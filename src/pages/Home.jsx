@@ -17,16 +17,13 @@ const Home = () => {
             className="absolute right-0 top-0 h-[700px] w-full object-cover z-[-1]"
           >
             {/* <source src="https://res.cloudinary.com/dcwwptwzt/video/upload/v1746467353/Screen_Recording_2025-04-29_045145_ixmnjn.mp4" type="video/mp4" /> */}
-            
           </video>
-          < Hero />
+          <Hero />
         </div>
         <CR />
         <Council />
         <BlogsComp />
         <Banner />
-
-        {/* <OrderPopup orderPopup={orderPopup} setOrderPopup={setOrderPopup} /> */}
       </div>
     </>
   );
