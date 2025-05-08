@@ -1,0 +1,20 @@
+import React from 'react'
+import TopOneData from './TopOneData'
+import BrightMindsCard from './BrightMindsCard'
+
+const TopOne = () => {
+  return (
+    <>
+      <div>
+        <h1 className='text-lg md:text-xl lg:text-2xl font-semibold mb-2'>Top Performer of Each Batch</h1>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 md:gap-6 lg:gap-8'>
+            {TopOneData.map((item) => (
+              <BrightMindsCard key={item.id} {...item} />
+            ))}
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default TopOne

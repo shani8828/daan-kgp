@@ -1,0 +1,92 @@
+import React from "react";
+import DownloadBtn from "../components/FresherPlace/DownloadBtn";
+
+const DownloadData = [
+  {
+    catching: "No more 'umm...'",
+    cover: "This is your intro cheat sheet!",
+    heading: "Intro Guide",
+    href: "https://docs.google.com/document/d/1tHNQBDmrCrXmxzZRs6Bct814N2XFpJAKXCaOtFEiclI/edit?usp=sharing",
+  },
+  {
+    catching: "Trouble in getting location?",
+    cover: "We've got your back!",
+    heading: "KGP Map",
+    href: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746650989/KGP_Map_w5ocll.jpg",
+  },
+  {
+    catching: "Lost in Nalanda?",
+    cover: "You're covered!",
+    heading: "Nalanda Map",
+    href: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746651123/Nalanda_Map_ruhmsq.jpg",
+  },
+  {
+    catching: "Not sure which EAA to choose?",
+    cover: "No worries — we’re on it!",
+    heading: "EAA Details",
+    href: "https://drive.google.com/file/d/1vIpdPPhjQ1OKuJ4bbjOyjKPx_Gdt6fP9/view?usp=sharing",
+  },
+  {
+    catching: "No more nodding blindly",
+    cover: "Get fluent in campus talk!",
+    heading: "KGP Lingo",
+    href: "https://drive.google.com/file/d/12GIJdNWZyLqBqOM4M1ljT7vMkFCrl29s/view?usp=sharing",
+  },
+  {
+    catching: "Deadlines got you down?",
+    cover: "You're in good hands.",
+    heading: "Academic Calendar",
+    href: "https://drive.google.com/file/d/14z7bz-ZAhR0VEViEn4zLmVNMF6PD22bv/view?usp=sharing",
+  },
+  {
+    catching: "No stress, just the best!",
+    cover: "Study Materials sorted.",
+    heading: "KGPellence",
+    href: "https://play.google.com/store/apps/details?id=com.iitkgp.kgpllence",
+  },
+  {
+    catching: "No money? No worry!",
+    cover: "We’ve got everything under control.",
+    heading: "Scholarship Guide",
+    href: "https://docs.google.com/document/d/1m8Bsq0SvZjTHttHbAkiSayAxMIUPcmyIJ2ohfXQrg1E/edit?usp=sharing",
+  },
+  {
+    catching: "Laptop shopping headache?",
+    cover: "Count on us!",
+    heading: "Laptop Guide",
+    href: "https://docs.google.com/document/d/1iXeVruprkmdQ-d9Gwtz3PNwTSax9BI11-MA2BVvCJNM/edit?usp=sharing",
+  },
+  {
+    catching: "Campus feels empty?",
+    cover: "Discover your vibe in a society!",
+    heading: "Society & Club Guide",
+    href: "https://docs.google.com/document/d/14qE-G9LrLDIHGMLiH2X6QT5ejJdleKUrq2epYh7MO70/edit?usp=sharing",
+  },
+  {
+    catching: "Emergency?",
+    cover: "All taken care of!",
+    heading: "Emergency Contacts",
+    href: "https://docs.google.com/document/d/1IS3fXMl8Jg9RS5EEUNutHxiC3jy71WwUYmamsbMxWlE/edit?usp=sharing",
+  },
+];
+
+const FresherPlace = () => {
+  return (
+    <>
+      <div className="dark:bg-gray-900 dark:text-white bg-gray-50 py-14 pt-20">
+        <section data-aos="fade-up" className="container ">
+          <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold">
+            Fresher Place
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+            {DownloadData.map((item, index) => (
+              <DownloadBtn key={index} {...item} />
+            ))}
+          </div>
+        </section>
+      </div>
+    </>
+  );
+};
+
+export default FresherPlace;
