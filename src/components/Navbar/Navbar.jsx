@@ -95,7 +95,7 @@ const Navbar = ({ handleOrderPopup }) => {
             </div>
             <div className="flex items-center gap-4">
               <a
-                className="bg-gradient-to-r from-red-600 to-red-400 hover:scale-[1.05] transition-all duration-300 text-white p-1 md:px-3 md:py-1 rounded-full text-center"
+                className="bg-gradient-to-r from-red-600 to-red-400 hover:scale-[1.05] transition-all duration-300 text-white p-1 md:px-3 md:py-1 rounded-xl text-center"
                 href="https://www.dakshana.org/"
                 target="_blank"
               >
