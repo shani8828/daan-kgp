@@ -96,12 +96,12 @@ const Footer = () => {
                     <p>+91 9555439091</p>
                   </a>
                   <a
-                    href="mailto:shanimaurya.iitkgp@gmail.com"
+                    href="mailto:shani.maurya.iitkgp@gmail.com"
                     target="_blank"
                     className="flex items-center gap-1 md:gap-3 mt-3 duration-300 hover:!text-primary"
                   >
                     <MdEmail />
-                    <p>shanimaurya.iitkgp@gmail.com</p>
+                    <p>shani.maurya.iitkgp@gmail.com</p>
                   </a>
                 </div>
                 {/* social handles */}

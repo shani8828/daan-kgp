@@ -13,7 +13,7 @@ const TopOneData = [
       name: "Mr. Shani Maurya",
       Year: "2nd Year",
       dept: "IM",
-      cg: "8.89",
+      cg: "8.39",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const TopOneData = [
       name: "Mr. Shani Maurya",
       Year: "3rd Year",
       dept: "IM",
-      cg: "8.89",
+      cg: "8.39",
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ const TopOneData = [
       name: "Mr. Shani Maurya",
       Year: "4th Year",
       dept: "IM",
-      cg: "8.89",
+      cg: "8.39",
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ const TopOneData = [
       name: "Mr. Shani Maurya",
       Year: "5th Year",
       dept: "IM",
-      cg: "8.89",
+      cg: "8.39",
     }
   ];
   

@@ -9,10 +9,6 @@ export const NavbarLinks = [
     link: "/",
   },
   {
-    name: "Our Bright Minds",
-    link: "/our-bright-minds",
-  },
-  {
     name: "Our Fam",
     link: "/our-fam",
   },
@@ -20,24 +16,13 @@ export const NavbarLinks = [
     name: "Fresher Place",
     link: "/fresher-place",
   },
-];
-
-const DropdownLinks = [
   {
-    name: "Our Services",
-    link: "/#services",
-  },
-  {
-    name: "Top Brands",
-    link: "/#mobile_brands",
-  },
-  {
-    name: "Location",
-    link: "/#location",
+    name: "Our Bright Minds",
+    link: "/our-bright-minds",
   },
 ];
 
-const Navbar = ({ handleOrderPopup }) => {
+const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -93,9 +78,9 @@ const Navbar = ({ handleOrderPopup }) => {
                 </li>
               </ul>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 justify-evenly">
               <a
-                className="bg-gradient-to-r from-red-600 to-red-400 hover:scale-[1.05] transition-all duration-300 text-white p-1 md:px-3 md:py-1 rounded-xl text-center"
+                className="bg-gradient-to-tr p-1 from-red-400 to-red-200 hover:scale-[1.05] transition-all duration-300 text-white  rounded-xl text-center hover:bg-gradient-to-tr hover:from-red-500 hover:to-red-300 hover:border-red-600"
                 href="https://www.dakshana.org/"
                 target="_blank"
               >
