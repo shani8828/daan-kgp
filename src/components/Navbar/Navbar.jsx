@@ -80,7 +80,7 @@ const Navbar = () => {
             </div>
             <div className="flex items-center gap-4 justify-evenly">
               <a
-                className="bg-gradient-to-tr p-1 from-red-400 to-red-200 hover:scale-[1.05] transition-all duration-300 text-white  rounded-xl text-center hover:bg-gradient-to-tr hover:from-red-500 hover:to-red-300 hover:border-red-600"
+                className="bg-gradient-to-tr p-2 from-red-400 to-red-200 border transition-all duration-300 text-black rounded-xl text-center hover:bg-gradient-to-tr hover:from-red-500 hover:to-red-300 hover:border-red-600"
                 href="https://www.dakshana.org/"
                 target="_blank"
               >
