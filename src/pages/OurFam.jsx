@@ -1,6 +1,6 @@
 import React from "react";
 import BlogsComp from "../components/Events/EventsComp";
-import Fam from "../components/OurFam/fam";
+// import Fam from "../components/OurFam/fam";
 
 const OurFam = () => {
   return (
