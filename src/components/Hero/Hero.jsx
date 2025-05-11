@@ -22,15 +22,16 @@ const Hero = () => {
             </p>
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="600"
+            
             className="flex justify-center items-center gap-3 md:gap-8 mt-8"
           >
-            <div className="bg-gradient-to-r from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col justify-evenly items-center">
+            <div data-aos="fade-up"
+            data-aos-delay="600" className="bg-gradient-to-r from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col justify-evenly items-center">
               <span className="text-3xl md:text-4xl lg:text-6xl font-bold">140+</span>
               <p className="text-sm">Currently in campus</p>
             </div>
-            <div className="bg-gradient-to-r from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col justify-evenly items-center">
+            <div data-aos="fade-up"
+            data-aos-delay="900" className="bg-gradient-to-r from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col justify-evenly items-center">
               <span className="text-3xl md:text-4xl lg:text-6xl font-bold">45+</span>
               <p className="text-sm">Expected to come</p>
             </div>
