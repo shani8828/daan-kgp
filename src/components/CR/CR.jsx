@@ -7,7 +7,7 @@ const testimonialData = [
     id: 0,
     name: "Mr. Shani Maurya",
     status: "Current",
-    hall: "Pt. Madan Mohan Malviya Hall of Residence",
+    hall: "MMH",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
     session: "2024-25",
     mobile: "+919555439091",
@@ -16,7 +16,7 @@ const testimonialData = [
     id: 1,
     name: "Mr. Ashish Meena",
     status: "Ex",
-    hall: "Rajendra Prasad Hall of Residence",
+    hall: "RP",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
     session: "2023-24",
     mobile: "+917340050926",
@@ -25,7 +25,7 @@ const testimonialData = [
     id: 2,
     name: "Mr. Abhinav Anand",
     status: "Ex",
-    hall: "Nehru Hall of Residence",
+    hall: "NHR",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
     session: "2022-23",
     mobile: "+919653408028",
@@ -86,7 +86,6 @@ const Testimonial = () => {
               managing programs, and handling inquiries inside the college.
             </p>
           </div>
-          {/* testimonial section */}
           <div
             data-aos="zoom-in"
             data-aos-duration="300"
@@ -97,15 +96,15 @@ const Testimonial = () => {
                 ({ id, name, status, hall, img, session, mobile }) => {
                   return (
                     <div key={id} className="my-6">
-                      <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-secondary/10 relative border border-secondary">
+                      <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-gradient-to-tr from-cyan-100 to-cyan-50 relative border border-secondary">
                         <img
                           src={img}
                           alt=""
                           className="rounded-full block mx-auto w-40"
                         />
-                        <h1 className="text-xl font-bold text-green-900">{name}</h1>
+                        <h1 className="text-xl font-bold from-cyan-900 to-cyan-500 bg-clip-text text-transparent bg-gradient-to-tr">{name}</h1>
                         <div className="flex gap-6 items-center">
-                          <h1 className="text-lg font-bold text-gray-600">
+                          <h1 className="text-lg font-semibold text-gray-600">
                             {status} CR
                           </h1>
                           <a
