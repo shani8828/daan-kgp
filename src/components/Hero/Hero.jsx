@@ -33,7 +33,7 @@ const Hero = () => {
             <div data-aos="fade-up"
             data-aos-delay="900" className="bg-gradient-to-r from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col justify-evenly items-center">
               <span className="text-3xl md:text-4xl lg:text-6xl font-bold">45+</span>
-              <p className="text-sm">Expected to come</p>
+              <p className="text-sm">Expected to join</p>
             </div>
           </div>
         </div>
