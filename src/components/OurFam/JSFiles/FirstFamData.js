@@ -79,7 +79,7 @@ const FirstFamData = [
   {
     id: 11,
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-    name: "Miss Chetna Kanesh",
+    name: "Ms. Chetna Kanesh",
     dept: "ME",
     hall: "MMH",
   },
@@ -142,14 +142,14 @@ const FirstFamData = [
   {
     id: 20,
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-    name: "Miss Monika Dhakad",
+    name: "Ms. Monika Dhakad",
     dept: "ME",
     hall: "MMH",
   },
   {
     id: 21,
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-    name: "Miss Muskan Verma",
+    name: "Ms. Muskan Verma",
     dept: "ME",
     hall: "MMH",
   },
@@ -198,7 +198,7 @@ const FirstFamData = [
   {
     id: 28,
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-    name: "Miss Preeti Chaudhary",
+    name: "Ms.Preeti Chaudhary",
     dept: "ME",
     hall: "MMH",
   },
