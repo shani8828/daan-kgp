@@ -55,7 +55,7 @@ const Council = () => {
           <h1 className=" my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold">
             Our DAAN Council Members
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {CouncilData.map((item, index) => (
               <CouncilCard
                 key={index}
