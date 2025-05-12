@@ -38,21 +38,21 @@ const Banner = () => {
                 <div data-aos="zoom-in" className="grid grid-cols-2 gap-6">
                   <div className="space-y-6">
                     <div className="flex items-center gap-4">
-                      <FaHelicopter className="text-4xl h-12 w-12 shadow-sm p-1 md:p-2 lg:p-4 rounded-full bg-violet-100 dark:bg-violet-400" />
+                      <FaHelicopter className="text-4xl hidden md:block h-12 w-12 shadow-sm p-4 rounded-full bg-violet-100 dark:bg-violet-400" />
                       <p>Helipad</p>
                     </div>
                     <div className="flex items-center gap-4">
-                      <FaBus className="text-4xl h-12 w-12 shadow-sm p-1 md:p-2 lg:p-4 rounded-full bg-orange-100 dark:bg-orange-400" />
+                      <FaBus className="text-4xl hidden md:block h-12 w-12 shadow-sm p-4 rounded-full bg-orange-100 dark:bg-orange-400" />
                       <p>Hanger</p>
                     </div>
                   </div>
                   <div className="space-y-6">
                     <div className="flex items-center gap-4">
-                      <GiTrophy className="text-4xl h-12 w-12 shadow-sm p-1 md:p-2 lg:p-4 rounded-full bg-green-100 dark:bg-green-400" />
+                      <GiTrophy className="text-4xl hidden md:block h-12 w-12 shadow-sm p-4 rounded-full bg-green-100 dark:bg-green-400" />
                       <p>Gymkhana</p>
                     </div>
                     <div className="flex items-center gap-4">
-                      <FaBuilding className="text-4xl h-12 w-12 shadow-sm p-1 md:p-2 lg:p-4 rounded-full bg-yellow-100 dark:bg-yellow-400" />
+                      <FaBuilding className="text-4xl hidden md:block h-12 w-12 shadow-sm p-4 rounded-full bg-yellow-100 dark:bg-yellow-400" />
                       <p>Hijli Shaheed Bhavan</p>
                     </div>
                   </div>

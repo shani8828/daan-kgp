@@ -1,12 +1,15 @@
 import React from "react";
 import {
+  FaLongArrowAltRight,
+  FaMapMarkedAlt,
   FaFacebook,
   FaInstagram,
   FaLinkedin,
   FaLocationArrow,
   FaMobileAlt,
 } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import {IoIosMail,} from 'react-icons/io';
+import { MdEmail, MdAddCall } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const FooterLinks = [
@@ -45,7 +48,7 @@ const Footer = () => {
             <div className="py-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
                 <img src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1746467915/DAAN_KGP_Logo_bhdfxo.png" alt="" className="max-h-[60px]" />
-                {/* TravelloGo */}
+                
               </h1>
               <p className="text-md">
               DAAN KGP is a well-structured DakshanA Alumni Network established at the Indian Institute of Technology, Kharagpur.
@@ -56,7 +59,7 @@ const Footer = () => {
               <div>
                 <div className="py-8 px-4">
                   <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
-                    Quick Ways
+                    Quick Ways 
                   </h1>
                   <ul className="flex flex-col gap-3">
                     {FooterLinks.map((link) => (
@@ -64,8 +67,9 @@ const Footer = () => {
                         <Link
                           to={link.link}
                           onClick={() => window.scrollTo(0, 0)}
+                          className="flex gap-1 items-center"
                         >
-                          <span>&#11162;</span>
+                          <span><FaLongArrowAltRight/></span>
                           <span>{link.title}</span>
                         </Link>
                       </li>
@@ -81,49 +85,50 @@ const Footer = () => {
                   <a
                     href="https://maps.app.goo.gl/SJVVbSZG5igkX1hXA"
                     target="_blank"
-                    className="flex items-center gap-3 duration-300 hover:!text-primary"
+                    className="flex items-center gap-3 transition-all duration-300 hover:!text-primary hover:italic"
                   >
-                    <FaLocationArrow />
+                    <FaMapMarkedAlt />
                     <p>IIT Kharagpur, West Bengal, 721302</p>
                   </a>
 
                   <a
-                    href="callto:+919555439091"
+                    href="tel:+919555439091"
                     target="_blank"
-                    className="flex items-center gap-3 mt-3 duration-300 hover:!text-primary"
+                    className="flex items-center gap-3 mt-3 transition-all duration-300 hover:!text-primary hover:italic"
                   >
-                    <FaMobileAlt />
+                    <MdAddCall />
                     <p>+91 9555439091</p>
                   </a>
                   <a
                     href="mailto:shani.maurya.iitkgp@gmail.com"
                     target="_blank"
-                    className="flex items-center gap-1 md:gap-3 mt-3 duration-300 hover:!text-primary"
+                    className="flex items-center gap-1 md:gap-3 mt-3 transition-all duration-300 hover:!text-primary hover:italic"
                   >
-                    <MdEmail />
+                    <IoIosMail />
                     <p>shani.maurya.iitkgp@gmail.com</p>
                   </a>
                 </div>
                 {/* social handles */}
                 <div>
-                  <div className="flex items-center gap-6 mt-6">
+                  <h1 className="font-semibold mt-4">Officials: </h1>
+                  <div className="flex w-[250px] justify-evenly items-center gap-6">
                     <a
                       href="https://www.instagram.com/daan.official1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                       target="_blank"
                     >
-                      <FaInstagram className="text-3xl duration-300 hover:!text-primary" />
+                      <FaInstagram className="text-3xl duration-300 hover:!text-primary hover:-translate-y-1" />
                     </a>
                     <a
                       href="https://www.facebook.com/share/g/1HgK8eLe43/"
                       target="_blank"
                     >
-                      <FaFacebook className="text-3xl duration-300 hover:!text-primary" />
+                      <FaFacebook className="text-3xl duration-300 hover:!text-primary  hover:-translate-y-1" />
                     </a>
                     <a
                       href="https://www.linkedin.com/groups/4920035/"
                       target="_blank"
                     >
-                      <FaLinkedin className="text-3xl duration-300 hover:!text-primary" />
+                      <FaLinkedin className="text-3xl duration-300 hover:!text-primary hover:-translate-y-1" />
                     </a>
                   </div>
                 </div>
