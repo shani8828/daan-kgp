@@ -108,7 +108,7 @@ const Testimonial = () => {
                             {status} CR
                           </h1>
                           <a
-                            href={`callto:${mobile}`}
+                            href={`tel:${mobile}`}
                             className="p-2  rounded-lg border border-green-400 text-green-800 flex items-center hover:bg-green-400 transition-colors duration-300"
                           >
                             <FaMobileAlt />
