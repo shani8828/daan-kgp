@@ -37,24 +37,40 @@ const Banner = () => {
                 </p>
                 <div data-aos="zoom-in" className="grid grid-cols-2 gap-6">
                   <div className="space-y-6">
-                    <div className="flex items-center gap-4">
-                      <FaHelicopter className="text-4xl hidden md:block h-12 w-12 shadow-sm p-4 rounded-full bg-violet-100 dark:bg-violet-400" />
+                    <a
+                      href="https://maps.app.goo.gl/NqEH1JNonsuRggBX9"
+                      target="_blank"
+                      className="flex items-center gap-4 hover:translate-x-1 transition-all duration-300"
+                    >
+                      <FaHelicopter className="text-4xl h-4 w-4 md:h-12 md:w-12 shadow-sm p-2 md:p-4 rounded-full bg-violet-100 border border-violet-300 dark:bg-violet-400" />
                       <p>Helipad</p>
-                    </div>
-                    <div className="flex items-center gap-4">
-                      <FaBus className="text-4xl hidden md:block h-12 w-12 shadow-sm p-4 rounded-full bg-orange-100 dark:bg-orange-400" />
+                    </a>
+                    <a
+                      href="https://maps.app.goo.gl/c6AvVK4NAywEqcDJ7"
+                      target="_blank"
+                      className="flex items-center gap-4 hover:translate-x-1 transition-all duration-300"
+                    >
+                      <FaBus className="text-4xl h-4 w-4 md:h-12 md:w-12 shadow-sm p-2 md:p-4 rounded-full bg-red-100 border border-red-300 dark:bg-red-400" />
                       <p>Hanger</p>
-                    </div>
+                    </a>
                   </div>
                   <div className="space-y-6">
-                    <div className="flex items-center gap-4">
-                      <GiTrophy className="text-4xl hidden md:block h-12 w-12 shadow-sm p-4 rounded-full bg-green-100 dark:bg-green-400" />
+                    <a
+                      href="https://maps.app.goo.gl/JGGXni9LUqP8zDZQA"
+                      target="_blank"
+                      className="flex items-center gap-4 hover:translate-x-1 transition-all duration-300"
+                    >
+                      <GiTrophy className="text-4xl h-4 w-4 md:h-12 md:w-12 shadow-sm p-2 md:p-4 rounded-full bg-green-100 border border-green-300 dark:bg-green-400" />
                       <p>Gymkhana</p>
-                    </div>
-                    <div className="flex items-center gap-4">
-                      <FaBuilding className="text-4xl hidden md:block h-12 w-12 shadow-sm p-4 rounded-full bg-yellow-100 dark:bg-yellow-400" />
-                      <p>Hijli Shaheed Bhavan</p>
-                    </div>
+                    </a>
+                    <a
+                      href="https://maps.app.goo.gl/c6AvVK4NAywEqcDJ7"
+                      target="_blank"
+                      className="flex items-center gap-4 hover:translate-x-1 transition-all duration-300"
+                    >
+                      <FaBuilding className="text-4xl h-4 w-4 md:h-12 md:w-12 shadow-sm p-2 md:p-4 rounded-full bg-yellow-100 border border-yellow-300 dark:bg-yellow-400" />
+                      <p>Nehru Museum</p>
+                    </a>
                   </div>
                 </div>
               </div>

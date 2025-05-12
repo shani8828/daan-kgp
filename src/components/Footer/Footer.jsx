@@ -111,7 +111,7 @@ const Footer = () => {
                 {/* social handles */}
                 <div>
                   <h1 className="font-semibold mt-4">Officials: </h1>
-                  <div className="flex w-[250px] justify-evenly items-center gap-6">
+                  <div className="flex w-[250px] md:w-[200px] justify-evenly items-center gap-6">
                     <a
                       href="https://www.instagram.com/daan.official1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                       target="_blank"
