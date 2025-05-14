@@ -26,7 +26,8 @@ const Fam = () => {
           <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold">
             Our Fam
           </h1>
-          <p className="text-center mb-2 text-red-500 underline">Choose Year</p>
+          <p className="text-center text-red-500 underline">Choose Year</p>
+           <p className="text-center mb-2 w-full text-[0.9rem] text-red-400">{'{As per 2024-25}'}</p>
           <div className="text-center">
             {tabs.map((tab) => (
               <button

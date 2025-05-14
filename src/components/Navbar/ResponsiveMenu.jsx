@@ -27,11 +27,11 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
           </ul>
         </nav>
       </div>
-      <div className="footer">
+      {/* <div className="footer">
         <h1>
           Made with 💖 by Amplifier
         </h1>
-      </div>
+      </div> */}
     </div>
   );
 };

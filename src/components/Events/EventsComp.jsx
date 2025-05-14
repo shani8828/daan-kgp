@@ -8,7 +8,7 @@ const EventData = [
     title: "A Memorable Visit by Ravi Sir",
     description:
       "We were honored to welcome Ravi Sir to our campus for a truly inspiring and memorable visit. His presence at the Gymkhana, IIT Kharagpur, brought immense joy and excitement among all of us. During his time with us, Ravi Sir interacted warmly with students, shared his experiences, and offered valuable guidance that left a lasting impact. We are deeply thankful for his visit, which motivated and encouraged us to strive for excellence.",
-    date: "April 15, 2022",
+    date: "April 15, 2025",
   },
   {
     id: 1,
