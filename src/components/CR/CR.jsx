@@ -7,7 +7,7 @@ const testimonialData = [
     id: 0,
     name: "Mr. Shani Maurya",
     status: "Current",
-    hall: "MMH",
+    hall: "MMM",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
     session: "2024-25",
     mobile: "+919555439091",
