@@ -9,6 +9,7 @@ import OurBrightMinds from "./pages/OurBrightMinds";
 import EventsDetails from "./pages/EventsDetails";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import PageUpBtn from "./pages/PageUpBtn";
 
 const App = () => {
   React.useEffect(() => {
@@ -33,6 +34,8 @@ const App = () => {
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
+        
+          <PageUpBtn/>
       </BrowserRouter>
     </>
   );

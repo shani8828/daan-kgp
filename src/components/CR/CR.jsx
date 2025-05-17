@@ -23,9 +23,9 @@ const testimonialData = [
   },
   {
     id: 2,
-    name: "Mr. Abhinav Anand",
+    name: "Mr. Abhinaw Anand",
     status: "Ex",
-    hall: "NHR",
+    hall: "Nehru",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
     session: "2022-23",
     mobile: "+919653408028",

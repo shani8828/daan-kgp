@@ -6,13 +6,13 @@ const DownloadData = [
     catching: "No more 'umm...'",
     cover: "This is your intro cheat sheet!",
     heading: "Intro Guide",
-    href: "https://docs.google.com/document/d/1tHNQBDmrCrXmxzZRs6Bct814N2XFpJAKXCaOtFEiclI/edit?usp=sharing",
+    href: "https://docs.google.com/document/d/1b-SWSYqEJdA3YEiZGOn278ZRGlXElqiVOLqpuWvEuH4/edit?usp=sharing",
   },
   {
     catching: "Trouble in getting location?",
     cover: "We've got your back!",
     heading: "KGP Map",
-    href: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746650989/KGP_Map_w5ocll.jpg",
+    href: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747046563/KGP_Map_firbed.jpg",
   },
   {
     catching: "Lost in Nalanda?",
@@ -41,26 +41,26 @@ const DownloadData = [
   {
     catching: "No stress, just the best!",
     cover: "Study Materials sorted.",
-    heading: "KGPellence",
-    href: "https://play.google.com/store/apps/details?id=com.iitkgp.kgpllence",
+    heading: "Study Materials",
+    href: "https://docs.google.com/document/d/1zYGhxb_qzve6TetDW0j1NZlszPbKJOuOQpfK96kexO0/edit?usp=sharing",
   },
   {
     catching: "No money? No worry!",
     cover: "We’ve got everything under control.",
     heading: "Scholarship Guide",
-    href: "https://docs.google.com/document/d/1m8Bsq0SvZjTHttHbAkiSayAxMIUPcmyIJ2ohfXQrg1E/edit?usp=sharing",
+    href: "https://drive.google.com/file/d/1e371Rn1eCIydR7sNcOT7XhM9T0avvNbR/view?usp=sharing",
   },
   {
     catching: "Laptop shopping headache?",
     cover: "Count on us!",
     heading: "Laptop Guide",
-    href: "https://docs.google.com/document/d/1iXeVruprkmdQ-d9Gwtz3PNwTSax9BI11-MA2BVvCJNM/edit?usp=sharing",
+    href: "https://docs.google.com/document/d/1N1Vr8rx9eWZr6AblfO8Eojlx293C0jxQoKZNuVVGCPs/edit?usp=sharing",
   },
   {
     catching: "Campus feels empty?",
     cover: "Discover your vibe in a society!",
     heading: "Society & Club Guide",
-    href: "https://docs.google.com/document/d/14qE-G9LrLDIHGMLiH2X6QT5ejJdleKUrq2epYh7MO70/edit?usp=sharing",
+    href: "https://docs.google.com/document/d/19B2TFi_VmyQsRmYAVMG71yJgRda07OxW2lvc51MTiY4/edit?usp=sharing",
   },
   {
     catching: "Emergency?",

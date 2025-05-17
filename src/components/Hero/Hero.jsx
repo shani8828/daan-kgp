@@ -1,4 +1,5 @@
 import React from "react";
+import AnimatedCounter from "./AnimatedCounter";
 
 const Hero = () => {
   return (
@@ -27,12 +28,14 @@ const Hero = () => {
           >
             <div data-aos="fade-up"
             data-aos-delay="600" className="bg-gradient-to-r from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col justify-evenly items-center">
-              <span className="text-3xl md:text-4xl lg:text-6xl font-bold">140+</span>
+              <span className="text-3xl md:text-4xl lg:text-6xl font-bold flex items-center">
+                <AnimatedCounter target={140} duration={2500} /> +
+              </span>
               <p className="text-sm">Currently in campus</p>
             </div>
             <div data-aos="fade-up"
             data-aos-delay="900" className="bg-gradient-to-r from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col justify-evenly items-center">
-              <span className="text-3xl md:text-4xl lg:text-6xl font-bold">45+</span>
+              <span className="text-3xl md:text-4xl lg:text-6xl font-bold flex items-center"><AnimatedCounter target={45} duration={2500} /> +</span>
               <p className="text-sm">Expected to join</p>
             </div>
           </div>

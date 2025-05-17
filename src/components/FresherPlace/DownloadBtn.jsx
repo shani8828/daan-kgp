@@ -11,7 +11,7 @@ const DownloadBtn = ({ catching, cover, heading, href }) => {
           href={href}
           download={heading}
           target="_blank"
-          className="border p-2 rounded-lg flex gap-2 items-center hover:bg-gradient-to-tr hover:from-red-500 hover:to-red-300 hover:border-red-600 transition-all duration-300"
+          className="border shadow-sm shadow-gray-500 p-2 rounded-lg flex gap-2 items-center hover:bg-gradient-to-tr hover:from-red-500 hover:to-red-300 hover:border-red-600 transition-all duration-300"
         >
             <div className="flex ">{heading}</div><FaDownload />
         </a>

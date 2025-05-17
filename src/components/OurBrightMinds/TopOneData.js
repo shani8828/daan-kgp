@@ -1,11 +1,11 @@
 const TopOneData = [
     {
       id: 0,
-      img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-      name: "Mr. Adam",
+      img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747487003/Sachin_Kumar_mppltl.jpg",
+      name: "Mr. Sachin Kumar",
       Year: "1st Year",
-      dept: "IM",
-      cg: "9.99",
+      dept: "CS",
+      cg: "9.54",
     },
     {
       id: 1,

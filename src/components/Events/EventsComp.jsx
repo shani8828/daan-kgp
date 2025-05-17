@@ -29,7 +29,7 @@ const EventData = [
   {
     id: 3,
     image: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746643482/Dakshana_Day_24_jpj4zy.jpg",
-    title: "Dakshana Day - 2024",
+    title: "Dakshana Day'24",
     description:
       "A special occasion where we celebrated the remarkable journey and successful completion of 18 years of the Dakshana Foundation. It was a day of gratitude and reflection, honoring our organization that has transformed countless lives through education and unwavering support. Dakshana has given us knowledge, values, and opportunities, shaping us into who we are today. Its impact is profound, and its legacy continues to inspire future generations.",
     date: "October 15, 2024",

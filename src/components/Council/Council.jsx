@@ -22,14 +22,14 @@ const CouncilData = [
   {
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
     title: "Mr. Shani Maurya",
-    location: "College Representative",
+    location: "College Representative, IIT Kharagpur",
     description:
       "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
     year: "2nd",
     type: "Cultural Relax",
   },
   {
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747403787/Mohit_Kumar_zmv5np.jpg",
     title: "Mr. Mohit Kumar",
     location: "Junior Secretary, DST(Non-JNV)",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -37,7 +37,7 @@ const CouncilData = [
     type: "Cultural Relax",
   },
   {
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747406803/Swarup_Dhanavade_fodfed.jpg",
     title: "Mr. Swarup Dhanavade",
     location: "Junior Secretary, DST(JNV)",
     description:
