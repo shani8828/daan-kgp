@@ -12,9 +12,9 @@ const Banner = () => {
               {/* Image section */}
               <div data-aos="flip-up">
                 <img
-                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1746469149/treasurebox_p2owq6.png"
-                  alt="biryani img"
-                  className="max-w-[450px] h-[350px] w-full mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover"
+                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747339555/TreasureImg_bd8ned.jpg"
+                  alt="Treasure Img"
+                  className="max-w-[450px] h-[350px] w-full mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover rounded-3xl"
                 />
               </div>
               {/* text content section */}

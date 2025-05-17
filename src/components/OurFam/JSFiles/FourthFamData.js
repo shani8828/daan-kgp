@@ -1,84 +1,30 @@
 const FourthFamData = [
   {
-    id: 0,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-    name: "Mr. Abhinav Anand",
-    dept: "ME",
-    hall: "LBS",
-    mail: "",
-    linkedIn: ""
-  },
-  {
     id: 1,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-    name: "Mr. Ashutosh",
-    dept: "ME",
-    hall: "LBS",
-    mail: "",
-    linkedIn: ""
+    name: "Mr. Nitin Rajvanshi",
+    dept: "MnC",
+    mail: "nkraj7266@kgpian.iitkgp.ac.in",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747395181/Nitin_Rajvanshi_lnmjs6.jpg",
+    linkedIn: "https://www.linkedin.com/in/nitinrajvanshi/",
+    hall: "Patel"
   },
   {
     id: 2,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-    name: "Mr. Pratik",
-    dept: "ME",
-    hall: "LBS",
-    mail: "",
-    linkedIn: ""
+    name: "Mr. Saurabh Kumar",
+    dept: "MI",
+    mail: "s.raj.2.o.p@kgpian.iitkgp.ac.in",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747395251/Saurabh_yqj2xr.jpg",
+    linkedIn: "https://www.linkedin.com/in/saurabh-kumar-7692b1223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    hall: ""
   },
   {
     id: 3,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-    name: "Mr. Suraj",
+    name: "Mr. Soumyadeep Pradhan",
     dept: "ME",
-    hall: "LBS",
-    mail: "",
-    linkedIn: ""
-  },
-  {
-    id: 4,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-    name: "Mr. Animesh Mondal",
-    dept: "ME",
-    hall: "LBS",
-    mail: "",
-    linkedIn: ""
-  },
-  {
-    id: 5,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-    name: "Mr. Anshuman Acharya",
-    dept: "ME",
-    hall: "LBS",
-    mail: "",
-    linkedIn: ""
-  },
-  {
-    id: 6,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-    name: "Mr. Anushesh Jumale",
-    dept: "ME",
-    hall: "LBS",
-    mail: "",
-    linkedIn: ""
-  },
-  {
-    id: 7,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-    name: "Mr. Arnab Chakraborty",
-    dept: "ME",
-    hall: "LBS",
-    mail: "",
-    linkedIn: ""
-  },
-  {
-    id: 8,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-    name: "Mr. Arvind Meena",
-    dept: "ME",
-    hall: "LBS",
-    mail: "",
-    linkedIn: ""
+    mail: "soumyadeep265@gmail.com",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747395340/Soumyadeep_Pradhan_erk4rl.jpg",
+    linkedIn: "https://in.linkedin.com/in/soumyadeep-pradhan-ab4412229",
+    hall: ""
   }
 ];
 

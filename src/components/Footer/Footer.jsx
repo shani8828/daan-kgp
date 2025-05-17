@@ -5,11 +5,8 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaLocationArrow,
-  FaMobileAlt,
 } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import { MdEmail, MdAddCall } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const FooterLinks = [
@@ -44,8 +41,8 @@ const Footer = () => {
           {/* <source src="https://res.cloudinary.com/dcwwptwzt/video/upload/v1746467353/Screen_Recording_2025-04-29_045145_ixmnjn.mp4" type="video/mp4" /> */}
         </video>
         <div className="container">
-          <div className="grid md:grid-cols-3 py-5 bg-gradient-to-tr from-red-200 to-red-100 border border-red-300 backdrop-blur-sm rounded-t-xl">
-            <div className="py-8 px-4">
+          <div className="grid md:grid-cols-3 pt-5 bg-gradient-to-tr from-red-200 to-red-100 border border-red-300 backdrop-blur-sm rounded-t-xl">
+            <div className="pt-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
                 <img
                   src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1746467915/DAAN_KGP_Logo_bhdfxo.png"
@@ -57,7 +54,7 @@ const Footer = () => {
                 DAAN KGP is a well-structured DakshanA Alumni Network
                 established at the Indian Institute of Technology, Kharagpur.
               </p>
-              <br />
+              
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 col-span-2 md:pl-10">
               <div>
@@ -116,8 +113,8 @@ const Footer = () => {
                 </div>
                 {/* social handles */}
                 <div>
-                  <h1 className="font-semibold mt-4">DAAN Officials: </h1>
-                  <div className="flex w-[250px] md:w-[200px] justify-evenly items-center gap-6">
+                  <h1 className="font-semibold mt-3">DAAN Officials: </h1>
+                  <div className="flex w-[250px] md:w-[200px] justify-evenly items-center gap-6 mt-2">
                     <a
                       href="https://www.instagram.com/daan.official1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                       target="_blank"
