@@ -10,8 +10,7 @@ const Hero = () => {
             <p
               data-aos="fade-up"
               className="text-2xl md:text-4xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-red-900  to-red-500 font-bold text-center"
-            >Shani Maurya
-              Congratulations on being a KGPian Dakshanite!
+            >Congratulations on being a KGPian Dakshanite!
             </p>
             <p
               data-aos="fade-up"
