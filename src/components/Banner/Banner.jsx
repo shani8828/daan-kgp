@@ -38,7 +38,7 @@ const Banner = () => {
                 <div data-aos="zoom-in" className="grid grid-cols-2 gap-6">
                   <div className="space-y-6">
                     <a
-                      href="https://maps.app.goo.gl/NqEH1JNonsuRggBX9"
+                      href="https://maps.app.goo.gl/bJGDh9x82obhCeyR9"
                       target="_blank"
                       className="flex items-center gap-4 hover:translate-x-1 transition-all duration-300"
                     >
@@ -46,7 +46,7 @@ const Banner = () => {
                       <p>Helipad</p>
                     </a>
                     <a
-                      href="https://maps.app.goo.gl/c6AvVK4NAywEqcDJ7"
+                      href="https://maps.app.goo.gl/7hXBb4WKcHD6HqR87"
                       target="_blank"
                       className="flex items-center gap-4 hover:translate-x-1 transition-all duration-300"
                     >
@@ -56,7 +56,7 @@ const Banner = () => {
                   </div>
                   <div className="space-y-6">
                     <a
-                      href="https://maps.app.goo.gl/JGGXni9LUqP8zDZQA"
+                      href="https://maps.app.goo.gl/1gqV1VTQ4cLr6Ut69"
                       target="_blank"
                       className="flex items-center gap-4 hover:translate-x-1 transition-all duration-300"
                     >
@@ -64,7 +64,7 @@ const Banner = () => {
                       <p>Gymkhana</p>
                     </a>
                     <a
-                      href="https://maps.app.goo.gl/c6AvVK4NAywEqcDJ7"
+                      href="https://maps.app.goo.gl/meC9B6u3ZPxQ8sPA8"
                       target="_blank"
                       className="flex items-center gap-4 hover:translate-x-1 transition-all duration-300"
                     >
