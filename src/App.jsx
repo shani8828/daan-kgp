@@ -21,6 +21,14 @@ const App = () => {
     });
     AOS.refresh();
   }, []);
+
+  // Gets where user is clicking
+  // React.useEffect(() => {
+  //   document.addEventListener("click", (e) => {
+  //     console.log("Clicked:", e.target);
+  //   });
+  // }, []);
+
   return (
     <>
       <BrowserRouter>
@@ -34,8 +42,7 @@ const App = () => {
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
-        
-          <PageUpBtn/>
+        <PageUpBtn />
       </BrowserRouter>
     </>
   );

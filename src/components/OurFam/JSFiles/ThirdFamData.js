@@ -18,6 +18,24 @@ const ThirdFamData = [
     hall: "MS"
   },
   {
+    id: 1,
+    name: "Mr. Gaurav Kumar",
+    dept: "AG",
+    mail: "gauravgargkumar20@gmail.com",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747579859/Gaurav_Kumar_jhjhbd.jpg",
+    linkedIn: "",
+    hall: "MMM"
+  },
+  {
+    id: 2,
+    name: "Mr. Gopal Ji",
+    dept: "CS",
+    mail: "gopal357gupta@gmail.com",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747579810/Gopal_G_vdtmsx.jpg",
+    linkedIn: "",
+    hall: "MMM"
+  },
+  {
     id: 3,
     name: "Mr. Jeevan Kumar Korra",
     dept: "ME",
@@ -43,6 +61,15 @@ const ThirdFamData = [
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747393829/Md_Mutahhir_Azam_tosc67.jpg",
     linkedIn: "https://www.linkedin.com/in/md-mutahhir-azam",
     hall: "LLR"
+  },
+  {
+    id: 6,
+    name: "Mr. Paramjeet Saini",
+    dept: "CH",
+    mail: "paramjeetsaini@kgpian.iitkgp.ac.in",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747579953/Paramjeet_Saini_av7yxl.jpg",
+    linkedIn: "",
+    hall: "Azad"
   },
   {
     id: 6,

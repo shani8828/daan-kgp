@@ -5,6 +5,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
+  FaRegCopyright,
 } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { Link } from "react-router-dom";
@@ -54,7 +55,6 @@ const Footer = () => {
                 DAAN KGP is a well-structured DakshanA Alumni Network
                 established at the Indian Institute of Technology, Kharagpur.
               </p>
-              
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 col-span-2 md:pl-10">
               <div>
@@ -139,8 +139,8 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <div className="text-center py-5 border-t-2 border-gray-300/50 bg-primary text-white">
-              All rights reserved || Amplifier
+            <div className="text-center py-5 border-t-2 border-gray-300/50 bg-primary text-white flex justify-center items-center">
+              <FaRegCopyright />Amplifier | All rights reserved.
             </div>
           </div>
         </div>

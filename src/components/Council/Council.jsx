@@ -11,7 +11,7 @@ const CouncilData = [
     type: "Cultural Relax",
   },
   {
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747579953/Paramjeet_Saini_av7yxl.jpg",
     title: "Mr. Paramjeet Saini",
     location: "Senior Sectretary, DST(JNV)",
     description:
