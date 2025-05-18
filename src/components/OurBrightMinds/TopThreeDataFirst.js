@@ -15,10 +15,10 @@ const TopThreeDataFirst =[
     },
     {
         id:2,
-        img :"https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
-        name : "Mr. Adam",
-        dept : "ME",
-        cg : "9.99",
+        img :"https://res.cloudinary.com/dcwwptwzt/image/upload/v1747485955/Nayan_Balpande_fagifz.jpg",
+        name : "Mr. Nayan Balpande",
+        dept : "IM",
+        cg : "8.68",
     },
 ]
 export default TopThreeDataFirst;

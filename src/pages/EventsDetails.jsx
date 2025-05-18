@@ -10,7 +10,7 @@ const EventsDetails = (props) => {
 
   return (
     <div className="pt-20">
-      <div className="h-auto overflow-hidden">
+      <div className="h-auto  overflow-hidden">
         <img
           src={image}
           alt={title}

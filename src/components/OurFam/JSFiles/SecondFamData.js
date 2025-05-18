@@ -15,7 +15,7 @@ const SecondFamData = [
     mail: "abhinavkumarchoudhary@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747401971/Abhinav_Kumar_Chaudhary_ahsqwx.jpg",
     linkedIn: "",
-    hall: "",
+    hall: "RP",
   },
   {
     index: 2,
@@ -42,7 +42,7 @@ const SecondFamData = [
     mail: "animeshtxt@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747402391/Animesh_Mondal_ncvp4c.jpg",
     linkedIn: "https://www.linkedin.com/in/animesh-mondal-4b702527a/",
-    hall: "",
+    hall: "MS",
   },
   {
     index: 5,
@@ -69,7 +69,7 @@ const SecondFamData = [
     mail: "I_am_arnab@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747402537/Arnab_Chakraborty_so1pdv.jpg",
     linkedIn: "https://www.linkedin.com/in/arnab-chakraborty-264a43289",
-    hall: "",
+    hall: "Nehru",
   },
   {
     index: 8,
@@ -105,7 +105,7 @@ const SecondFamData = [
     mail: "bijayabehera745@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747403013/Bijay_Kumar_Behera_su8rmg.jpg",
     linkedIn: "",
-    hall: "",
+    hall: "Nehru",
   },
   {
     index: 12,
@@ -195,7 +195,7 @@ const SecondFamData = [
     mail: "praveenoraon518@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747404374/Praveen_Oraon_zqeuwe.jpg",
     linkedIn: "",
-    hall: "",
+    hall: "Patel",
   },
   {
     index: 22,
@@ -204,7 +204,7 @@ const SecondFamData = [
     mail: "rajamandal5346@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747404490/Raja_Mandal_nmtbza.jpg",
     linkedIn: "",
-    hall: "",
+    hall: "RP",
   },
   {
     index: 23,
@@ -223,6 +223,15 @@ const SecondFamData = [
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747404750/Sangeeta_Kumari_Mandal_a35dfb.jpg",
     linkedIn: "",
     hall: "MT",
+  },
+  {
+    index: 25,
+    name: "Mr. Shani Maurya",
+    dept: "IM",
+    mail: "shanimaurya@kgpian.iitkgp.ac.in",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    linkedIn: "",
+    hall: "MMM",
   },
   {
     index: 25,
