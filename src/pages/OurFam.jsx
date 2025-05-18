@@ -1,5 +1,5 @@
 import React from "react";
-import Fam from "../components/OurFam/fam";
+import Fam from "../components/OurFam/Fam";
 
 const OurFam = () => {
   return (
