@@ -72,7 +72,7 @@ const Testimonial = () => {
     ],
   };
   return (
-    <>+
+    <>
       <div data-aos="fade-up" data-aos-duration="300" className="py-10">
         <div className="container">
           {/* Header section */}
