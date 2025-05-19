@@ -6,6 +6,7 @@ import CR from "../components/CR/CR";
 import Banner from "../components/Banner/Banner";
 
 const Home = () => {
+  document.title="DAAN KGP";
   return (
     <>
       <div>

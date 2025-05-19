@@ -5,6 +5,8 @@ const TopThreeDataFirst =[
         name : "Mr. Sachin Kumar",
         dept : "CS",
         cg : "9.54",
+        position:"1",
+        colour:"yellow",
     },
     {
         id:1,
@@ -12,6 +14,8 @@ const TopThreeDataFirst =[
         name : "Mr. Pratik Verma",
         dept : "CS",
         cg : "9.04",
+        position:"2",
+        colour:"purple",
     },
     {
         id:2,
@@ -19,6 +23,8 @@ const TopThreeDataFirst =[
         name : "Mr. Nayan Balpande",
         dept : "IM",
         cg : "8.68",
+        position:"3",
+        colour:"blue",
     },
 ]
 export default TopThreeDataFirst;

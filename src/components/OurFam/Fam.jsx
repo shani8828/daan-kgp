@@ -33,6 +33,7 @@ const Fam = () => {
               <button
                 className="py-3 px-4 w-14 rounded-lg border border-red-300 text-red-800 bg-red-200 hover:shadow-lg transition-all duration-300 hover:bg-red-400"
                 key={tab.id}
+                title={`Year : ${tab.id}`}
                 onClick={() => handleTabClick(tab.id)}
               >
                 {tab.label}

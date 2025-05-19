@@ -8,7 +8,7 @@ const testimonialData = [
     name: "Mr. Shani Maurya",
     status: "Current",
     hall: "MMM",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747680580/cleaned_shadow_image_vxj3k9.jpg",
     session: "2024-25",
     mobile: "+919555439091",
   },
@@ -80,8 +80,8 @@ const Testimonial = () => {
             <p className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondary to-secondary/30">
               College Representatives
             </p>
-            <h1 className="md:text-3xl text-xl font-bold mt-4">Know your CRs</h1>
-            <p className="text-sm text-gray-400 mt-3">
+            {/* <h1 className="md:text-3xl text-xl font-bold mt-4">Know your CRs</h1> */}
+            <p className="text-sm text-gray-500 mt-3">
               College Representative(CR) is responsible for guiding students,
               managing programs, and handling inquiries inside the college.
             </p>
@@ -109,6 +109,7 @@ const Testimonial = () => {
                           </h1>
                           <a
                             href={`tel:${mobile}`}
+                            title="Call Now"
                             className="p-2  rounded-lg border border-green-400 text-green-800 flex items-center hover:bg-green-400 transition-colors duration-300"
                           >
                             <FaMobileAlt />

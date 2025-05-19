@@ -88,6 +88,7 @@ const Footer = () => {
                   <a
                     href="https://maps.app.goo.gl/SJVVbSZG5igkX1hXA"
                     target="_blank"
+                    title="Address"
                     className="flex items-center gap-3 transition-all duration-300 hover:!text-primary hover:italic"
                   >
                     <FaMapMarkedAlt />
@@ -103,8 +104,10 @@ const Footer = () => {
                     <p>+91 9555439091</p>
                   </a> */}
                   <a
+                  
                     href="mailto:cr.daan.kgp@gmail.com"
                     target="_blank"
+                    title="E-Mail"
                     className="flex items-center gap-1 md:gap-3 mt-3 transition-all duration-300 hover:!text-primary hover:italic"
                   >
                     <IoIosMail />
@@ -118,18 +121,21 @@ const Footer = () => {
                     <a
                       href="https://www.instagram.com/daan.official1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                       target="_blank"
+                      title="Instagram DAAN"
                     >
                       <FaInstagram className="text-3xl duration-300 hover:!text-primary hover:-translate-y-1" />
                     </a>
                     <a
                       href="https://www.facebook.com/share/g/1HgK8eLe43/"
                       target="_blank"
+                      title="Facebook DAAN"
                     >
                       <FaFacebook className="text-3xl duration-300 hover:!text-primary  hover:-translate-y-1" />
                     </a>
                     <a
                       href="https://www.linkedin.com/groups/4920035/"
                       target="_blank"
+                      title="LinkedIn DAAN"
                     >
                       <FaLinkedin className="text-3xl duration-300 hover:!text-primary hover:-translate-y-1" />
                     </a>

@@ -20,7 +20,7 @@ const CouncilData = [
     type: "Cultural Relax",
   },
   {
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747680580/cleaned_shadow_image_vxj3k9.jpg",
     title: "Mr. Shani Maurya",
     location: "College Representative, IIT Kharagpur",
     description:

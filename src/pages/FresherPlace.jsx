@@ -71,6 +71,7 @@ const DownloadData = [
 ];
 
 const FresherPlace = () => {
+  document.title="Fresher Place | DAAN KGP";
   return (
     <>
       <div className="dark:bg-gray-900 dark:text-white bg-gray-50 py-14 pt-20">

@@ -7,6 +7,7 @@ const EventsDetails = (props) => {
   console.log(props, " props");
   console.log(location, " useLocation Hook");
   const { image, date, title, description, } = location.state;
+  document.title="Events | DAAN KGP";
 
   return (
     <div className="pt-20">

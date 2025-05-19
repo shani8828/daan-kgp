@@ -229,7 +229,7 @@ const SecondFamData = [
     name: "Mr. Shani Maurya",
     dept: "IM",
     mail: "shanimaurya@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747680580/cleaned_shadow_image_vxj3k9.jpg",
     linkedIn: "",
     hall: "MMM",
   },

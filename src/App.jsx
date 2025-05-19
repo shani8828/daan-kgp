@@ -34,11 +34,10 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-      <Navbar/>
+        <Navbar />
         <Routes>
-          
           <Route>
-          {/* <Route path="/" element={<Layout />}> */}
+            {/* <Route path="/" element={<Layout />}> */}
             <Route index element={<Home />} />
             <Route path="our-fam" element={<OurFam />} />
             <Route path="blogs/:id" element={<EventsDetails />} />
@@ -48,7 +47,7 @@ const App = () => {
           </Route>
         </Routes>
         <PageUpBtn />
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </>
   );
