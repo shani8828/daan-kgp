@@ -20,7 +20,7 @@ const EventData = [
   },
   {
     id: 2,
-    image: 'https://res.cloudinary.com/dcwwptwzt/image/upload/v1747685561/Fresher_s_Treat_hwrmhx_hpzxx8.webp',
+    image: 'https://res.cloudinary.com/dcwwptwzt/image/upload/v1746986908/Fresher_s_Treat_hwrmhx.jpg',
     title: "Fresher's Treat",
     description:
       "Cheers to our Freshers' Treat — a vibrant and heartfelt welcome that brought Fresher and Sophomers together. It was an evening filled with laughter, energy, and meaningful connections, setting the perfect tone for the journey ahead. The joy, performances, and bonding created unforgettable memories, marking a beautiful beginning for our newest members of the KGP family.",
