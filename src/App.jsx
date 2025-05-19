@@ -12,6 +12,7 @@ import "aos/dist/aos.css";
 import PageUpBtn from "./pages/PageUpBtn";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   React.useEffect(() => {
@@ -47,6 +48,7 @@ const App = () => {
           </Route>
         </Routes>
         <PageUpBtn />
+        <Analytics/>
         <Footer />
       </BrowserRouter>
     </>
