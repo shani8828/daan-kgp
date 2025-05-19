@@ -3,7 +3,7 @@ import AnimatedCounter from "./AnimatedCounter";
 
 const Hero = () => {
   return (
-    <div className="  h-full">
+    <div className="bg-transparent h-full">
       <div className="h-full flex justify-center items-center p-4 bg-transparent">
         <div className="container grid grid-cols-1 gap-4">
           <div className="text-white">

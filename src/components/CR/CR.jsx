@@ -17,7 +17,7 @@ const testimonialData = [
     name: "Mr. Ashish Meena",
     status: "Ex",
     hall: "RP",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747640918/Ashish_kumar_Meena_oqu1d3.jpg",
     session: "2023-24",
     mobile: "+917340050926",
   },
@@ -72,7 +72,7 @@ const Testimonial = () => {
     ],
   };
   return (
-    <>
+    <>+
       <div data-aos="fade-up" data-aos-duration="300" className="py-10">
         <div className="container">
           {/* Header section */}

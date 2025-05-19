@@ -10,6 +10,8 @@ import EventsDetails from "./pages/EventsDetails";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import PageUpBtn from "./pages/PageUpBtn";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   React.useEffect(() => {
@@ -32,8 +34,11 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
+      <Navbar/>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          
+          <Route>
+          {/* <Route path="/" element={<Layout />}> */}
             <Route index element={<Home />} />
             <Route path="our-fam" element={<OurFam />} />
             <Route path="blogs/:id" element={<EventsDetails />} />
@@ -43,6 +48,7 @@ const App = () => {
           </Route>
         </Routes>
         <PageUpBtn />
+        <Footer/>
       </BrowserRouter>
     </>
   );

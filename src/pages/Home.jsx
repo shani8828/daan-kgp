@@ -10,14 +10,15 @@ const Home = () => {
     <>
       <div>
         <div className="h-[700px] relative bg-black">
-          <video
+          {/* <video
             autoPlay
             loop
             muted
             className="absolute right-0 top-0 h-[700px] w-full object-cover z-[-1]"
           >
-            {/* <source src="https://res.cloudinary.com/dcwwptwzt/video/upload/v1746467353/Screen_Recording_2025-04-29_045145_ixmnjn.mp4" type="video/mp4" /> */}
-          </video>
+            <source src="https://res.cloudinary.com/dcwwptwzt/video/upload/v1746467353/Screen_Recording_2025-04-29_045145_ixmnjn.mp4" type="video/mp4" />
+          </video> */}
+          {/* <img src="src/assets/globe-outline-dark-2.svg" alt="" className="absolute right-0 top-0 h-[700px] w-full object-cover z-[-1]"/> */}
           <Hero />
         </div>
         <CR />
