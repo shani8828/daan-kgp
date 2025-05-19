@@ -16,11 +16,11 @@ const Banner = () => {
                   <link
                     rel="preload"
                     as="image"
-                    href="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747339555/TreasureImg_bd8ned.jpg"
+                    href="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747687611/TreasureImg_lulknl.webp"
                   />
                 </Helmet>
                 <img
-                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747339555/TreasureImg_bd8ned.jpg"
+                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747687611/TreasureImg_lulknl.webp"
                   alt="Treasure Img"
                   className="max-w-[450px] h-[350px] w-full mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover rounded-3xl"
                 />

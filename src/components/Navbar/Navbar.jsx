@@ -51,11 +51,11 @@ const Navbar = () => {
                   <link
                     rel="preload"
                     as="image"
-                    href="https://res.cloudinary.com/dcwwptwzt/image/upload/v1746467915/DAAN_KGP_Logo_bhdfxo.png"
+                    href="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747687457/DAAN_KGP_Logo_ie2g9d.webp"
                   />
                 </Helmet>
                 <img
-                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1746467915/DAAN_KGP_Logo_bhdfxo.png"
+                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747687457/DAAN_KGP_Logo_ie2g9d.webp"
                   alt=""
                   className="h-16"
                   title="DAAN KGP"

@@ -46,7 +46,7 @@ const Footer = () => {
             <div className="pt-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
                 <img
-                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1746467915/DAAN_KGP_Logo_bhdfxo.png"
+                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747687457/DAAN_KGP_Logo_ie2g9d.webp"
                   alt=""
                   className="max-h-[60px]"
                 />
