@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const BrightMindsCard = ({ img, name, dept, Year, cg, position, colour }) => {
   return (
@@ -9,9 +10,12 @@ const BrightMindsCard = ({ img, name, dept, Year, cg, position, colour }) => {
         >
           {position}
         </p>
+        <Helmet>
+        <link rel="preload" as="image" href={img} />
+      </Helmet>
         <img
           src={img}
-          alt=""
+          alt={name}
           className="rounded-lg w-[200px] h-[200px] drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)]"
         />
         <h1 className="text-lg md:text-xl font-semibold md:font-bold">

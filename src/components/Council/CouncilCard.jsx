@@ -1,13 +1,15 @@
 import React from "react";
 import { VscDiffIgnored } from "react-icons/vsc";
+import { Helmet } from "react-helmet";
 
 const CouncilCard = ({ img, title, location, year }) => {
   return (
     <>
-      <div
-        className="shadow-lg border border-red-300 transition-all duration-500 hover:shadow-xl dark:bg-slate-950 dark:text-white rounded-lg bg-gradient-to-tr from-red-200 to-red-100"
->
+      <div className="shadow-lg border border-red-300 transition-all duration-500 hover:shadow-xl dark:bg-slate-950 dark:text-white rounded-lg bg-gradient-to-tr from-red-200 to-red-100">
         <div className="overflow-hidden h-[220px] transition duration-700 rounded-lg flex justify-center items-center">
+          <Helmet>
+            <link rel="preload" as="image" href={img} />
+          </Helmet>
           <img
             src={img}
             alt={title}

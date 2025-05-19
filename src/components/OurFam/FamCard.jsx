@@ -1,18 +1,39 @@
 import React from "react";
-import { IoIosMail } from "react-icons/io";
+import { Helmet } from "react-helmet";
 import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const FamCard = ({ img, name, dept, hall, mail, linkedIn }) => {
   return (
     <>
       <div className="flex flex-col justify-around items-center p-2 md:p-3 lg:p-4 border border-red-400 bg-gradient-to-tr from-red-300 to-red-100 rounded-lg gap-1 md:gap-2">
-        <img title={`${name}'s Image`} src={img} alt={name} className="rounded-lg border border-red-900" />
-        <h1 title="Name" className="text-lg md:text-xl font-semibold md:font-bold bg-clip-text text-transparent bg-gradient-to-tr from-red-900 to-orange-600">
+        <Helmet>
+          <link rel="preload" as="image" href={img} />
+        </Helmet>
+        <img
+          title={`${name}'s Image`}
+          src={img}
+          alt={name}
+          className="rounded-lg border border-red-900"
+        />
+        <h1
+          title="Name"
+          className="text-lg md:text-xl font-semibold md:font-bold bg-clip-text text-transparent bg-gradient-to-tr from-red-900 to-orange-600"
+        >
           {name}
         </h1>
         <div className=" relative flex justify-between items-center gap-4 w-full">
-          <p title="Department/Branch" className="text-sm md:text-lg text-black/80">{dept}</p>
-          <p title="Hall of Residence" className="text-black/80 text-sm md:text-lg">{hall}</p>
+          <p
+            title="Department/Branch"
+            className="text-sm md:text-lg text-black/80"
+          >
+            {dept}
+          </p>
+          <p
+            title="Hall of Residence"
+            className="text-black/80 text-sm md:text-lg"
+          >
+            {hall}
+          </p>
         </div>
         <div className="relative flex justify-evenly items-center gap-2 md:gap-4 w-full">
           {mail && (

@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { FaMobileAlt } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const testimonialData = [
   {
@@ -97,12 +98,17 @@ const Testimonial = () => {
                   return (
                     <div key={id} className="my-6">
                       <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-gradient-to-tr from-cyan-100 to-cyan-50 relative border border-secondary">
+                        <Helmet>
+                          <link rel="preload" as="image" href={img} />
+                        </Helmet>
                         <img
                           src={img}
                           alt=""
                           className="rounded-full block mx-auto w-40"
                         />
-                        <h1 className="text-xl font-bold from-cyan-900 to-cyan-500 bg-clip-text text-transparent bg-gradient-to-tr">{name}</h1>
+                        <h1 className="text-xl font-bold from-cyan-900 to-cyan-500 bg-clip-text text-transparent bg-gradient-to-tr">
+                          {name}
+                        </h1>
                         <div className="flex gap-6 items-center">
                           <h1 className="text-lg font-semibold text-gray-600">
                             {status} CR

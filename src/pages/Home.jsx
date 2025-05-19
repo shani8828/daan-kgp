@@ -9,7 +9,7 @@ const Home = () => {
   document.title="DAAN KGP";
   return (
     <>
-      <div>
+      <div data-aos="fade-in">
         <div className="h-[700px] relative bg-black">
           {/* <video
             autoPlay

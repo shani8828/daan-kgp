@@ -1,6 +1,7 @@
 import React from "react";
 import { GiTrophy } from "react-icons/gi";
 import { FaHelicopter, FaBus, FaBuilding } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const Banner = () => {
   return (
@@ -11,6 +12,13 @@ const Banner = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
               {/* Image section */}
               <div data-aos="flip-up">
+                <Helmet>
+                  <link
+                    rel="preload"
+                    as="image"
+                    href="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747339555/TreasureImg_bd8ned.jpg"
+                  />
+                </Helmet>
                 <img
                   src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747339555/TreasureImg_bd8ned.jpg"
                   alt="Treasure Img"
