@@ -22,7 +22,7 @@ const FourthFamData = [
     name: "Mr. Ashutosh",
     dept: "MA",
     mail: "ashu02@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
     linkedIn: "",
     hall: "RK"
   },

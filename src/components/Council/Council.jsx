@@ -3,7 +3,7 @@ import CouncilCard from "./CouncilCard";
 
 const CouncilData = [
   {
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
     title: "Mr. Ashutosh ",
     location: "Vice President, Events - DST & Freshmen",
     description: "He plans and manages events to ensure success and strong member engagement throughout.",
@@ -11,7 +11,7 @@ const CouncilData = [
     type: "Cultural Relax",
   },
   {
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747579953/Paramjeet_Saini_av7yxl.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723339/Paramjeet_Saini_xolxxj.avif",
     title: "Mr. Paramjeet Saini",
     location: "Senior Sectretary, DST(JNV)",
     description:
@@ -29,7 +29,7 @@ const CouncilData = [
     type: "Cultural Relax",
   },
   {
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747403787/Mohit_Kumar_zmv5np.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723437/Mohit_Kumar_h57d5w.avif",
     title: "Mr. Mohit Kumar",
     location: "Junior Secretary, DST(Non-JNV)",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -37,7 +37,7 @@ const CouncilData = [
     type: "Cultural Relax",
   },
   {
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747406803/Swarup_Dhanavade_fodfed.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723597/Swarup_Dhanavade_ncjz8k.avif",
     title: "Mr. Swarup Dhanavade",
     location: "Junior Secretary, DST(JNV)",
     description:

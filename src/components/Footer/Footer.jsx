@@ -49,6 +49,7 @@ const Footer = () => {
                   src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747687457/DAAN_KGP_Logo_ie2g9d.webp"
                   alt=""
                   width="60px"
+                  height="60px"
                   // className="max-h-[60px]"
                 />
               </h1>

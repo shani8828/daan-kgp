@@ -94,7 +94,7 @@ const ThirdFamData = [
     name: "Mr. Paramjeet Saini",
     dept: "CH",
     mail: "paramjeetsaini@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747579953/Paramjeet_Saini_av7yxl.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723339/Paramjeet_Saini_xolxxj.avif",
     linkedIn: "",
     hall: "Azad"
   },
