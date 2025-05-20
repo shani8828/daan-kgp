@@ -33,14 +33,14 @@ const Footer = () => {
   return (
     <>
       <div className=" dark:bg-gray-950 py-10 relative overflow-hidden">
-        <video
+        {/* <video
           autoPlay
           loop
           muted
           className="absolute right-0 top-0 h-full overflow-hidden w-full object-cover z-[-1]"
         >
-          {/* <source src="https://res.cloudinary.com/dcwwptwzt/video/upload/v1746467353/Screen_Recording_2025-04-29_045145_ixmnjn.mp4" type="video/mp4" /> */}
-        </video>
+          <source src="https://res.cloudinary.com/dcwwptwzt/video/upload/v1746467353/Screen_Recording_2025-04-29_045145_ixmnjn.mp4" type="video/mp4" />
+        </video> */}
         <div className="container">
           <div className="grid md:grid-cols-3 pt-5 bg-gradient-to-tr from-red-200 to-red-100 border border-red-300 backdrop-blur-sm rounded-t-xl">
             <div className="pt-8 px-4">
