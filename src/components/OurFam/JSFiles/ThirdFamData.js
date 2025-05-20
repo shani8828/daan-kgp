@@ -1,7 +1,7 @@
 const ThirdFamData = [
   {
     id: 0,
-    name: "Mr. Ashish Kr. Meena",
+    name: "Mr. Ashish Meena",
     dept: "ME",
     mail: "dewandameena1098@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747740285/Ashish_kumar_Meena_z9nbod.avif",
@@ -107,15 +107,15 @@ const ThirdFamData = [
     linkedIn: "",
     hall: "Azad"
   },
-  {
-    id: 9,
-    name: "Ms. Rani Kumari",
-    dept: "MF",
-    mail: "ranikumari261998@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1744168371/cat_xbtcep.jpg",
-    linkedIn: "",
-    hall: "SN/IG"
-  },
+  // {
+  //   id: 9,
+  //   name: "Ms. Rani Kumari",
+  //   dept: "MF",
+  //   mail: "ranikumari261998@kgpian.iitkgp.ac.in",
+  //   img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1744168371/cat_xbtcep.jpg",
+  //   linkedIn: "",
+  //   hall: "SN/IG"
+  // },
   {
     id: 10,
     name: "Mr. Sayan Das",

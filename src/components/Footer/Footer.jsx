@@ -150,7 +150,7 @@ const Footer = () => {
             <div className="text-center py-5 border-t-2 border-gray-300/50 bg-primary text-gray-900 flex justify-center items-center">
               <FaRegCopyright />Amplifier | All rights reserved.
             </div>
-          </div>9
+          </div>
         </div>
       </div>
     </>
