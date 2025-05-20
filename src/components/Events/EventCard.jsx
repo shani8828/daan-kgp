@@ -29,7 +29,8 @@ const EventCard = ({ image, date, title, description, author }) => {
               src={image}
               alt={title}
               width="100%"
-              className="mx-auto h-[250px] object-cover rounded-lg border border-yellow-500 shadow-sm shadow-yellow-300"
+              height="250px"
+              className="mx-auto object-cover rounded-lg border border-yellow-500 shadow-sm shadow-yellow-300"
             />
           </div>
           <div className="flex justify-between pt-2 text-slate-600">
