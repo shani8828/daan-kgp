@@ -57,7 +57,7 @@ const Navbar = () => {
                 <img
                   src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747687457/DAAN_KGP_Logo_ie2g9d.webp"
                   alt=""
-                  className="h-16"
+                  width="50"
                   title="DAAN KGP"
                 />
               </Link>

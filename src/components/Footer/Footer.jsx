@@ -48,7 +48,8 @@ const Footer = () => {
                 <img
                   src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747687457/DAAN_KGP_Logo_ie2g9d.webp"
                   alt=""
-                  className="max-h-[60px]"
+                  width="60px"
+                  // className="max-h-[60px]"
                 />
               </h1>
               <p className="text-md">

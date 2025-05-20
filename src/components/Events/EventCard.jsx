@@ -9,11 +9,11 @@ const EventCard = ({ image, date, title, description, author }) => {
         to={`/blogs/${title}`}
         onClick={() => {
           window.scrollTo(0, 0);
-          // window.scroll({
-          //   top: 0,
-          //   left: 0,
-          //   behavior: "smooth",
-          // });
+          window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
         }}
         state={{ image, date, title, description, author }}
       >
@@ -27,8 +27,9 @@ const EventCard = ({ image, date, title, description, author }) => {
             </Helmet>
             <img
               src={image}
-              alt="No image"
-              className="mx-auto h-[250px] w-full object-cover transition duration-700 hover:skew-x-1 hover:scale-[1.05] rounded-lg"
+              alt={title}
+              width="100%"
+              className="mx-auto h-[250px] object-cover rounded-lg border border-yellow-500 shadow-sm shadow-yellow-300"
             />
           </div>
           <div className="flex justify-between pt-2 text-slate-600">

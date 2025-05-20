@@ -16,13 +16,15 @@ const Banner = () => {
                   <link
                     rel="preload"
                     as="image"
-                    href="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747687611/TreasureImg_lulknl.webp"
+                    href="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747720288/Untitled_design_uoutp3.avif"
                   />
                 </Helmet>
                 <img
-                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747687611/TreasureImg_lulknl.webp"
+                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747720288/Untitled_design_uoutp3.avif"
                   alt="Treasure Img"
-                  className="max-w-[450px] h-[350px] w-full mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover rounded-3xl"
+                  width="100%"
+                  height="350px"
+                  className="max-w-[450px] mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover rounded-3xl"
                 />
               </div>
               {/* text content section */}

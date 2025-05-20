@@ -13,7 +13,9 @@ const CouncilCard = ({ img, title, location, year }) => {
           <img
             src={img}
             alt={title}
-            className="hover:skew-2 hover:scale-[1.04] transition duration-700 w-[180px] h-[180px] rounded-full"
+            width="180px"
+            height="180px"
+            className="hover:skew-2 hover:scale-[1.04] transition duration-700  rounded-full"
           />
         </div>
 
