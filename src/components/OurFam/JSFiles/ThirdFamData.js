@@ -4,7 +4,7 @@ const ThirdFamData = [
     name: "Mr. Ashish Kr. Meena",
     dept: "ME",
     mail: "dewandameena1098@gmail.com",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747640918/Ashish_kumar_Meena_oqu1d3.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747740285/Ashish_kumar_Meena_z9nbod.avif",
     linkedIn: "https://www.linkedin.com/in/ashishkm1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     hall: "RP"
   },

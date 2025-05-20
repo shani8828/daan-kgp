@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/Hero/Hero";
 import BlogsComp from "../components/Events/EventsComp";
 import Council from "../components/Council/Council";
-// import CR from "../components/CR/CR";
+import CR from "../components/CR/CR";
 import Banner from "../components/Banner/Banner";
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
           {/* <img src="src/assets/globe-outline-dark-2.svg" alt="" className="absolute right-0 top-0 h-[700px] w-full object-cover z-[-1]"/> */}
           <Hero />
         </div>
-        {/* <CR /> */}
+        <CR />
         <Council />
         <BlogsComp />
         <Banner />

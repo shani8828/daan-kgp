@@ -62,7 +62,6 @@ const Navbar = () => {
                   title="DAAN KGP"
                 />
               </Link>
-              {/* <span>TCJ Tourism</span> */}
             </div>
             <div className="hidden md:block">
               <ul className="flex items-center gap-6 ">

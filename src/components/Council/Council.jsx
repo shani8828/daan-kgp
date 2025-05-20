@@ -8,7 +8,6 @@ const CouncilData = [
     location: "Vice President, Events - DST & Freshmen",
     description: "He plans and manages events to ensure success and strong member engagement throughout.",
     year: "4th",
-    type: "Cultural Relax",
   },
   {
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723339/Paramjeet_Saini_xolxxj.avif",
@@ -17,16 +16,14 @@ const CouncilData = [
     description:
       "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
     year: "3rd",
-    type: "Cultural Relax",
   },
   {
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747680580/cleaned_shadow_image_vxj3k9.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
     title: "Mr. Shani Maurya",
     location: "College Representative, IIT Kharagpur",
     description:
       "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
     year: "2nd",
-    type: "Cultural Relax",
   },
   {
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723437/Mohit_Kumar_h57d5w.avif",
@@ -34,7 +31,6 @@ const CouncilData = [
     location: "Junior Secretary, DST(Non-JNV)",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     year: "2nd",
-    type: "Cultural Relax",
   },
   {
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723597/Swarup_Dhanavade_ncjz8k.avif",
@@ -43,7 +39,6 @@ const CouncilData = [
     description:
       "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
     year: "2nd",
-    type: "Cultural Relax",
   },
 ];
 
