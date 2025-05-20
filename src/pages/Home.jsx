@@ -4,11 +4,18 @@ import BlogsComp from "../components/Events/EventsComp";
 import Council from "../components/Council/Council";
 import CR from "../components/CR/CR";
 import Banner from "../components/Banner/Banner";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
-  document.title="DAAN KGP";
+  document.title = "DAAN KGP";
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Welcome to the homepage of DAAN KGP where we KGPian Dakshanites showcasing our strength and defining why we are different from other dakshanites."
+        />
+      </Helmet>
       <div data-aos="fade-in">
         <div className="h-[700px] relative bg-black">
           {/* <video
