@@ -105,6 +105,7 @@ const Testimonial = () => {
                           src={img}
                           alt={`${name}'s Image`}
                           width="160px"
+                          height="160px"
                           className="rounded-full block mx-auto"
                         />
                         <h1 className="text-xl font-bold from-cyan-900 to-cyan-500 bg-clip-text text-transparent bg-gradient-to-tr">
