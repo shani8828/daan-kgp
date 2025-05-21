@@ -125,21 +125,21 @@ const Footer = () => {
                       target="_blank"
                       title="Instagram DAAN"
                     >
-                      <FaInstagram className="text-3xl duration-300 hover:!text-primary hover:-translate-y-1" />
+                      <FaInstagram className="text-3xl duration-300 hover:!text-primary hover:-translate-y-1 hover:shadow-lg bg-transparent rounded-lg hover:shadow-red-400" />
                     </a>
                     <a
                       href="https://www.facebook.com/share/g/1HgK8eLe43/"
                       target="_blank"
                       title="Facebook DAAN"
                     >
-                      <FaFacebook className="text-3xl duration-300 hover:!text-primary  hover:-translate-y-1" />
+                      <FaFacebook className="text-3xl duration-300 hover:!text-primary  hover:-translate-y-1 hover:shadow-lg bg-transparent rounded-full hover:shadow-red-400" />
                     </a>
                     <a
                       href="https://www.linkedin.com/groups/4920035/"
                       target="_blank"
                       title="LinkedIn DAAN"
                     >
-                      <FaLinkedin className="text-3xl duration-300 hover:!text-primary hover:-translate-y-1" />
+                      <FaLinkedin className="text-3xl duration-300 hover:!text-primary hover:-translate-y-1 hover:shadow-lg bg-transparent rounded-md hover:shadow-red-400" />
                     </a>
                   </div>
                 </div>

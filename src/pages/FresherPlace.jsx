@@ -37,7 +37,7 @@ const DownloadData = [
     catching: "Deadlines got you down?",
     cover: "You're in good hands.",
     heading: "Academic Calendar",
-    href: "https://drive.google.com/file/d/14z7bz-ZAhR0VEViEn4zLmVNMF6PD22bv/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1RCGevew1BsJH0ZnWdkPeo-NK3AkmpLPm/view?usp=sharing",
   },
   {
     catching: "No stress, just the best!",

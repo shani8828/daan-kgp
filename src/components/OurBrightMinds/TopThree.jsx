@@ -14,35 +14,35 @@ const TopThree = () => {
           Batch-wise Performers
         </h1>
         <h1 className="text-sm md:text-lg lg:text-xl font-bold mt-4 mb-1 text-center">First Year</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+        <div className="flex justify-center items-center flex-wrap flex-row gap-4 md:gap-6 lg:gap-8">
             
           {TopThreeDataFirst.map((item) => (
             <BrightMindsCard key={item.id} {...item} />
           ))}
         </div>
         <h1 className="text-sm md:text-lg lg:text-xl font-bold mt-4 mb-1 text-center">Second Year</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+        <div className="flex justify-center items-center flex-wrap flex-row gap-4 md:gap-6 lg:gap-8">
             
           {TopThreeDataSecond.map((item) => (
             <BrightMindsCard key={item.id} {...item} />
           ))}
         </div>
         <h1 className="text-sm md:text-lg lg:text-xl font-bold mt-4 mb-1 text-center">Third Year</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+        <div className="flex justify-center items-center flex-wrap flex-row gap-4 md:gap-6 lg:gap-8">
             
           {TopThreeDataThird.map((item) => (
             <BrightMindsCard key={item.id} {...item} />
           ))}
         </div>
         <h1 className="text-sm md:text-lg lg:text-xl font-bold mt-4 mb-1 text-center">Fourth Year</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+        <div className="flex justify-center items-center flex-wrap flex-row gap-4 md:gap-6 lg:gap-8">
             
           {TopThreeDataFourth.map((item) => (
             <BrightMindsCard key={item.id} {...item} />
           ))}
         </div>
         <h1 className="text-sm md:text-lg lg:text-xl font-bold mt-4 mb-1 text-center">Fifth Year</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+        <div className="flex justify-center items-center flex-wrap flex-row gap-4 md:gap-6 lg:gap-8">
             
           {TopThreeDataFifth.map((item) => (
             <BrightMindsCard key={item.id} {...item} />

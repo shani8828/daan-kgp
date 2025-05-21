@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { FaMobileAlt } from "react-icons/fa";
+import { MdAddCall } from "react-icons/md";
 import { Helmet } from "react-helmet";
 
 const testimonialData = [
@@ -78,7 +78,7 @@ const Testimonial = () => {
         <div className="container">
           {/* Header section */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
-            <p className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondary to-secondary/30">
+            <p className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/30">
               College Representatives
             </p>
             {/* <h1 className="md:text-3xl text-xl font-bold mt-4">Know your CRs</h1> */}
@@ -97,7 +97,7 @@ const Testimonial = () => {
                 ({ id, name, status, hall, img, session, mobile }) => {
                   return (
                     <div key={id} className="my-6">
-                      <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-gradient-to-tr from-cyan-100 to-cyan-50 relative border border-secondary">
+                      <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-gradient-to-tr from-red-100 to-red-50 relative border border-primary">
                         <Helmet>
                           <link rel="preload" as="image" href={img} />
                         </Helmet>
@@ -108,7 +108,7 @@ const Testimonial = () => {
                           height="160px"
                           className="rounded-full block mx-auto"
                         />
-                        <h1 className="text-xl font-bold from-cyan-900 to-cyan-500 bg-clip-text text-transparent bg-gradient-to-tr">
+                        <h1 className="text-xl font-bold from-red-900 to-red-500 bg-clip-text text-transparent bg-gradient-to-tr">
                           {name}
                         </h1>
                         <div className="flex gap-6 items-center">
@@ -118,10 +118,11 @@ const Testimonial = () => {
                           <a
                             href={`tel:${mobile}`}
                             title="Call Now"
-                            className="p-2  rounded-lg border border-green-400 text-green-800 flex items-center hover:bg-green-400 transition-colors duration-300"
+                            className="p-2 rounded-lg border border-green-200 bg-green-50 text-green-400 flex items-center hover:bg-green-100 hover:scale-[1.05] hover:shadow-green-300 transition-all hover:translate-x-1 hover:-translate-y-1 hover:shadow-lg hover:border-green-300 duration-300"
                           >
-                            <FaMobileAlt />
-                            <p>{mobile}</p>
+                            {/* <FaMobileAlt /> */}
+                            <MdAddCall />
+                            {/* <p>{mobile}</p> */}
                           </a>
                         </div>
 
