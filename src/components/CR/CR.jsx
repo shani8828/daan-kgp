@@ -83,8 +83,9 @@ const Testimonial = () => {
             </p>
             {/* <h1 className="md:text-3xl text-xl font-bold mt-4">Know your CRs</h1> */}
             <p className="text-sm text-gray-500 mt-3">
-              College Representative(CR) is responsible for guiding students,
-              managing programs, and handling inquiries inside the college.
+              As the key point of contact for Dakshana within the college, the
+              CR plays a vital role in guiding students, managing programs, and
+              addressing any related inquiries.
             </p>
           </div>
           <div
