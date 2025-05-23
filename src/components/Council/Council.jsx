@@ -3,7 +3,7 @@ import CouncilCard from "./CouncilCard";
 
 const CouncilData = [
   {
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748012053/Ashutosh_wvgdts.avif",
     title: "Mr. Ashutosh ",
     location: "Vice President, Events - DST & Freshmen",
     description: "He plans and manages events to ensure success and strong member engagement throughout.",
@@ -18,7 +18,7 @@ const CouncilData = [
     year: "3rd",
   },
   {
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748023103/Shani_Maurya_cpux6d.avif",
     title: "Mr. Shani Maurya",
     location: "College Representative, IIT Kharagpur",
     description:

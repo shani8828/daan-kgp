@@ -9,7 +9,7 @@ const testimonialData = [
     name: "Mr. Shani Maurya",
     status: "Current",
     hall: "MMM",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748023103/Shani_Maurya_cpux6d.avif",
     session: "2024-25",
     mobile: "+919555439091",
   },
@@ -128,7 +128,7 @@ const Testimonial = () => {
                         </div>
 
                         <p className="text-gray-500 text-sm">{hall}</p>
-                        <p className="text-black/20 text-sm font-serif absolute top-1 right-1">
+                        <p className="text-black/30 text-sm font-serif absolute top-1 right-1">
                           {session}
                         </p>
                       </div>
