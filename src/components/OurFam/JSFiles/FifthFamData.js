@@ -28,7 +28,7 @@ const FifthFamData = [
   },
   {
     id: 3,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
     name: "Mr. Sumit Patel",
     dept: "MA",
     hall: "",
@@ -37,7 +37,7 @@ const FifthFamData = [
   },
   {
     id: 4,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
     name: "Ms. Sweta Kumari",
     dept: "CH",
     hall: "",

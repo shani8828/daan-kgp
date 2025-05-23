@@ -9,7 +9,7 @@ const TopOneData = [
     },
     {
       id: 1,
-      img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+      img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
       name: "Ms. Eve",
       Year: "2nd Yr",
       dept: "IM",
@@ -17,7 +17,7 @@ const TopOneData = [
     },
     {
       id: 2,
-      img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+      img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
       name: "Mr. Adam",
       Year: "3rd Yr",
       dept: "IM",
@@ -25,7 +25,7 @@ const TopOneData = [
     },
     {
       id: 3,
-      img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+      img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
       name: "Ms. Eve",
       Year: "4th Yr",
       dept: "IM",
@@ -33,7 +33,7 @@ const TopOneData = [
     },
     {
       id: 4,
-      img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+      img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
       name: "Mr. Adam",
       Year: "5th Yr",
       dept: "IM",

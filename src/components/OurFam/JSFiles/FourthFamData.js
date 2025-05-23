@@ -4,7 +4,7 @@ const FourthFamData = [
     name: "Mr. Abhinaw Anand",
     dept: "MA",
     mail: "abhinaw12anand@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
     linkedIn: "",
     hall: "Nehru"
   },
@@ -13,7 +13,7 @@ const FourthFamData = [
     name: "Mr. Akshay Sawai",
     dept: "MI",
     mail: "akshaysawai252@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
     linkedIn: "",
     hall: ""
   },
@@ -31,7 +31,7 @@ const FourthFamData = [
     name: "Ms. Himanshi Gupta",
     dept: "IE",
     mail: "himanshigupta@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
     linkedIn: "",
     hall: ""
   },
@@ -40,7 +40,7 @@ const FourthFamData = [
     name: "Mr. Maheraman Indrasinh Rameshbhai",
     dept: "MA",
     mail: "indrasinhmahera1110@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
     linkedIn: "",
     hall: ""
   },
@@ -49,7 +49,7 @@ const FourthFamData = [
     name: "Mr. Neeraj Kumar",
     dept: "MA",
     mail: "meenaneerajkumar148@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
     linkedIn: "",
     hall: ""
   },
@@ -76,7 +76,7 @@ const FourthFamData = [
     name: "Mr. Sewan Panchare",
     dept: "MA",
     mail: "sevanpanchare@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
     linkedIn: "",
     hall: ""
   },
@@ -94,7 +94,7 @@ const FourthFamData = [
     name: "Mr. Suman Anand",
     dept: "MA",
     mail: "ksumananand614@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1746180942/images_1_eqjrit.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
     linkedIn: "",
     hall: ""
   },
