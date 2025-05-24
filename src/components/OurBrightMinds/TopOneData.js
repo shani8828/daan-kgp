@@ -5,7 +5,7 @@ const TopOneData = [
       name: "Mr. Sachin Kumar",
       Year: "1st Yr",
       dept: "CS",
-      cg: "9.54",
+      cg: "9.52",
     },
     {
       id: 1,
