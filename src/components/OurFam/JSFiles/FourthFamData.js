@@ -1,6 +1,6 @@
 const FourthFamData = [
   {
-    id: 1,
+    id: 0,
     name: "Mr. Abhinaw Anand",
     dept: "MA",
     mail: "abhinaw12anand@kgpian.iitkgp.ac.in",
@@ -18,7 +18,7 @@ const FourthFamData = [
     hall: ""
   },
   {
-    id: 1,
+    id: 2,
     name: "Mr. Ashutosh",
     dept: "MA",
     mail: "ashutosh.daan@gmail.com",
@@ -27,7 +27,7 @@ const FourthFamData = [
     hall: "RK"
   },
   {
-    id: 1,
+    id: 3,
     name: "Ms. Himanshi Gupta",
     dept: "IE",
     mail: "himanshigupta@kgpian.iitkgp.ac.in",
@@ -36,7 +36,7 @@ const FourthFamData = [
     hall: ""
   },
   {
-    id: 1,
+    id: 4,
     name: "Mr. Maheraman Indrasinh Rameshbhai",
     dept: "MA",
     mail: "indrasinhmahera1110@kgpian.iitkgp.ac.in",
@@ -45,7 +45,7 @@ const FourthFamData = [
     hall: ""
   },
   {
-    id: 1,
+    id: 5,
     name: "Mr. Neeraj Kumar",
     dept: "MA",
     mail: "meenaneerajkumar148@kgpian.iitkgp.ac.in",
@@ -54,7 +54,7 @@ const FourthFamData = [
     hall: ""
   },
   {
-    id: 2,
+    id: 6,
     name: "Mr. Nitin Rajvanshi",
     dept: "MA",
     mail: "nkraj7266@kgpian.iitkgp.ac.in",
@@ -63,7 +63,7 @@ const FourthFamData = [
     hall: "Patel"
   },
   {
-    id: 3,
+    id: 7,
     name: "Mr. Saurabh Kumar",
     dept: "MI",
     mail: "s.raj.2.o.p@kgpian.iitkgp.ac.in",
@@ -72,7 +72,7 @@ const FourthFamData = [
     hall: ""
   },
   {
-    id: 1,
+    id: 8,
     name: "Mr. Sewan Panchare",
     dept: "MA",
     mail: "sevanpanchare@kgpian.iitkgp.ac.in",
@@ -81,7 +81,7 @@ const FourthFamData = [
     hall: ""
   },
   {
-    id: 4,
+    id: 9,
     name: "Mr. Soumyadeep Pradhan",
     dept: "ME",
     mail: "soumyadeep265@gmail.com",
@@ -90,7 +90,7 @@ const FourthFamData = [
     hall: ""
   },
   {
-    id: 1,
+    id: 10,
     name: "Mr. Suman Anand",
     dept: "MA",
     mail: "ksumananand614@kgpian.iitkgp.ac.in",

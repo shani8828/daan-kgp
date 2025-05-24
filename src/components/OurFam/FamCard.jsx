@@ -13,7 +13,7 @@ const FamCard = ({ img, name, dept, hall, mail, linkedIn }) => {
           title={`${name}'s Image`}
           src={img}
           alt={name}
-          className="rounded-lg border border-red-900"
+          className="rounded-lg border border-red-500"
         />
         <h1
           title="Name"

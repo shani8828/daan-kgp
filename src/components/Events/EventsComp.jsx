@@ -7,7 +7,7 @@ const EventData = [
     image: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747720816/Ravi_Sir_s_Visit_inndze_wjuwmw.avif",
     title: "A Memorable Visit by Ravi Sir",
     description:
-      "We were honored to welcome Ravi Sir to our campus for a truly inspiring and memorable visit. His presence at the Gymkhana, IIT Kharagpur, brought immense joy and excitement among all of us. During his time with us, Ravi Sir interacted warmly with students, shared his experiences, and offered valuable guidance that left a lasting impact. We are deeply thankful for his visit, which motivated and encouraged us to strive for excellence.",
+      "We were honored to welcome Ravi Sir to our campus for a truly inspiring and memorable visit. Their presence at the Gymkhana, IIT Kharagpur, brought immense joy and excitement among all of us. During their time with us, Ravi Sir interacted warmly with students, shared their experiences, and offered valuable guidance that left a lasting impact. We are deeply thankful for their visit, which motivated and encouraged us to strive for excellence.",
     date: "April 15, 2025",
   },
   {

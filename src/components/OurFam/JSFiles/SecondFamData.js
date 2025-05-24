@@ -234,7 +234,7 @@ const SecondFamData = [
     hall: "MMM",
   },
   {
-    index: 25,
+    index: 26,
     name: "Mr. Shreyash Dhakate",
     dept: "IM",
     mail: "shreyashdhakate@kgpian.iitkgp.ac.in",
@@ -243,7 +243,7 @@ const SecondFamData = [
     hall: "MMM",
   },
   {
-    index: 26,
+    index: 27,
     name: "Mr. Subhajit Mondal",
     dept: "IM",
     mail: "subhajit2005@kgpian.iitkgp.ac.in",
@@ -252,7 +252,7 @@ const SecondFamData = [
     hall: "RP",
   },
   {
-    index: 27,
+    index: 28,
     name: "Mr. Subhajit Sarkar",
     dept: "EC",
     mail: "subhajit35sarkar@kgpian.iitkgp.ac.in",
@@ -261,7 +261,7 @@ const SecondFamData = [
     hall: "MMM",
   },
   {
-    index: 28,
+    index: 29,
     name: "Mr. Sukumar Singh",
     dept: "CS",
     mail: "sukumarsingh@kgpian.iitkgp.ac.in",
@@ -270,7 +270,7 @@ const SecondFamData = [
     hall: "MS",
   },
   {
-    index: 29,
+    index: 30,
     name: "Mr. Sunny",
     dept: "IE",
     mail: "sunnyscnt458@gmail.com",
@@ -279,7 +279,7 @@ const SecondFamData = [
     hall: "Nehru",
   },
   {
-    index: 30,
+    index: 31,
     name: "Mr. Suvadip Bhuiya",
     dept: "CS",
     mail: "suvadipbhuiya09@kgpian.iitkgp.ac.in",
@@ -288,7 +288,7 @@ const SecondFamData = [
     hall: "Nehru",
   },
   {
-    index: 31,
+    index: 32,
     name: "Mr. Swarup Jayaram Dhanavade",
     dept: "MI",
     mail: "swarupd@kgpian.iitkgp.ac.in",
@@ -297,7 +297,7 @@ const SecondFamData = [
     hall: "Nehru",
   },
   {
-    index: 32,
+    index: 33,
     name: "Mr. Vikash Rathore",
     dept: "CH",
     mail: "vikashrathore@kgpian.iitkgp.ac.in",
