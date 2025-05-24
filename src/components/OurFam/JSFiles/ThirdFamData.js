@@ -107,15 +107,15 @@ const ThirdFamData = [
     linkedIn: "",
     hall: "Azad"
   },
-  // {
-  //   id: 12,
-  //   name: "Ms. Rani Kumari",
-  //   dept: "MF",
-  //   mail: "ranikumari261998@kgpian.iitkgp.ac.in",
-  //   img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1744168371/cat_xbtcep.jpg",
-  //   linkedIn: "",
-  //   hall: "SN/IG"
-  // },
+  {
+    id: 12,
+    name: "Ms. Rani Kumari",
+    dept: "MF",
+    mail: "ranikumari261998@kgpian.iitkgp.ac.in",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748104731/Rani_Kumari_tczhl5.avif",
+    linkedIn: "",
+    hall: "SN/IG"
+  },
   {
     id: 13,
     name: "Mr. Sayan Das",
