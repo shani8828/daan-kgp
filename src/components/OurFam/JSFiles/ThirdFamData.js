@@ -109,6 +109,15 @@ const ThirdFamData = [
   },
   {
     id: 12,
+    name: "Mr. Praveen Kumar",
+    dept: "CS",
+    mail: "praveenkumarjnv9120@gmail.com",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748179854/Praveen_Kumar_lce3pu.avif",
+    linkedIn: "https://www.linkedin.com/in/pvkumarp200/",
+    hall: "MMM"
+  },
+  {
+    id: 13,
     name: "Ms. Rani Kumari",
     dept: "MF",
     mail: "ranikumari261998@kgpian.iitkgp.ac.in",
@@ -117,7 +126,16 @@ const ThirdFamData = [
     hall: "SN/IG"
   },
   {
-    id: 13,
+    id: 14,
+    name: "Mr. Sagar Sahu",
+    dept: "NA",
+    mail: "sagarsahu2907@gmail.com",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748179844/Sagar_Sahu_dkoagw.avif",
+    linkedIn: "https://www.linkedin.com/in/sagar-sahu-69886a273",
+    hall: "MMM"
+  },
+  {
+    id: 15,
     name: "Mr. Sayan Das",
     dept: "MA",
     mail: "sayandas22@kgpian.iitkgp.ac.in",
@@ -126,7 +144,7 @@ const ThirdFamData = [
     hall: "RP"
   },
   {
-    id: 14,
+    id: 16,
     name: "Mr. Somnath Mahata",
     dept: "EC",
     mail: "somnathmahata@kgpian.iitkgp.ac.in",
@@ -135,7 +153,7 @@ const ThirdFamData = [
     hall: "RP"
   },
   {
-    id: 15,
+    id: 17,
     name: "Ms. Sonali Verma",
     dept: "MI",
     mail: "sonaliverma@kgpian.iitkgp.ac.in",
@@ -144,7 +162,7 @@ const ThirdFamData = [
     hall: ""
   },
   {
-    id: 16,
+    id: 18,
     name: "Mr. Sunny Kumar",
     dept: "IM",
     mail: "sunnykumar8544189096@kgpian.iitkgp.ac.in",
@@ -153,7 +171,7 @@ const ThirdFamData = [
     hall: "LLR"
   },
   {
-    id: 17,
+    id: 19,
     name: "Mr. Suranjan Karmakar",
     dept: "IM",
     mail: "karmakarsuranjan1207@kgpian.iitkgp.ac.in",
@@ -162,7 +180,7 @@ const ThirdFamData = [
     hall: "Azad"
   },
   {
-    id: 18,
+    id: 20,
     name: "Mr. Vedant Sewatkar",
     dept: "ME",
     mail: "vedant12@kgpian.iitkgp.ac.in",

@@ -20,7 +20,7 @@ const OurBrightMinds = () => {
           </h1>
           <TopOne />
           <TopThree />
-          <div className="text-left mt-8">Score feel off? Let’s <a
+          <div className="text-left mt-8">Score feels off? Let’s <a
               href="https://forms.gle/1zzmcc8NbfXRohUH9"
               target="_blank"
               className="text-blue-500"
