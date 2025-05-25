@@ -16,6 +16,18 @@ const FirstFam = () => {
               <FamCard key={item.id} {...item} />
             ))}
           </div>
+          <div className="text-left mt-8">
+            Oops, missed your info? Upload it right
+            <a
+              href="https://forms.gle/VVG85GND5cjLFjNj9"
+              target="_blank"
+              className="text-blue-500"
+            >
+              {" "}
+              here
+            </a>
+            !
+          </div>
         </section>
       </div>
     </>

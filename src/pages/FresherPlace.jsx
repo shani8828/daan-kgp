@@ -91,6 +91,17 @@ const FresherPlace = () => {
               <DownloadBtn key={index} {...item} />
             ))}
           </div>
+          <div className="text-left mt-8">
+            Have something to add? Submit it
+            <a
+              href="https://forms.gle/aF8CtLf7cTtuUpe89"
+              target="_blank"
+              className="text-blue-500"
+            >
+              {" "}
+              here
+            </a>.
+          </div>
         </section>
       </div>
     </>

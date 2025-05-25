@@ -5,39 +5,41 @@ const CouncilData = [
   {
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748012053/Ashutosh_wvgdts.avif",
     title: "Mr. Ashutosh ",
-    location: "Vice President, Events - DST & Freshmen",
-    description: "He plans and manages events to ensure success and strong member engagement throughout.",
+    portfolio: "Vice President, Events - DST & Freshmen",
+    mobile: "+91 9058887078",
+    mail: "ashutosh.daan@gmail.com",
     year: "4th",
   },
   {
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723339/Paramjeet_Saini_xolxxj.avif",
     title: "Mr. Paramjeet Saini",
-    location: "Senior Sectretary, DST(JNV)",
-    description:
-      "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
+    portfolio: "Senior Sectretary, DST(JNV)",
+    mail: "paramjeetsaini@kgpian.iitkgp.ac.in",
+    mobile: "+91 6397189676",
     year: "3rd",
   },
   {
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748023103/Shani_Maurya_cpux6d.avif",
     title: "Mr. Shani Maurya",
-    location: "College Representative, IIT Kharagpur",
-    description:
-      "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
+    portfolio: "College Representative, IIT Kharagpur",
+    mail: "shauryashanisaini@gmail.com",
+    mobile: "+91 9555439091",
     year: "2nd",
   },
   {
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723437/Mohit_Kumar_h57d5w.avif",
     title: "Mr. Mohit Kumar",
-    location: "Junior Secretary, DST(Non-JNV)",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    portfolio: "Junior Secretary, DST(Non-JNV)",
+    mail: "mk8750351763@kgpian.iitkgp.ac.in",
+    mobile: "+91 8384078167",
     year: "2nd",
   },
   {
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723597/Swarup_Dhanavade_ncjz8k.avif",
     title: "Mr. Swarup Dhanavade",
-    location: "Junior Secretary, DST(JNV)",
-    description:
-      "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
+    portfolio: "Junior Secretary, DST(JNV)",
+    mail: "swarupd@kgpian.iitkgp.ac.in",
+    mobile: "+91 9423751729",
     year: "2nd",
   },
 ];
@@ -52,10 +54,7 @@ const Council = () => {
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {CouncilData.map((item, index) => (
-              <CouncilCard
-                key={index}
-                {...item}
-              />
+              <CouncilCard key={index} {...item} />
             ))}
           </div>
         </section>

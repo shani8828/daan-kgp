@@ -9,11 +9,11 @@ const TopOneData = [
     },
     {
       id: 1,
-      img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
-      name: "Ms. Eve",
+      img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747402893/Ashutosh_Ranjan_flro1b.jpg",
+      name: "Mr. Ashutosh Ranjan",
       Year: "2nd Yr",
-      dept: "IM",
-      cg: "9.99",
+      dept: "ME",
+      cg: "9.19",
     },
     {
       id: 2,
