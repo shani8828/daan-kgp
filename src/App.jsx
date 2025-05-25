@@ -39,10 +39,10 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route>
-            {/* <Route path="/" element={<Layout />}> */}
+            <Route path="/" element={<Layout />}/>
             <Route index element={<Home />} />
             <Route path="our-fam" element={<OurFam />} />
-            <Route path="blogs/:id" element={<EventsDetails />} />
+            <Route path="events/:id" element={<EventsDetails />} />
             <Route path="fresher-place" element={<FresherPlace />} />
             <Route path="our-bright-minds" element={<OurBrightMinds />} />
             <Route path="*" element={<NoPage />} />

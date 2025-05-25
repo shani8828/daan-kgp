@@ -2,11 +2,11 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
-const EventCard = ({ image, date, title, description, author }) => {
+const EventCard = ({ image, date, title, description }) => {
   return (
     <>
       <Link
-        to={`/blogs/${title}`}
+        to={`/events/${title}`}
         onClick={() => {
           window.scrollTo(0, 0);
           window.scroll({
@@ -15,7 +15,7 @@ const EventCard = ({ image, date, title, description, author }) => {
             behavior: "smooth",
           });
         }}
-        state={{ image, date, title, description, author }}
+        state={{ image, date, title, description  }}
       >
         <div
           title={title}
@@ -35,7 +35,6 @@ const EventCard = ({ image, date, title, description, author }) => {
           </div>
           <div className="flex justify-between pt-2 text-slate-600">
             <p title="Date">{date}</p>
-            {/* <p className="line-clamp-1">By {author}</p> */}
           </div>
           <div className="space-y-2 py-3">
             <h1
