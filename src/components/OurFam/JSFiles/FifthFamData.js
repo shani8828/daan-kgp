@@ -1,7 +1,7 @@
 const FifthFamData = [
   {
     id: 0,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747510071/Nandan_Kumar_Singh_bgfigs.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748290427/Nandan_Kumar_Singh_bgfigs_ga45au.avif",
     name: "Mr. Nandan Kr. Singh",
     dept: "CH",
     hall: "",
@@ -10,7 +10,7 @@ const FifthFamData = [
   },
   {
     id: 1,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747510071/Neeraj_Gartia_cbr3l1.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748290428/Neeraj_Gartia_cbr3l1_xvgk8b.avif",
     name: "Mr. Neeraj Gartia",
     dept: "MA",
     hall: "",
@@ -19,7 +19,7 @@ const FifthFamData = [
   },
   {
     id: 2,
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747510071/Pratik_Choudhury_rlk0lk.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748290429/Pratik_Choudhury_njqkep.avif",
     name: "Mr. Pratik Choudhury",
     dept: "CH",
     hall: "",

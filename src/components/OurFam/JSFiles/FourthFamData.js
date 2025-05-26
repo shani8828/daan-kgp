@@ -58,7 +58,7 @@ const FourthFamData = [
     name: "Mr. Nitin Rajvanshi",
     dept: "MA",
     mail: "nkraj7266@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747395181/Nitin_Rajvanshi_lnmjs6.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748290244/Nitin_Rajvanshi_mbleyw.avif",
     linkedIn: "https://www.linkedin.com/in/nitinrajvanshi/",
     hall: "Patel"
   },
@@ -67,7 +67,7 @@ const FourthFamData = [
     name: "Mr. Saurabh Kumar",
     dept: "MI",
     mail: "s.raj.2.o.p@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747395251/Saurabh_yqj2xr.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748290245/Saurabh_tez2ke.avif",
     linkedIn: "https://www.linkedin.com/in/saurabh-kumar-7692b1223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     hall: ""
   },
@@ -85,7 +85,7 @@ const FourthFamData = [
     name: "Mr. Soumyadeep Pradhan",
     dept: "ME",
     mail: "soumyadeep265@gmail.com",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747395340/Soumyadeep_Pradhan_erk4rl.jpg",
+    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748290245/Soumyadeep_Pradhan_txhhqi.avif",
     linkedIn: "https://in.linkedin.com/in/soumyadeep-pradhan-ab4412229",
     hall: ""
   },

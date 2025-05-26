@@ -275,7 +275,7 @@ const FirstFamData = [
     index: 30,
     name: "Mr. Rajesh Kumar Behera",
     dept: "MA",
-    mail: "Rajesh Kumar.24@kgpian.iitkgp.ac.in",
+    mail: "rajeshkumar.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747750668/Rajesh_Kumar_Bahera_pjeyzk.avif",
     linkedIn: "",
     hall: "LBS",
@@ -360,7 +360,7 @@ const FirstFamData = [
     dept: "AE",
     mail: "ujaakash.24@kgpiian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753928/Joel_Aakash_Undamati_ekswpb_l0pd6y.avif",
-    linkedIn: "No",
+    linkedIn: "",
     hall: "LBS",
   },
   {
