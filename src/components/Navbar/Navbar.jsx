@@ -66,22 +66,50 @@ const Navbar = () => {
             <div className="hidden md:block">
               <ul className="flex items-center gap-6 ">
                 <li className="py-4">
-                  <NavLink className={`hover:text-red-300 transition-all duration-300`} to="/" activeClassName="active">
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-red-500 font-semibold border-b-2 border-red-500 "
+                        : "text-gray-700 hover:text-red-300 transition-all duration-300"
+                    }
+                    to="/"
+                  >
                     Home
                   </NavLink>
                 </li>
                 <li className="py-4">
-                  <NavLink className={`hover:text-red-300 transition-all duration-300`} to="/our-fam" activeClassName="active">
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-red-500 font-semibold border-b-2 border-red-500 "
+                        : "text-gray-700 hover:text-red-300 transition-all duration-300"
+                    }
+                    to="/our-fam"
+                  >
                     Our Fam
                   </NavLink>
                 </li>
                 <li className="py-4">
-                  <NavLink className={`hover:text-red-300 transition-all duration-300`} to="/fresher-place" activeClassName="active">
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-red-500 font-semibold border-b-2 border-red-500 "
+                        : "text-gray-700 hover:text-red-300 transition-all duration-300"
+                    }
+                    to="/fresher-place"
+                  >
                     Fresher Place
                   </NavLink>
                 </li>
                 <li className="py-4">
-                  <NavLink className={`hover:text-red-300 transition-all duration-300`} to="/our-bright-minds" activeClassName="active">
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-red-500 font-semibold border-b-2 border-red-500 "
+                        : "text-gray-700 hover:text-red-300 transition-all duration-300"
+                    }
+                    to="/our-bright-minds"
+                  >
                     Our Bright Minds
                   </NavLink>
                 </li>

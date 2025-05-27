@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { NavbarLinks } from "./Navbar";
 
 const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
@@ -15,13 +15,17 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
           <ul className="space-y-4 text-xl">
             {NavbarLinks.map((data) => (
               <li>
-                <Link
+                <NavLink
                   to={data.link}
                   onClick={() => setShowMenu(false)}
-                  className="mb-4 inline-block active:text-red-500 border-b-2  border-red-300 rounded-lg"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-red-500 font-semibold border-b-2 border-red-500 "
+                      : "text-gray-700 hover:text-red-300 transition-all duration-300"
+                  }
                 >
                   {data.name}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
