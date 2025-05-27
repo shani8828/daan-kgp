@@ -20,7 +20,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
                   onClick={() => setShowMenu(false)}
                   className={({ isActive }) =>
                     isActive
-                      ? "text-red-500 font-semibold border-b-2 border-red-500 "
+                      ? "text-red-500 font-semibold border-b-2 border-red-500 rounded-lg"
                       : "text-gray-700 hover:text-red-300 transition-all duration-300"
                   }
                 >
