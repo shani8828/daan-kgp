@@ -119,7 +119,7 @@ const ThirdFamData = [
   {
     id: 13,
     name: "Ms. Rani Kumari",
-    dept: "MF",
+    dept: "ME",
     mail: "ranikumari261998@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748104731/Rani_Kumari_tczhl5.avif",
     linkedIn: "",

@@ -241,7 +241,7 @@ const FirstFamData = [
     mail: "preeti.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753949/Preeti_Choudhary_padnkp_fruso1.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "SNVH",
   },
   {
     index: 27,
