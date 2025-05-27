@@ -66,22 +66,22 @@ const Navbar = () => {
             <div className="hidden md:block">
               <ul className="flex items-center gap-6 ">
                 <li className="py-4">
-                  <NavLink to="/" activeClassName="active">
+                  <NavLink className={`hover:text-red-300 transition-all duration-300`} to="/" activeClassName="active">
                     Home
                   </NavLink>
                 </li>
                 <li className="py-4">
-                  <NavLink to="/our-fam" activeClassName="active">
+                  <NavLink className={`hover:text-red-300 transition-all duration-300`} to="/our-fam" activeClassName="active">
                     Our Fam
                   </NavLink>
                 </li>
                 <li className="py-4">
-                  <NavLink to="/fresher-place" activeClassName="active">
+                  <NavLink className={`hover:text-red-300 transition-all duration-300`} to="/fresher-place" activeClassName="active">
                     Fresher Place
                   </NavLink>
                 </li>
                 <li className="py-4">
-                  <NavLink to="/our-bright-minds" activeClassName="active">
+                  <NavLink className={`hover:text-red-300 transition-all duration-300`} to="/our-bright-minds" activeClassName="active">
                     Our Bright Minds
                   </NavLink>
                 </li>
@@ -101,13 +101,13 @@ const Navbar = () => {
                 {showMenu ? (
                   <HiMenuAlt1
                     onClick={toggleMenu}
-                    className=" cursor-pointer transition-all"
+                    className="cursor-pointer transition-all duration-300"
                     size={30}
                   />
                 ) : (
                   <HiMenuAlt3
                     onClick={toggleMenu}
-                    className="cursor-pointer transition-all"
+                    className="cursor-pointer transition-all duration-300"
                     size={30}
                   />
                 )}

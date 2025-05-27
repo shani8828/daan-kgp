@@ -18,7 +18,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
                 <Link
                   to={data.link}
                   onClick={() => setShowMenu(false)}
-                  className="mb-5 inline-block"
+                  className="mb-4 inline-block active:text-red-500 border-b-2  border-red-300 rounded-lg"
                 >
                   {data.name}
                 </Link>
