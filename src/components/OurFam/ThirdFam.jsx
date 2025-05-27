@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from "react";
 import FamCard from "./FamCard";
 import ThirdFamData from "./JSFiles/ThirdFamData";
 
 const ThirdFam = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredItems = ThirdFamData.filter((item) =>
+    item.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
   return (
     <>
       <div className="dark:bg-gray-900 dark:text-white py-10">
@@ -11,9 +16,22 @@ const ThirdFam = () => {
             Third Years
           </h1>
           <h3 className="m-2 italic">Total : 32 Members</h3>
+          <div className="w-full bg-transparent flex justify-center">
+            <input
+              type="text"
+              placeholder="Search by name"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="m-4 px-4 py-2 border border-red-200 rounded-lg shadow-sm placeholder-red-300 text-red-600
+         focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
+         transition-all duration-300 ease-in-out
+          dark:bg-gray-800 dark:text-white dark:placeholder-gray-400
+         hover:shadow-md"
+            />
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
-            {ThirdFamData.map((item) => (
-              <FamCard key={item.id} {...item} />
+            {filteredItems.map((item) => (
+              <FamCard key={item.id} name-badge={item.name} {...item} />
             ))}
           </div>
           <div className="text-left mt-8">
@@ -31,7 +49,7 @@ const ThirdFam = () => {
         </section>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ThirdFam
+export default ThirdFam;
