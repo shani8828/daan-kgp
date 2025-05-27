@@ -26,7 +26,7 @@ const FirstFam = () => {
          focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
          transition-all duration-300 ease-in-out
           dark:bg-gray-800 dark:text-white dark:placeholder-gray-400
-         hover:shadow-md"
+         hover:shadow-md max-w-[200px] text-center"
             />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
