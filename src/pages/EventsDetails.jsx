@@ -39,7 +39,7 @@ Celebrating 18 impactful years of the Dakshana Foundation’s life-changing educ
       <div className="container ">
         <p className="text-slate-600 text-sm py-3"> on {date}</p>
         <h1 className="text-2xl font-semibold">{title}</h1>
-        <p>{description}</p>
+        <p className="text-gray-700">{description}</p>
       </div>
 
       {/* All Events Section */}
