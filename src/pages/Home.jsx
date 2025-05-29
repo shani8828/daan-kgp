@@ -17,7 +17,7 @@ const Home = () => {
         />
       </Helmet>
       <div data-aos="fade-in">
-        <div className="h-[700px] relative bg-black">
+        <div className="h-[775px] relative bg-black flex items-center">
           {/* <video
             autoPlay
             loop
