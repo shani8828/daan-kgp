@@ -1,5 +1,6 @@
 import React from "react";
 import AnimatedCounter from "./AnimatedCounter";
+import { VscDiffIgnored } from "react-icons/vsc";
 
 const Hero = () => {
   return (
@@ -35,13 +36,32 @@ const Hero = () => {
             </div>
             <div
               data-aos="fade-up"
-              data-aos-delay="900"
+              data-aos-delay="600"
               className="bg-gradient-to-tr from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col justify-evenly items-center"
             >
               <span className="text-3xl md:text-4xl lg:text-6xl font-bold flex items-center text-center">
                 <AnimatedCounter target={45} duration={2500} /> +
               </span>
               <p className="text-sm text-center">Expected to join</p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="00"
+            className="text-white items-center text-left p-4  border-red-300 border-r-2 border-b-2 rounded-xl"
+          >
+            <h1 className="text-left underline font-semibold mb-1 md:mb-2 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500 ">
+              Flashing Notices
+            </h1>
+            <div >
+              <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
+                <div><VscDiffIgnored /></div>
+                <div>Date of Reporting for Existing ones: Jul 16, 2025.</div>
+              </div>
+              <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
+                <div><VscDiffIgnored /></div>
+                <div>Date of Reporting for New ones: Jul 19, 2025.</div>
+              </div>
             </div>
           </div>
         </div>
