@@ -1,10 +1,12 @@
 import React from "react";
 import AnimatedCounter from "./AnimatedCounter";
 import { VscDiffIgnored } from "react-icons/vsc";
+import BubbleBackground from "./BubbleBackground";
 
 const Hero = () => {
   return (
-    <div className="bg-transparent h-full">
+    <div className="bg-transparent h-full"><BubbleBackground />
+      
       <div className="h-full flex justify-center items-center p-4 bg-transparent">
         <div className="container grid grid-cols-1 gap-4">
           <div className="text-white">
@@ -48,7 +50,7 @@ const Hero = () => {
           <div
             data-aos="fade-right"
             data-aos-delay="900"
-            className="text-white items-center text-left p-4 mt-8 border-red-500 border-r-2 border-b-2 rounded-xl shadow-md shadow-red-400"
+            className="text-white bg-black items-center text-left p-4 mt-8 border-red-500 border-r-2 border-b-2 rounded-xl shadow-md shadow-red-400"
           >
             <h1 className="text-left underline font-semibold mb-1 md:mb-2 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500 ">
               Flashing Notices

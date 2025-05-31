@@ -38,3 +38,37 @@ body {
   font-family: 'Poppins',sans-serif;
   font-weight: 100;
 }
+
+/* BubbleAnimation */
+.bubbles span {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background: #EF4444B3;
+  margin: 0 4px;
+  border-radius: 40px;
+  box-shadow:
+    0 0 0 10px #EF4444B3,
+    0 0 0 50px #EF4444B3,
+    0 0 0 100px #EF4444B3;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+/* .bubbles span:nth-child(even) {
+  background: green;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 10px #f0714d44,
+    0 0 0 50px #EF4444,
+    0 0 0 100px #EF4444;
+} */
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(0.099);
+  }
+}
