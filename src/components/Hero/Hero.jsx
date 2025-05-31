@@ -46,20 +46,24 @@ const Hero = () => {
             </div>
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="00"
-            className="text-white items-center text-left p-4  border-red-300 border-r-2 border-b-2 rounded-xl"
+            data-aos="fade-right"
+            data-aos-delay="900"
+            className="text-white items-center text-left p-4 mt-8 border-red-500 border-r-2 border-b-2 rounded-xl shadow-md shadow-red-400"
           >
             <h1 className="text-left underline font-semibold mb-1 md:mb-2 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500 ">
               Flashing Notices
             </h1>
-            <div >
+            <div>
               <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
-                <div><VscDiffIgnored /></div>
+                <div>
+                  <VscDiffIgnored />
+                </div>
                 <div>Date of Reporting for Existing ones: Jul 16, 2025.</div>
               </div>
               <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
-                <div><VscDiffIgnored /></div>
+                <div>
+                  <VscDiffIgnored />
+                </div>
                 <div>Date of Reporting for New ones: Jul 19, 2025.</div>
               </div>
             </div>
