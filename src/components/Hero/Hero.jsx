@@ -58,7 +58,7 @@ const Hero = () => {
                 <div>
                   <VscDiffIgnored />
                 </div>
-                <div>Date of Reporting for Existing ones: Jul 16, 2025.</div>
+                <div>Date of Reporting : Jul 16, 2025.</div>
               </div>
               <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
                 <div>
