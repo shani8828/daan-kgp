@@ -5,14 +5,15 @@ import BubbleBackground from "./BubbleBackground";
 
 const Hero = () => {
   return (
-    <div className="bg-transparent h-full"><BubbleBackground />
-      
+    <div className="bg-transparent h-full">
+      <BubbleBackground />
+
       <div className="h-full flex justify-center items-center p-4 bg-transparent">
         <div className="container grid grid-cols-1 gap-4">
           <div className="text-white">
             <p
               data-aos="fade-up"
-              className="text-2xl md:text-4xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-red-900  to-red-500 font-bold text-center"
+              className="text-2xl md:text-4xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-tr from-red-500 to-orange-500 font-bold text-center"
             >
               Congratulations on being a KGPian Dakshanite!
             </p>
@@ -67,6 +68,23 @@ const Hero = () => {
                   <VscDiffIgnored />
                 </div>
                 <div>Date of Reporting for New ones: Jul 19, 2025.</div>
+              </div>
+              <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
+                <div>
+                  <VscDiffIgnored />
+                </div>
+                <div>
+                  Income Certificate Format for this session, Click
+                  <a
+                    href="https://drive.google.com/file/d/11QzFLJ0cWz8hz5W8F8heIKV1XmJtu-J8/view?usp=sharing"
+                    target="_blank"
+                    className="text-blue-500 hover:text-blue-700 transition-all duration-300 "
+                  >
+                    {" "}
+                    here
+                  </a>
+                  .
+                </div>
               </div>
             </div>
           </div>
