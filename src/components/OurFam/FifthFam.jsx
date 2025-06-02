@@ -87,7 +87,7 @@ const FifthFam = () => {
             <a
               href="https://forms.gle/Ss9D5nwR6CKXqQi3A"
               target="_blank"
-              className="text-blue-500"
+              className="text-blue-500 hover:text-blue-700 transition-all duration-300"
             >
               {" "}
               here

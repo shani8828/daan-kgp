@@ -87,7 +87,7 @@ const ThirdFam = () => {
             <a
               href="https://forms.gle/RU82Y7gkdju5VTFn8"
               target="_blank"
-              className="text-blue-500"
+              className="text-blue-500 hover:text-blue-700 transition-all duration-300"
             >
               {" "}
               here

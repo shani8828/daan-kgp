@@ -87,7 +87,7 @@ const SecondFam = () => {
             <a
               href="https://forms.gle/z3SJn3XUzuQRC5Rg9"
               target="_blank"
-              className="text-blue-500"
+              className="text-blue-500 hover:text-blue-700 transition-all duration-300"
             >
               {" "}
               here

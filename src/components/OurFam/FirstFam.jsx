@@ -89,7 +89,7 @@ const FirstFam = () => {
             <a
               href="https://forms.gle/VVG85GND5cjLFjNj9"
               target="_blank"
-              className="text-blue-500"
+              className="text-blue-500  hover:text-blue-700 transition-all duration-300"
               rel="noopener noreferrer"
             >
               {" "}

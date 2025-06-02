@@ -7,7 +7,6 @@ const Hero = () => {
   return (
     <div className="bg-transparent h-full">
       <BubbleBackground />
-
       <div className="h-full flex justify-center items-center p-4 bg-transparent">
         <div className="container grid grid-cols-1 gap-4">
           <div className="text-white">
