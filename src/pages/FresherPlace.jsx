@@ -1,6 +1,7 @@
 import React from "react";
 import DownloadBtn from "../components/FresherPlace/DownloadBtn";
 import { Helmet } from "react-helmet";
+import AcademicData from "../components/FresherPlace/AcademicData";
 
 const DownloadData = [
   {
@@ -101,6 +102,14 @@ const FresherPlace = () => {
               {" "}
               here
             </a>.
+          </div>
+          <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold w-full ">
+            Academic Place
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+            {AcademicData.map((item, index) => (
+              <DownloadBtn key={index} {...item} />
+            ))}
           </div>
         </section>
       </div>
