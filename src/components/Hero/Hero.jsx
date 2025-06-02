@@ -58,19 +58,19 @@ const Hero = () => {
             </h1>
             <div>
               <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
-                <div>
+                <div className="translate-y-[3px] lg:translate-y-0">
                   <VscDiffIgnored />
                 </div>
                 <div>Date of Reporting : Jul 16, 2025.</div>
               </div>
               <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
-                <div>
+                <div className="translate-y-[3px] lg:translate-y-0">
                   <VscDiffIgnored />
                 </div>
                 <div>Date of Reporting for New ones: Jul 19, 2025.</div>
               </div>
               <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
-                <div>
+                <div className="translate-y-[3px] lg:translate-y-0">
                   <VscDiffIgnored />
                 </div>
                 <div>
