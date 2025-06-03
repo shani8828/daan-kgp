@@ -50,7 +50,7 @@ const DownloadData = [
     catching: "No money? No worry!",
     cover: "We’ve got everything under control.",
     heading: "Scholarship Guide",
-    href: "https://drive.google.com/file/d/1e371Rn1eCIydR7sNcOT7XhM9T0avvNbR/view?usp=sharing",
+    href: "https://docs.google.com/document/d/1SIhiB9Pbk-W7en8ET-EUg-O51g-wfiMt_GSOtEwjKdI/edit?usp=sharing",
   },
   {
     catching: "Laptop shopping headache?",
