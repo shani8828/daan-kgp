@@ -69,7 +69,7 @@ const Hero = () => {
                 <div>Date of Reporting for New ones: Jul 19, 2025.</div>
               </div>
               <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
-                <div>
+                <div className="translate-y-[3px] lg:translate-y-0">
                   <VscDiffIgnored />
                 </div>
                 <div>
@@ -77,7 +77,7 @@ const Hero = () => {
                   <a
                     href="https://drive.google.com/file/d/11QzFLJ0cWz8hz5W8F8heIKV1XmJtu-J8/view?usp=sharing"
                     target="_blank"
-                    className="text-blue-500 hover:text-blue-700 transition-all duration-300 "
+                    className="text-blue-500 hover:text-blue-700 transition-all duration-300"
                   >
                     {" "}
                     here
