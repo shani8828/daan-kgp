@@ -39,7 +39,7 @@ const DownloadData = [
     catching: "Deadlines got you down?",
     cover: "You're in good hands.",
     heading: "Academic Calendar",
-    href: "https://drive.google.com/file/d/1RCGevew1BsJH0ZnWdkPeo-NK3AkmpLPm/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1aRt6CFws-7NgROdtuZmox33E3UB5ZKDx/view?usp=sharing",
   },
   {
     catching: "No stress, just the best!",
@@ -85,14 +85,7 @@ const FresherPlace = () => {
       </Helmet>
       <div className="dark:bg-gray-900 dark:text-white bg-gray-50 py-14 pt-20">
         <section data-aos="fade-up" className="container ">
-          <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold w-full ">
-            ERP Place
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-            {ERPPlaceData.map((item, index) => (
-              <DownloadBtn key={index} {...item} />
-            ))}
-          </div>
+          
           <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold">
             Fresher Place
           </h1>
@@ -113,14 +106,7 @@ const FresherPlace = () => {
             </a>
             .
           </div> */}
-          <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold w-full ">
-            Academic Place
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-            {AcademicData.map((item, index) => (
-              <DownloadBtn key={index} {...item} />
-            ))}
-          </div>
+          
         </section>
       </div>
     </>

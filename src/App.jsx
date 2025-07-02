@@ -14,6 +14,9 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import ERPPlace from "./pages/ERPPlace";
+import AcademicPlace from "./pages/AcademicPlace";
+import CDCInternPlace from "./pages/CDCInternPlace";
 
 const App = () => {
   React.useEffect(() => {
@@ -44,6 +47,9 @@ const App = () => {
             <Route path="our-fam" element={<OurFam />} />
             <Route path="events/:id" element={<EventsDetails />} />
             <Route path="fresher-place" element={<FresherPlace />} />
+            <Route path="erp-place" element={<ERPPlace />} />
+            <Route path="academic-place" element={<AcademicPlace />} />
+            <Route path="cdc-intern-place" element={<CDCInternPlace />} />
             <Route path="our-bright-minds" element={<OurBrightMinds />} />
             <Route path="*" element={<NoPage />} />
           </Route>

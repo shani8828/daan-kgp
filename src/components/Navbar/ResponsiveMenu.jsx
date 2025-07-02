@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { NavbarLinks } from "./Navbar";
+import { NavbarLinks, dropdown } from "./Navbar";
 
 const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
   console.log("showMenu", showMenu);
+  const [showDropdown, setShowDropdown] = useState(false);
+  const dropdownRef = useRef();
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowDropdown(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div
       className={`${
@@ -28,6 +49,37 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
                 </NavLink>
               </li>
             ))}
+            <li ref={dropdownRef}>
+              <div
+                onClick={() => setShowDropdown(!showDropdown)}
+                className="cursor-pointer text-gray-700 transition-all duration-300 hover:text-red-300"
+              >
+                {/* KGP Toolkit {showDropdown ? "▲" : "▼"} */}
+                KGP Toolkit {showDropdown ? "↴" : "→"}
+              </div>
+              {showDropdown && (
+                <ul className="p-2 space-y-2 rounded-lg relative top-[10px] bg-white z-50 shadow-lg shadow-gray-500">
+                  {dropdown.map((e, index) => (
+                    <li key={index}>
+                      <NavLink
+                        to={e.link}
+                        onClick={() => {
+                          setShowMenu(false); // close mobile menu
+                          setShowDropdown(false); // close dropdown
+                        }}
+                        className={({ isActive }) =>
+                          isActive
+                            ? "text-red-500 font-semibold border-b-2 border-red-500 rounded-lg"
+                            : "text-gray-700 hover:text-red-300 transition-all duration-300"
+                        }
+                      >
+                        {e.name}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
           </ul>
         </nav>
       </div>

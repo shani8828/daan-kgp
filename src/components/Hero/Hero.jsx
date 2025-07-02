@@ -66,7 +66,7 @@ const Hero = () => {
                 <div className="translate-y-[3px] lg:translate-y-0">
                   <VscDiffIgnored />
                 </div>
-                <div>Date of Reporting for Freshers : Jul 19-20, 2025.</div>
+                <div>Date of Reporting for Freshers : Jul 22-23, 2025.</div>
               </div>
               <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
                 <div className="translate-y-[3px] lg:translate-y-0">

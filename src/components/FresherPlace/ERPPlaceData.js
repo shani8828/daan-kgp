@@ -35,5 +35,11 @@ const ERPPlaceData = [
     heading: "FAQs",
     href: "https://drive.google.com/file/d/14QWZsEB1jpvVJK0BYZmArQJ09bBkuQMA/view?usp=sharing",
   },
+  {
+    catching: "Stuck with ERP issues?",
+    cover: "Reach the right people, right away.",
+    heading: "ERP Contacts",
+    href: "https://docs.google.com/document/d/1FiRJyvft1t5LQbt9mwX46JfCLYcJDXPr9c3cSBhBynM/edit?usp=sharing",
+  },
 ];
 export default ERPPlaceData;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
@@ -14,17 +14,47 @@ export const NavbarLinks = [
     link: "/our-fam",
   },
   {
-    name: "Fresher Place",
-    link: "/fresher-place",
-  },
-  {
     name: "Our Bright Minds",
     link: "/our-bright-minds",
   },
 ];
+export const dropdown = [
+  {
+    name: "ERP Place",
+    link: "/erp-place",
+  },
+  {
+    name: "Fresher Place",
+    link: "/fresher-place",
+  },
+  {
+    name: "Academic Place",
+    link: "/academic-place",
+  },
+  {
+    name: "CDC Intern Place",
+    link: "/cdc-intern-place",
+  },
+];
 
 const Navbar = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+  const dropdownRef = useRef();
   const [showMenu, setShowMenu] = useState(false);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowDropdown(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -65,53 +95,50 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <ul className="flex items-center gap-6 ">
-                <li className="py-4">
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive
-                        ? "text-red-500 font-semibold border-b-2 border-red-500 rounded-lg"
-                        : "text-gray-700 hover:text-red-300 transition-all duration-300"
-                    }
-                    to="/"
+                {NavbarLinks.map((e) => (
+                  <li className="py-4">
+                    <NavLink
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-red-500 font-semibold border-b-2 border-red-500 rounded-lg"
+                          : "text-gray-700 hover:text-red-300 transition-all duration-300"
+                      }
+                      to={e.link}
+                    >
+                      {e.name}
+                    </NavLink>
+                  </li>
+                ))}
+                <li ref={dropdownRef}>
+                  <div
+                    onClick={() => setShowDropdown(!showDropdown)}
+                    className="cursor-pointer text-gray-700 transition-all duration-300 hover:text-red-300"
                   >
-                    Home
-                  </NavLink>
-                </li>
-                <li className="py-4">
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive
-                        ? "text-red-500 font-semibold border-b-2 border-red-500 rounded-lg"
-                        : "text-gray-700 hover:text-red-300 transition-all duration-300"
-                    }
-                    to="/our-fam"
-                  >
-                    Our Fam
-                  </NavLink>
-                </li>
-                <li className="py-4">
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive
-                        ? "text-red-500 font-semibold border-b-2 border-red-500 rounded-lg"
-                        : "text-gray-700 hover:text-red-300 transition-all duration-300"
-                    }
-                    to="/fresher-place"
-                  >
-                    Fresher Place
-                  </NavLink>
-                </li>
-                <li className="py-4">
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive
-                        ? "text-red-500 font-semibold border-b-2 border-red-500 rounded-lg"
-                        : "text-gray-700 hover:text-red-300 transition-all duration-300"
-                    }
-                    to="/our-bright-minds"
-                  >
-                    Our Bright Minds
-                  </NavLink>
+                    {/* KGP Toolkit {showDropdown ? "▲" : "▼"} */}
+                    KGP Toolkit {showDropdown ? "↴" : "→"}
+                  </div>
+                  {showDropdown && (
+                    <ul className="p-2 space-y-2 rounded-lg absolute top-[72px] bg-white z-50 shadow-sm shadow-gray-500">
+                      {dropdown.map((e, index) => (
+                        <li key={index}>
+                          <NavLink
+                            to={e.link}
+                            onClick={() => {
+                              setShowMenu(false); // close mobile menu
+                              setShowDropdown(false); // close dropdown
+                            }}
+                            className={({ isActive }) =>
+                              isActive
+                                ? "text-red-500 font-semibold border-b-2 border-red-500 rounded-lg"
+                                : "text-gray-700 hover:text-red-300 transition-all duration-300"
+                            }
+                          >
+                            {e.name}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               </ul>
             </div>
@@ -124,12 +151,12 @@ const Navbar = () => {
                   title="Dakshana Foundation"
                 >
                   <img
-                  src="https://res.cloudinary.com/dubu8yxkm/image/upload/v1751437736/Untitled_design-removebg-preview_elucc3.png"
-                  alt=""
-                  width="35px"
-                  height="35px"
-                  title="Dakshana Foundation"
-                />
+                    src="https://res.cloudinary.com/dubu8yxkm/image/upload/v1751437736/Untitled_design-removebg-preview_elucc3.png"
+                    alt=""
+                    width="35px"
+                    height="35px"
+                    title="Dakshana Foundation"
+                  />
                 </a>
                 <a
                   className="bg-gradient-to-tr p-2 from-red-400 to-red-200 border transition-all duration-300 text-black rounded-full text-center hover:bg-gradient-to-tr hover:from-red-500 hover:to-red-300 hover:border-red-600 shadow-sm shadow-gray-600"
@@ -137,7 +164,8 @@ const Navbar = () => {
                   target="_blank"
                   title="ERP IIT Kharagpur"
                 >
-                  ERP</a>
+                  ERP
+                </a>
               </div>
               {/* Mobile Hamburger icon */}
               <div className="md:hidden block">
