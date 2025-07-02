@@ -2,6 +2,7 @@ import React from "react";
 import DownloadBtn from "../components/FresherPlace/DownloadBtn";
 import { Helmet } from "react-helmet";
 import AcademicData from "../components/FresherPlace/AcademicData";
+import ERPPlaceData from "../components/FresherPlace/ERPPlaceData";
 
 const DownloadData = [
   {
@@ -84,6 +85,14 @@ const FresherPlace = () => {
       </Helmet>
       <div className="dark:bg-gray-900 dark:text-white bg-gray-50 py-14 pt-20">
         <section data-aos="fade-up" className="container ">
+          <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold w-full ">
+            ERP Place
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+            {ERPPlaceData.map((item, index) => (
+              <DownloadBtn key={index} {...item} />
+            ))}
+          </div>
           <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold">
             Fresher Place
           </h1>
@@ -92,7 +101,7 @@ const FresherPlace = () => {
               <DownloadBtn key={index} {...item} />
             ))}
           </div>
-          <div className="text-left mt-8">
+          {/* <div className="text-left mt-8">
             Have something to add? Submit it
             <a
               href="https://forms.gle/aF8CtLf7cTtuUpe89"
@@ -101,8 +110,9 @@ const FresherPlace = () => {
             >
               {" "}
               here
-            </a>.
-          </div>
+            </a>
+            .
+          </div> */}
           <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold w-full ">
             Academic Place
           </h1>
