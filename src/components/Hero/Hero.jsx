@@ -66,23 +66,40 @@ const Hero = () => {
                 <div className="translate-y-[3px] lg:translate-y-0">
                   <VscDiffIgnored />
                 </div>
-                <div>Date of Reporting for New ones: Jul 19, 2025.</div>
+                <div>Date of Reporting for Freshers : Jul 19-20, 2025.</div>
               </div>
               <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
                 <div className="translate-y-[3px] lg:translate-y-0">
                   <VscDiffIgnored />
                 </div>
+
                 <div>
-                  Income Certificate Format for this session, Click
+                  <a
+                    href="https://chat.whatsapp.com/IOtGUjxfUPf7mZ5ehSKx5J?mode=r_c"
+                    target="_blank"
+                    className="text-blue-500 hover:text-blue-700 transition-all duration-300"
+                  >
+                    Whatsapp group{" "}
+                  </a>
+                  for Freshers.
+                </div>
+              </div>
+              <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
+                <div className="translate-y-[3px] lg:translate-y-0">
+                  <VscDiffIgnored />
+                </div>
+
+                <div>
+                  Income Certificate
                   <a
                     href="https://drive.google.com/file/d/11QzFLJ0cWz8hz5W8F8heIKV1XmJtu-J8/view?usp=sharing"
                     target="_blank"
                     className="text-blue-500 hover:text-blue-700 transition-all duration-300"
                   >
                     {" "}
-                    here
+                    Format{" "}
                   </a>
-                  .
+                  for current session.
                 </div>
               </div>
             </div>
