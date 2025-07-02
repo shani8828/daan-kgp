@@ -116,14 +116,29 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="flex items-center gap-4 justify-evenly">
-              <a
-                className="bg-gradient-to-tr p-2 from-red-400 to-red-200 border transition-all duration-300 text-black rounded-xl text-center hover:bg-gradient-to-tr hover:from-red-500 hover:to-red-300 hover:border-red-600 shadow-sm shadow-gray-600"
-                href="https://www.dakshana.org/"
-                target="_blank"
-                title="Dakshana Foundation"
-              >
-                Official Dakshana Page
-              </a>
+              <div className="flex justify-between items-center gap-4">
+                <a
+                  className="bg-gradient-to-tr p-1 from-red-400 to-red-200 border transition-all duration-300 text-black rounded-full text-center hover:bg-gradient-to-tr hover:from-red-500 hover:to-red-300 hover:border-red-600 shadow-sm shadow-gray-600"
+                  href="https://www.dakshana.org/"
+                  target="_blank"
+                  title="Dakshana Foundation"
+                >
+                  <img
+                  src="https://res.cloudinary.com/dubu8yxkm/image/upload/v1751437736/Untitled_design-removebg-preview_elucc3.png"
+                  alt=""
+                  width="35px"
+                  height="35px"
+                  title="Dakshana Foundation"
+                />
+                </a>
+                <a
+                  className="bg-gradient-to-tr p-2 from-red-400 to-red-200 border transition-all duration-300 text-black rounded-full text-center hover:bg-gradient-to-tr hover:from-red-500 hover:to-red-300 hover:border-red-600 shadow-sm shadow-gray-600"
+                  href="https://erp.iitkgp.ac.in/"
+                  target="_blank"
+                  title="ERP IIT Kharagpur"
+                >
+                  ERP</a>
+              </div>
               {/* Mobile Hamburger icon */}
               <div className="md:hidden block">
                 {showMenu ? (
