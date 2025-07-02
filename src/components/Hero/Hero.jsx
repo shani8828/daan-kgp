@@ -81,7 +81,7 @@ const Hero = () => {
                   >
                     Whatsapp group{" "}
                   </a>
-                  for Freshers.
+                  for Freshers with Sophomers.
                 </div>
               </div>
               <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
