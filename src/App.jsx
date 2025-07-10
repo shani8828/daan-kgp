@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import OurFam from "./pages/OurFam";
@@ -13,7 +13,7 @@ import PageUpBtn from "./pages/PageUpBtn";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import ERPPlace from "./pages/ERPPlace";
 import AcademicPlace from "./pages/AcademicPlace";
 import CDCInternPlace from "./pages/CDCInternPlace";
@@ -42,9 +42,10 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route>
-            <Route path="/" element={<Layout />}/>
+            <Route path="/" element={<Layout />} />
             <Route index element={<Home />} />
-            <Route path="our-fam" element={<OurFam />} />
+            <Route path="our-fam/:year" element={<OurFam />} />
+            <Route path="our-fam" element={<Navigate to="/our-fam/24" />} />
             <Route path="events/:id" element={<EventsDetails />} />
             <Route path="fresher-place" element={<FresherPlace />} />
             <Route path="erp-place" element={<ERPPlace />} />
@@ -55,8 +56,8 @@ const App = () => {
           </Route>
         </Routes>
         <PageUpBtn />
-        <Analytics/>
-        <SpeedInsights/>
+        <Analytics />
+        <SpeedInsights />
         <Footer />
       </BrowserRouter>
     </>
