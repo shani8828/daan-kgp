@@ -17,7 +17,7 @@ const FamCard = ({ img, name, dept, hall, mail, linkedIn }) => {
         />
         <h1
           title="Name"
-          className="text-lg md:text-xl font-semibold md:font-bold bg-clip-text text-transparent bg-gradient-to-tr from-red-900 to-orange-600"
+          className="text-lg md:text-xl font-semibold md:font-bold bg-clip-text text-transparent bg-gradient-to-tr from-red-900 to-orange-600 text-center"
         >
           {name}
         </h1>
