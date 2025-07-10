@@ -6,7 +6,7 @@ const FirstFamData = [
     mail: "abhinamdutta.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753920/Abhinam_Dutta_rupd1f_uhbhxv.avif",
     linkedIn: "https://www.linkedin.com/in/duttaabhinam",
-    hall: "LBS",
+    hall: "JCB",
   },
   {
     index: 1,
@@ -15,7 +15,7 @@ const FirstFamData = [
     mail: "akhileshdixit07.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753917/Akhil_Dixit_qlwruw_s0bq6w.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "MMM",
   },
   {
     index: 2,
@@ -51,7 +51,7 @@ const FirstFamData = [
     mail: "kumarpushpendra02817.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753921/Anuruddh_Yadav_gmv5bq_aebsm0.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "RK",
   },
   {
     index: 6,
@@ -60,7 +60,7 @@ const FirstFamData = [
     mail: "aryandhangar000.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753920/Aryan_Dhangar_w35n18_hhlmlt.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "HJB",
   },
   {
     index: 7,
@@ -69,7 +69,7 @@ const FirstFamData = [
     mail: "Avinash03.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753925/Avinash_cns2hn_eyakm7.avif",
     linkedIn: "https://www.linkedin.com/in/avinash-sappati-9435b7313",
-    hall: "LBS",
+    hall: "MS",
   },
   {
     index: 8,
@@ -78,7 +78,7 @@ const FirstFamData = [
     mail: "mallikayan54.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753923/Ayan_Mallick_ncv6ol_gmpg4s.avif",
     linkedIn: "https://www.linkedin.com/in/ayan-mallick-343865312",
-    hall: "LBS",
+    hall: "Azad",
   },
   {
     index: 9,
@@ -87,7 +87,7 @@ const FirstFamData = [
     mail: "ayushkumar.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753929/Ayush_Kumar_evlkss_yucqfr.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "MS",
   },
   {
     index: 10,
@@ -96,7 +96,7 @@ const FirstFamData = [
     mail: "biswasbibek438@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753924/Bibek_Biswas_qvz9uy_rkdxex.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "RP",
   },
   {
     index: 11,
@@ -105,7 +105,7 @@ const FirstFamData = [
     mail: "kc277e.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753930/Chetna_Kanesh_kv7cuo_m3qbkq.avif",
     linkedIn: "",
-    hall: "SNVH",
+    hall: "SN/IG",
   },
   {
     index: 12,
@@ -132,7 +132,7 @@ const FirstFamData = [
     mail: "gksagar98765.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753927/Golu_Kumar_Sagar_oiwhim_bnqpfq.avif",
     linkedIn: "G.K.Sagar",
-    hall: "LBS",
+    hall: "RP",
   },
   {
     index: 15,
@@ -141,7 +141,7 @@ const FirstFamData = [
     mail: "malikhimanshu.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753927/Himanshu_Malik_wmo5ud_u5yqrc.avif",
     linkedIn: "https://www.linkedin.com/in/himanshu-malik-a3aa0331a",
-    hall: "LBS",
+    hall: "Azad",
   },
   {
     index: 16,
@@ -150,7 +150,7 @@ const FirstFamData = [
     mail: "hiron1234deori.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753928/Hiran_Deori_d8pl4m_ioytag.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "LLR",
   },
   {
     index: 17,
@@ -159,7 +159,7 @@ const FirstFamData = [
     mail: "mayanksingh2007.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753945/Mayank_Singh_aaj0dg_m6ymbr.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "Azad",
   },
   {
     index: 18,
@@ -168,7 +168,7 @@ const FirstFamData = [
     mail: "monikadhakad135.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753952/Monika_Dhakad_nhzfmf_pybofo.avif",
     linkedIn: "",
-    hall: "SNVH",
+    hall: "SN/IG",
   },
   {
     index: 19,
@@ -186,7 +186,7 @@ const FirstFamData = [
     mail: "nayanbalpa.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753945/Nayan_Balpande_fagifz_kbshxp.avif",
     linkedIn: "https://www.linkedin.com/in/nayan-balpande-2ba1a0326",
-    hall: "LBS",
+    hall: "Azad",
   },
   {
     index: 21,
@@ -213,7 +213,7 @@ const FirstFamData = [
     mail: "bhoiprabin23.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753951/Prabin_Kumar_Bhoi_g85btt_yyua8e.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "RP",
   },
   {
     index: 24,
@@ -222,7 +222,7 @@ const FirstFamData = [
     mail: "prashikmane1412.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753948/Prashik_Mane_ov7x4j_p3ruin.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "MS",
   },
   {
     index: 25,
@@ -232,7 +232,7 @@ const FirstFamData = [
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753949/Pratik_Verma_nirhu7_uorhgb.avif",
     linkedIn:
       "https://www.linkedin.com/in/verma-pratik?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    hall: "LBS",
+    hall: "RK",
   },
   {
     index: 26,
@@ -241,7 +241,7 @@ const FirstFamData = [
     mail: "preeti.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753949/Preeti_Choudhary_padnkp_fruso1.avif",
     linkedIn: "",
-    hall: "SNVH",
+    hall: "SN/IG",
   },
   {
     index: 27,
@@ -250,7 +250,7 @@ const FirstFamData = [
     mail: "priyanshu234.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753952/Priyanshu_Gautam_vr6mku_hac98d.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "Patel",
   },
   {
     index: 28,
@@ -260,7 +260,7 @@ const FirstFamData = [
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753963/Priyanshu_Gupta_f6h8tl_uxtfwv.avif",
     linkedIn:
       "https://www.linkedin.com/in/priyanshu-gupta-590b4931b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    hall: "LBS",
+    hall: "MMM",
   },
   {
     index: 29,
@@ -269,7 +269,7 @@ const FirstFamData = [
     mail: "rahul2309.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747750668/Rahul_Borkar_m15fy5.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "RK",
   },
   {
     index: 30,
@@ -306,7 +306,7 @@ const FirstFamData = [
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753968/Sachin_Kumar_mppltl_yffpix.avif",
     linkedIn:
       "https://www.linkedin.com/in/sachin-kumar-32b781312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    hall: "LBS",
+    hall: "RK",
   },
   {
     index: 34,
@@ -315,7 +315,7 @@ const FirstFamData = [
     mail: "sanjayahari1704.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753962/Sanjay_Ahari_tcizvn_bmeieh.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "MS",
   },
   {
     index: 35,
@@ -334,7 +334,7 @@ const FirstFamData = [
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753963/Shivam_Ahirwar_x9m9ox_o3y2d2.avif",
     linkedIn:
       "https://www.linkedin.com/in/shivam-ahirwar-425293311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    hall: "LBS",
+    hall: "Patel",
   },
   {
     index: 37,
@@ -343,7 +343,7 @@ const FirstFamData = [
     mail: "subhankar.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753964/Subhankar_Majhi_tmmtmy_wfntiw.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "RK",
   },
   {
     index: 38,
@@ -352,7 +352,7 @@ const FirstFamData = [
     mail: "Tanish.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753964/Tanish_Kumar_syafjs_ee3niw.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "MMM",
   },
   {
     index: 39,
@@ -370,7 +370,7 @@ const FirstFamData = [
     mail: "Uttammeghwal.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753974/Uttam_Meghwal_kdgvqh_f90ijr.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "Nehru",
   },
   {
     index: 41,
@@ -380,7 +380,7 @@ const FirstFamData = [
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753974/Vigyandev_Gupta_ywhkor_jfdbzf.avif",
     linkedIn:
       "https://www.linkedin.com/in/vigyan-dev-gupta-0590aa206?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    hall: "LBS",
+    hall: "RK",
   },
   {
     index: 42,
@@ -389,7 +389,7 @@ const FirstFamData = [
     mail: "captain.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753974/Vijay_Meda_sg5vxy_zxugmn.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "RP",
   },
   {
     index: 43,
@@ -398,7 +398,7 @@ const FirstFamData = [
     mail: "yashrajmorode.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753975/Yashraj_Morode_rlfuch_bzpvrw.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "MMM",
   },
 ];
 
