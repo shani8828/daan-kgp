@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero/Hero";
-import BlogsComp from "../components/Events/EventsComp";
+import EventsComp from "../components/Events/EventsComp";
 import Council from "../components/Council/Council";
 import CR from "../components/CR/CR";
 import Banner from "../components/Banner/Banner";
@@ -31,7 +31,7 @@ const Home = () => {
         </div>
         <CR />
         <Council />
-        <BlogsComp />
+        <EventsComp />
         <Banner />
       </div>
     </>

@@ -47,7 +47,7 @@ const CouncilData = [
 const Council = () => {
   return (
     <>
-      <div className="dark:bg-gray-900 dark:text-white bg-gray-50 py-10">
+      <div id="daan-council" className="scroll-mt-[100px] dark:bg-gray-900 dark:text-white bg-gray-50 py-10">
         <section data-aos="fade-up" className="container ">
           <h1 className=" my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold">
             Our DAAN Council Members

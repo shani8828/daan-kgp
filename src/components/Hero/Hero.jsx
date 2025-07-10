@@ -48,9 +48,10 @@ const Hero = () => {
             </div>
           </div>
           <div
+          id="flashing-notices"
             data-aos="fade-right"
             data-aos-delay="900"
-            className="text-white bg-black items-center text-left p-4 mt-8 border-red-500 border-r-2 border-b-2 rounded-xl shadow-md shadow-red-400"
+            className="scroll-mt-[100px] text-white bg-black items-center text-left p-4 mt-8 border-red-500 border-r-2 border-b-2 rounded-xl shadow-md shadow-red-400"
           >
             <h1 className="text-left underline font-semibold mb-1 md:mb-2 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500 ">
               Flashing Notices
