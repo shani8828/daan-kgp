@@ -44,6 +44,13 @@ const App = () => {
           <Route>
             <Route path="/" element={<Layout />} />
             <Route index element={<Home />} />
+            <Route
+              path="flashing-notices"
+              element={<Home scrollTo="flashing-notices" />}
+            />
+            <Route path="cr" element={<Home scrollTo="cr" />} />
+            <Route path="council" element={<Home scrollTo="council" />} />
+            <Route path="events" element={<Home scrollTo="events" />} />
             <Route path="our-fam/:year" element={<OurFam />} />
             <Route path="our-fam" element={<Navigate to="/our-fam/24" />} />
             <Route path="events/:id" element={<EventsDetails />} />

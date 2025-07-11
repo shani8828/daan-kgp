@@ -15,7 +15,7 @@ const EventCard = ({ image, date, title, description }) => {
             behavior: "smooth",
           });
         }}
-        state={{ image, date, title, description  }}
+        state={{ image, date, title, description }}
       >
         <div
           title={title}
