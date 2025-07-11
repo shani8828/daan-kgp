@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { MdAddCall } from "react-icons/md";
 import { Helmet } from "react-helmet";
 
-const testimonialData = [
+const CRData = [
   {
     id: 0,
     name: "Mr. Shani Maurya",
@@ -33,7 +33,7 @@ const testimonialData = [
   },
 ];
 
-const Testimonial = () => {
+const CR = () => {
   var settings = {
     dots: true,
     arrows: false,
@@ -94,7 +94,7 @@ const Testimonial = () => {
             className="grid grid-cols-1 max-w-[800px] mx-auto gap-6"
           >
             <Slider {...settings}>
-              {testimonialData.map(
+              {CRData.map(
                 ({ id, name, status, hall, img, session, mobile }) => {
                   return (
                     <div key={id} className="my-6">
@@ -144,4 +144,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial;
+export default CR;
