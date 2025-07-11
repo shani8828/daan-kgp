@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import AcademicData from "../components/FresherPlace/AcademicData";
 import ERPPlaceData from "../components/FresherPlace/ERPPlaceData";
 
-const DownloadData = [
+const FresherPlaceData = [
   {
     catching: "No more 'umm...'",
     cover: "This is your intro cheat sheet!",
@@ -90,7 +90,7 @@ const FresherPlace = () => {
             Fresher Place
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-            {DownloadData.map((item, index) => (
+            {FresherPlaceData.map((item, index) => (
               <DownloadBtn key={index} {...item} />
             ))}
           </div>
