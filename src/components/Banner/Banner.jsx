@@ -63,7 +63,7 @@ const Banner = () => {
                       className="flex items-center gap-4 hover:translate-x-2 transition-all duration-300 hover:text-red-500"
                     >
                       <FaBus className="text-4xl h-4 w-4 md:h-12 md:w-12 shadow-lg shadow-green-200 p-2 md:p-4 rounded-full bg-green-100 border border-green-300 dark:bg-green-400" />
-                      <p>Hanger</p>
+                      <p>Hangar</p>
                     </a>
                   </div>
                   <div className="space-y-6">
