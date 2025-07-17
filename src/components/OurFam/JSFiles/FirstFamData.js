@@ -287,7 +287,7 @@ const FirstFamData = [
     mail: "rajmalmurmu1724.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747750668/Rajmal_Murmu_jyyj2t.avif",
     linkedIn: "",
-    hall: "LBS",
+    hall: "Patel",
   },
   {
     index: 32,
