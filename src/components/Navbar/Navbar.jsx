@@ -63,14 +63,15 @@ const Navbar = () => {
     <>
       <nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md">
         <div className="bg-gradient-to-r from-red-600 to-red-400 text-white overflow-hidden">
-  <div className="container py-[2px] sm:block hidden relative">
-    <div className="animate-marquee whitespace-nowrap">
-      <p className="text-sm inline-block px-4">
-        Freshers, fasten your seatbelts! Say hello to the land of greenery, night canteens, and crazy innovation – welcome to KGP!
-      </p>
-    </div>
-  </div>
-</div>
+          <div className="container py-[2px] sm:block hidden relative">
+            <div className="animate-marquee whitespace-nowrap">
+              <p className="text-sm inline-block px-4">
+                Freshers, fasten your seatbelts! Say hello to the land of
+                greenery, night canteens, and crazy innovation – welcome to KGP!
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div className="container py-3 sm:py-0">
           <div className="flex justify-between items-center">
