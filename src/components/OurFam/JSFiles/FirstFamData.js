@@ -164,7 +164,7 @@ const FirstFamData = [
   {
     index: 18,
     name: "Ms. Monika Dhakad",
-    dept: "EE",
+    dept: "IE",
     mail: "monikadhakad135.24@kgpian.iitkgp.ac.in",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753952/Monika_Dhakad_nhzfmf_pybofo.avif",
     linkedIn: "",
