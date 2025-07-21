@@ -63,7 +63,7 @@ const Navbar = () => {
     <>
       <nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md">
         <div className="bg-gradient-to-r from-red-600 to-red-400 text-white overflow-hidden">
-          <div className="container py-[2px] sm:block hidden relative">
+          <div className="container py-[2px] relative">
             <div className="animate-marquee whitespace-nowrap">
               <p className="text-sm inline-block px-4">
                 Freshers, fasten your seatbelts! Say hello to the land of

@@ -11,7 +11,7 @@ export default {
         },
       },
       animation: {
-        marquee: "marquee 40s linear infinite",
+        marquee: "marquee 30s linear infinite",
       },
       colors: {
         primary: "#FF3737",
