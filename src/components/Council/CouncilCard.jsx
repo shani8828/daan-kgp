@@ -1,4 +1,3 @@
-import React from "react";
 import { VscDiffIgnored } from "react-icons/vsc";
 import { MdAddCall } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
