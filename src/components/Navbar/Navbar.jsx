@@ -167,7 +167,7 @@ const Navbar = () => {
               </div>
 
               {/* DARK MODE TOGGLE */}
-              <button
+              {/* <button
                 onClick={() => setDarkMode(!darkMode)}
                 className="p-2 transition duration-300 hover:scale-110"
                 title="Toggle Theme"
@@ -177,7 +177,7 @@ const Navbar = () => {
                 ) : (
                   <Moon className="text-gray-800" size={22} />
                 )}
-              </button>
+              </button> */}
 
               {/* Mobile Menu Icon */}
               <div className="md:hidden block">
