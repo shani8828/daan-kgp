@@ -7,6 +7,7 @@ import Banner from "../components/Banner/Banner";
 import { Helmet } from "react-helmet";
 
 const Home = ({ scrollTo }) => {
+  document.title = "DAAN KGP";
   useEffect(() => {
     if (scrollTo) {
       const el = document.getElementById(scrollTo);
@@ -20,6 +21,7 @@ const Home = ({ scrollTo }) => {
 
   return (
     <>
+    
       <Helmet>
         <meta
           name="description"
