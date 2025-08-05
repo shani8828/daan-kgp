@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import FamCard from "./FamCard";
-import FourthFamData from "./JSFiles/FourthFamData";
+import Intake2021Data from "./JSFiles/Intake2021Data";
 
-const FourthFam = () => {
+const Intake2021 = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [searchName, setSearchName] = useState(searchParams.get("name") || "");
@@ -18,7 +18,7 @@ const FourthFam = () => {
     setSearchParams(params);
   }, [searchName, searchDept, searchHall, setSearchParams]);
 
-  const filteredItems = FourthFamData.filter((item) => {
+  const filteredItems = Intake2021Data.filter((item) => {
     const matchesName = searchName
       ? item.name.toLowerCase().includes(searchName.toLowerCase())
       : true;
@@ -103,4 +103,4 @@ const FourthFam = () => {
   );
 };
 
-export default FourthFam;
+export default Intake2021;

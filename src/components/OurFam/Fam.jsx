@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import FirstFam from "./FirstFam";
 import SecondFam from "./SecondFam";
 import ThirdFam from "./ThirdFam";
-import FourthFam from "./FourthFam";
+import Intake2021 from "./Intake2021";
 import Intake2020 from "./Intake2020";
 
 const Fam = ({ yearParam }) => {
@@ -13,7 +13,7 @@ const Fam = ({ yearParam }) => {
     { id: "24", label: "'24", content: <FirstFam /> },
     { id: "23", label: "'23", content: <SecondFam /> },
     { id: "22", label: "'22", content: <ThirdFam /> },
-    { id: "21", label: "'21", content: <FourthFam /> },
+    { id: "21", label: "'21", content: <Intake2021 /> },
     { id: "20", label: "'20", content: <Intake2020 /> },
   ];
 
