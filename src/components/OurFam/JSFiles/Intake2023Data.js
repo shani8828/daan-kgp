@@ -1,4 +1,4 @@
-const SecondFamData = [
+const Intake2023Data = [
   {
     index: 0,
     name: "Mr. Abhay Mishra",
@@ -307,4 +307,4 @@ const SecondFamData = [
   },
 ];
 
-export default SecondFamData;
+export default Intake2023Data;
