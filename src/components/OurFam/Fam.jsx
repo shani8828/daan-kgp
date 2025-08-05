@@ -36,7 +36,7 @@ const Fam = ({ yearParam }) => {
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              className={`py-3 px-4 w-14 rounded-lg border ${
+              className={`py-1 md:py-2 lg:py-3 px-2 md:px-3 lg:px-4 w-10 md:w-12 lg:w-14 rounded-lg text-sm border ${
                 tab.id === activeTab.id
                   ? "bg-red-400 text-white"
                   : "border-red-300 text-red-800 bg-red-200 hover:bg-red-400"
