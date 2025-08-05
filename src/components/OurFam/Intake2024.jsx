@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import FamCard from "./FamCard";
-import FirstFamData from "./JSFiles/FirstFamData";
+import Intake2024Data from "./JSFiles/Intake2024Data";
 
-const FirstFam = () => {
+const Intake2024 = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   // Local state initialized from query params
@@ -26,7 +26,7 @@ const FirstFam = () => {
   const handleHallChange = (e) => setSearchHall(e.target.value);
 
   // Filter logic - apply all non-empty filters together
-  const filteredItems = FirstFamData.filter((item) => {
+  const filteredItems = Intake2024Data.filter((item) => {
     const matchesName = searchName
       ? item.name.toLowerCase().includes(searchName.toLowerCase())
       : true;
@@ -43,7 +43,7 @@ const FirstFam = () => {
     <div className="dark:bg-gray-900 dark:text-white py-10">
       <section data-aos="fade-up" className="container">
         <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-2xl font-bold text-center w-full">
-          First Years
+          Second Years
         </h1>
         <h3 className="m-2 lg:m-4 italic text-center w-full">
           Total :{" "}
@@ -100,4 +100,4 @@ const FirstFam = () => {
   );
 };
 
-export default FirstFam;
+export default Intake2024;

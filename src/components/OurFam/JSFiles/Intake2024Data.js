@@ -1,4 +1,4 @@
-const FirstFamData = [
+const Intake2024Data = [
   {
     index: 0,
     name: "Mr. Abhinam Dutta",
@@ -402,4 +402,4 @@ const FirstFamData = [
   },
 ];
 
-export default FirstFamData;
+export default Intake2024Data;
