@@ -66,8 +66,7 @@ const Navbar = () => {
           <div className="container py-[2px] sm:block hidden relative">
             <div className="animate-marquee whitespace-nowrap">
               <p className="text-sm inline-block px-4">
-                Freshers, fasten your seatbelts! Say hello to the land of
-                greenery, night canteens, and crazy innovation – welcome to KGP!
+                Grey skies, green vibes, and that unmistakable KGP spark ~ monsoon season is here to charge us up.
               </p>
             </div>
           </div>
