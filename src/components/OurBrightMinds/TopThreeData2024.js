@@ -1,4 +1,4 @@
-const TopThreeDataFirst =[
+const TopThreeData2024 =[
     {
         id:0,
         img :"https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753968/Sachin_Kumar_mppltl_yffpix.avif",
@@ -27,4 +27,4 @@ const TopThreeDataFirst =[
         colour:"blue",
     },
 ]
-export default TopThreeDataFirst;
+export default TopThreeData2024;

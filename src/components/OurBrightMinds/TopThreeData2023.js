@@ -1,4 +1,4 @@
-const TopThreeDataSecond =[
+const TopThreeData2023 =[
     {
         id:0,
         img :"https://res.cloudinary.com/dcwwptwzt/image/upload/v1748288498/Ashutosh_Ranjan_flro1b_mfeulw.avif",
@@ -21,4 +21,4 @@ const TopThreeDataSecond =[
         cg : "8.40",
     },
 ]
-export default TopThreeDataSecond;
+export default TopThreeData2023;
