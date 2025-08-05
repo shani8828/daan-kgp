@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Intake2025 from "./Intake2025";
 import Intake2024 from "./Intake2024";
 import Intake2023 from "./Intake2023";
 import Intake2022 from "./Intake2022";
@@ -10,6 +11,7 @@ const Fam = ({ yearParam }) => {
   const navigate = useNavigate();
 
   const tabs = [
+    { id: "25", label: "'25", content: <Intake2025/> },
     { id: "24", label: "'24", content: <Intake2024/> },
     { id: "23", label: "'23", content: <Intake2023 /> },
     { id: "22", label: "'22", content: <Intake2022 /> },

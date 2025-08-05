@@ -52,7 +52,7 @@ const App = () => {
             <Route path="council" element={<Home scrollTo="council" />} />
             <Route path="events" element={<Home scrollTo="events" />} />
             <Route path="our-fam/:year" element={<OurFam />} />
-            <Route path="our-fam" element={<Navigate to="/our-fam/24" />} />
+            <Route path="our-fam" element={<Navigate to="/our-fam/25" />} />
             <Route path="events/:id" element={<EventsDetails />} />
             <Route path="fresher-place" element={<FresherPlace />} />
             <Route path="erp-place" element={<ERPPlace />} />
