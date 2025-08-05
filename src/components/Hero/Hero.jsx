@@ -32,7 +32,7 @@ const Hero = () => {
               className="bg-gradient-to-tr from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col justify-evenly items-center"
             >
               <span className="text-3xl md:text-4xl lg:text-6xl font-bold flex items-center text-center">
-                <AnimatedCounter target={140} duration={2500} /> +
+                <AnimatedCounter target={170} duration={2500} /> +
               </span>
               <p className="text-sm text-center">Currently in campus</p>
             </div>
@@ -42,13 +42,13 @@ const Hero = () => {
               className="bg-gradient-to-tr from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col justify-evenly items-center"
             >
               <span className="text-3xl md:text-4xl lg:text-6xl font-bold flex items-center text-center">
-                <AnimatedCounter target={45} duration={2500} /> +
+                <AnimatedCounter target={40} duration={2500} /> +
               </span>
-              <p className="text-sm text-center">Expected to join</p>
+              <p className="text-sm text-center">Joined this year</p>
             </div>
           </div>
           <div
-          id="flashing-notices"
+            id="flashing-notices"
             data-aos="fade-right"
             data-aos-delay="900"
             className="scroll-mt-[100px] text-white bg-black items-center text-left p-4 mt-8 border-red-500 border-r-2 border-b-2 rounded-xl shadow-md shadow-red-400"
@@ -61,19 +61,24 @@ const Hero = () => {
                 <div className="translate-y-[3px] lg:translate-y-0">
                   <VscDiffIgnored />
                 </div>
-                <div>Date of Reporting : Jul 16, 2025.</div>
+                <div>Mid-Semester Exams : Sep 18-25, 2025.</div>
               </div>
               <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
                 <div className="translate-y-[3px] lg:translate-y-0">
                   <VscDiffIgnored />
                 </div>
-                <div>Date of Reporting for Freshers : Jul 22-23, 2025.</div>
+                <div>Autumn Break : Sep 27-Oct 05, 2025.</div>
               </div>
               <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
                 <div className="translate-y-[3px] lg:translate-y-0">
                   <VscDiffIgnored />
                 </div>
-
+                <div>Dakshana Day Celebration : Oct 15, 2025.</div>
+              </div>
+              {/* <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
+                <div className="translate-y-[3px] lg:translate-y-0">
+                  <VscDiffIgnored />
+                </div>
                 <div>
                   <a
                     href="https://chat.whatsapp.com/IOtGUjxfUPf7mZ5ehSKx5J?mode=r_c"
@@ -84,7 +89,7 @@ const Hero = () => {
                   </a>
                   for Freshers with Sophomers.
                 </div>
-              </div>
+              </div> */}
               <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
                 <div className="translate-y-[3px] lg:translate-y-0">
                   <VscDiffIgnored />
