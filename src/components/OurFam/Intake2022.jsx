@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import FamCard from "./FamCard";
-import ThirdFamData from "./JSFiles/ThirdFamData";
+import Intake2022Data from "./JSFiles/Intake2022Data";
 
-const ThirdFam = () => {
+const Intake2022 = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [searchName, setSearchName] = useState(searchParams.get("name") || "");
@@ -18,7 +18,7 @@ const ThirdFam = () => {
     setSearchParams(params);
   }, [searchName, searchDept, searchHall, setSearchParams]);
 
-  const filteredItems = ThirdFamData.filter((item) => {
+  const filteredItems = Intake2022Data.filter((item) => {
     const matchesName = searchName
       ? item.name.toLowerCase().includes(searchName.toLowerCase())
       : true;
@@ -35,7 +35,7 @@ const ThirdFam = () => {
     <div className="dark:bg-gray-900 dark:text-white py-10">
       <section data-aos="fade-up" className="container">
         <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-2xl font-bold text-center w-full">
-          Third Years
+          Fourth Years
         </h1>
         <h3 className="m-2 lg:m-4 italic text-center w-full">Total :{" "}
           {searchName || searchDept || searchHall ? filteredItems.length : "32"}{" "}
@@ -103,4 +103,4 @@ const ThirdFam = () => {
   );
 };
 
-export default ThirdFam;
+export default Intake2022;

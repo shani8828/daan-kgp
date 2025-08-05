@@ -1,4 +1,4 @@
-const ThirdFamData = [
+const Intake2022Data = [
   {
     id: 0,
     name: "Mr. Ashish Meena",
@@ -190,4 +190,4 @@ const ThirdFamData = [
   }
 ];
 
-export default ThirdFamData;
+export default Intake2022Data;
