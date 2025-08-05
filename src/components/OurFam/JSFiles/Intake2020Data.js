@@ -1,4 +1,4 @@
-const FifthFamData = [
+const Intake2020Data = [
   {
     id: 0,
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1748290427/Nandan_Kumar_Singh_bgfigs_ga45au.avif",
@@ -46,4 +46,4 @@ const FifthFamData = [
   },
 ];
 
-export default FifthFamData;
+export default Intake2020Data;

@@ -35,7 +35,7 @@ const FourthFam = () => {
     <div className="dark:bg-gray-900 dark:text-white py-10">
       <section data-aos="fade-up" className="container">
         <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-2xl font-bold text-center w-full">
-          Fourth Years
+          Fifth Years
         </h1>
         <h3 className="m-2 lg:m-4 italic text-center w-full">Total :{" "}
           {searchName || searchDept || searchHall ? filteredItems.length : "19"}{" "}
