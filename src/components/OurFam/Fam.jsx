@@ -36,10 +36,10 @@ const Fam = ({ yearParam }) => {
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              className={`py-1 md:py-2 lg:py-3 px-2 md:px-3 lg:px-4 w-10 md:w-12 lg:w-14 rounded-lg text-sm border ${
+              className={`shadow-md hover:shadow-lg py-1 md:py-2 lg:py-3 px-2 md:px-3 lg:px-4 w-10 md:w-12 lg:w-14 rounded-lg text-sm border transition-all duration-300 ${
                 tab.id === activeTab.id
-                  ? "bg-red-400 text-white"
-                  : "border-red-300 text-red-800 bg-red-200 hover:bg-red-400"
+                  ? "bg-gray-500 text-white border-gray-600"
+                  : "border-gray-300 text-red-800 bg-gray-200 hover:bg-gray-400 hover:border-gray-500"
               }`}
               onClick={() => handleTabClick(tab.id)}
             >

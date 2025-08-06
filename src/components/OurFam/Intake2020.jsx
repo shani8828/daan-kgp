@@ -86,7 +86,7 @@ const Intake2020 = () => {
           ))}
         </div>
 
-        <div className="text-left mt-8">
+        {/* <div className="text-left mt-8">
           Oops, missed your info? Upload it right{" "}
           <a
             href="https://forms.gle/Ss9D5nwR6CKXqQi3A"
@@ -97,7 +97,7 @@ const Intake2020 = () => {
             here
           </a>
           !
-        </div>
+        </div> */}
       </section>
     </div>
   );

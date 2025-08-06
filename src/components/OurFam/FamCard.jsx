@@ -4,7 +4,7 @@ import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 const FamCard = ({ img, name, dept, hall, mail, linkedIn }) => {
   return (
     <>
-      <div className="flex flex-col justify-around items-center p-2 md:p-3 lg:p-4 border border-red-400 bg-gradient-to-tr from-red-300 to-red-100 rounded-lg gap-1 md:gap-2">
+      <div className="flex flex-col justify-around items-center p-2 md:p-3 lg:p-4 border border-gray-400 bg-gradient-to-tr from-gray-100 to-gray-200 rounded-lg gap-1 md:gap-2 shadow-md  hover:shadow-red-500 transition-all duration-300">
         <Helmet>
           <link rel="preload" as="image" href={img} />
         </Helmet>
@@ -12,7 +12,7 @@ const FamCard = ({ img, name, dept, hall, mail, linkedIn }) => {
           title={`${name}'s Image`}
           src={img}
           alt={name}
-          className="rounded-lg border border-red-500"
+          className="rounded-lg border border-gray-400"
         />
         <h1
           title="Name"

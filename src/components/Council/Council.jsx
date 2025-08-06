@@ -59,7 +59,7 @@ const Council = () => {
           </div>
           <div className="text-center mt-8 w-full">
             <a
-              className="bg-gradient-to-tr p-2 from-red-300 to-red-200 border transition-all duration-300 text-black rounded-xl text-center hover:bg-gradient-to-tr hover:from-red-500 hover:to-red-300 hover:border-red-600 shadow-sm shadow-gray-600"
+              className="bg-gradient-to-tr p-2 from-gray-100 to-gray-200 border border-gray-300 transition-all duration-300 rounded-xl text-center hover:bg-gradient-to-tr hover:from-gray-300 hover:to-gray-400 hover:border-gray-500 shadow-sm shadow-gray-600 text-red-600"
               href="https://docs.google.com/spreadsheets/d/1nz1CIe0N_4NcI_l0K6u6biITxJKGillizUyfkfjL_8c/edit?usp=sharing"
               target="_blank"
               title="DAAN Council 2024-25"

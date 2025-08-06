@@ -42,7 +42,7 @@ const Footer = () => {
           <source src="https://res.cloudinary.com/dcwwptwzt/video/upload/v1746467353/Screen_Recording_2025-04-29_045145_ixmnjn.mp4" type="video/mp4" />
         </video> */}
         <div className="container">
-          <div className="grid md:grid-cols-3 pt-5 bg-gradient-to-tr from-red-200 to-red-100 border border-red-300 backdrop-blur-sm rounded-t-xl">
+          <div className="grid md:grid-cols-3 pt-5 bg-gradient-to-tr from-gray-100 to-gray-200 border border-gray-300 backdrop-blur-sm rounded-t-xl shadow-gray-600">
             <div className="pt-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
                 <img

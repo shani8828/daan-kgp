@@ -30,7 +30,7 @@ const PageUpBtn = () => {
       <button
       title="Page Up"
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 z-50 p-2 md:p-3 rounded-lg shadow-gray-700 bg-gradient-to-tr from-red-400 to-red-200 border shadow-lg hover:bg-gradient-to-tr hover:from-red-500 hover:to-red-300 hover:border-red-600 transition-all duration-300 text-red-900"
+        className="fixed bottom-6 right-6 z-50 p-2 md:p-3 rounded-lg shadow-gray-700 bg-gradient-to-tr from-gray-100 to-gray-200 border border-gray-300 shadow-lg hover:bg-gradient-to-tr hover:from-gray-300 hover:to-gray-400 hover:border-gray-500 transition-all duration-300 text-red-600"
         aria-label="Scroll to top"
       >
         <FaLongArrowAltUp  className="w-4 h-4"/>
