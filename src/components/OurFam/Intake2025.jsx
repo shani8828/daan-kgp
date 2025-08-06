@@ -47,7 +47,7 @@ const Intake2025 = () => {
         </h1>
         <h3 className="m-2 lg:m-4 italic text-center w-full">
           Total :{" "}
-          {searchName || searchDept || searchHall ? filteredItems.length : "41"}{" "}
+          {searchName || searchDept || searchHall ? filteredItems.length : "42"}{" "}
           Members
         </h3>
         <h1 className="text-gray-700 font-semibold underline border-t-2 border-red-300 pt-2 lg:pt-4 rounded-lg text-center">
