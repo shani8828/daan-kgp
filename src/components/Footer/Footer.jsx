@@ -46,14 +46,14 @@ const Footer = () => {
             <div className="pt-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
                 <img
-                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747687457/DAAN_KGP_Logo_ie2g9d.webp"
+                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1754520271/NavLogo_lg27ym.avif"
                   alt=""
-                  width="60px"
-                  height="60px"
+                  width="250px"
+                  height="100px"
                   // className="max-h-[60px]"
                 />
               </h1>
-              <p className="text-md">
+              <p className="text-md mt-6">
                 DAAN KGP is a well-structured DakshanA Alumni Network
                 established at the Indian Institute of Technology, Kharagpur.
               </p>

@@ -83,11 +83,34 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
           </ul>
         </nav>
       </div>
-      {/* <div className="footer">
-        <h1>
+      <div className="footer">
+        {/* <h1>
           Made with 💖 by Amplifier
-        </h1>
-      </div> */}
+        </h1> */}
+        <div className="w-full flex justify-between items-center">
+          <a
+            className="bg-gray-200 p-1 rounded-lg border border-gray-300"
+            href="https://www.dakshana.org/"
+            target="_blank"
+            title="Dakshana Foundation"
+          >
+            <img
+              src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1754520270/DakshanaLogo_ouuxyh.avif"
+              alt="Dakshana Foundation"
+              width="50px"
+              height="50px"
+            />
+          </a>
+          <a
+            className="bg-gray-200 p-1 rounded-lg border border-gray-300 w-[50px] h-[50px] flex justify-center items-center"
+            href="https://erp.iitkgp.ac.in/"
+            target="_blank"
+            title="ERP IIT Kharagpur"
+          >
+            ERP
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
