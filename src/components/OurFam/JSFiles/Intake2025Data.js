@@ -1,7 +1,7 @@
 const Intake2025Data = [
   {
     id: 0,
-    name: "Anguluri Rajesh",
+    name: "Mr. Anguluri Rajesh",
     dept: "MT",
     mail: "rajeshanguluri965@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -10,7 +10,7 @@ const Intake2025Data = [
   },
   {
     id: 1,
-    name: "Aniket Biswas",
+    name: "Mr. Aniket Biswas",
     dept: "BT",
     mail: "aniketrhythm2424@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -19,7 +19,7 @@ const Intake2025Data = [
   },
   {
     id: 2,
-    name: "Aniket Herole",
+    name: "Mr. Aniket Herole",
     dept: "MT",
     mail: "aniketherole9@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -28,7 +28,7 @@ const Intake2025Data = [
   },
   {
     id: 3,
-    name: "Ankit Raj",
+    name: "Mr. Ankit Raj",
     dept: "CS",
     mail: "ankiitrazz@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -37,7 +37,7 @@ const Intake2025Data = [
   },
   {
     id: 4,
-    name: "Anurag",
+    name: "Mr. Anurag",
     dept: "NA",
     mail: "anuragchaudhari64@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -46,7 +46,7 @@ const Intake2025Data = [
   },
   {
     id: 5,
-    name: "Anurag Sharma",
+    name: "Mr. Anurag Sharma",
     dept: "EC",
     mail: "anurag114211817sharma@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -55,7 +55,7 @@ const Intake2025Data = [
   },
   {
     id: 6,
-    name: "Arpit Turkar",
+    name: "Mr. Arpit Turkar",
     dept: "CS",
     mail: "turkararpit08@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -64,7 +64,7 @@ const Intake2025Data = [
   },
   {
     id: 7,
-    name: "Arpit Tuti",
+    name: "Mr. Arpit Tuti",
     dept: "EE",
     mail: "tutiarpit8@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -73,7 +73,7 @@ const Intake2025Data = [
   },
   {
     id: 8,
-    name: "Banothu Sandeep Nani",
+    name: "Mr. Banothu Sandeep Nani",
     dept: "EC",
     mail: "sandeepbanothu056@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -82,7 +82,7 @@ const Intake2025Data = [
   },
   {
     id: 9,
-    name: "Bikash Sahis",
+    name: "Mr. Bikash Sahis",
     dept: "MT",
     mail: "bikashsahis661@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -91,7 +91,7 @@ const Intake2025Data = [
   },
   {
     id: 10,
-    name: "Chandra Pal",
+    name: "Mr. Chandra Pal",
     dept: "MT",
     mail: "chandrapalmoonmilk@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -100,7 +100,7 @@ const Intake2025Data = [
   },
   {
     id: 11,
-    name: "Chethan",
+    name: "Mr. Chethan",
     dept: "IM",
     mail: "chethanchethu3132006@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -109,7 +109,7 @@ const Intake2025Data = [
   },
   {
     id: 12,
-    name: "Darshan",
+    name: "Mr. Darshan",
     dept: "CS",
     mail: "darshanrathod0810@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -118,7 +118,7 @@ const Intake2025Data = [
   },
   {
     id: 13,
-    name: "Devanand Veernapu",
+    name: "Mr. Devanand Veernapu",
     dept: "NA",
     mail: "rickyeva1718@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -127,7 +127,7 @@ const Intake2025Data = [
   },
   {
     id: 14,
-    name: "Dhananshi Rana",
+    name: "Ms. Dhananshi Rana",
     dept: "NA",
     mail: "rdhananshi18@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -136,7 +136,7 @@ const Intake2025Data = [
   },
   {
     id: 15,
-    name: "Dimpal Bagul",
+    name: "Ms. Dimpal Bagul",
     dept: "EE",
     mail: "dimpalbagul2006@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -145,7 +145,7 @@ const Intake2025Data = [
   },
   {
     id: 16,
-    name: "Divyanshu",
+    name: "Mr. Divyanshu",
     dept: "AG",
     mail: "divyanshukgp1702@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -154,7 +154,7 @@ const Intake2025Data = [
   },
   {
     id: 17,
-    name: "Ganesh Soren",
+    name: "Mr. Ganesh Soren",
     dept: "MA",
     mail: "sorenganesh2006@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -163,7 +163,7 @@ const Intake2025Data = [
   },
   {
     id: 18,
-    name: "Himanshu",
+    name: "Mr. Himanshu",
     dept: "MT",
     mail: "him1572006@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -172,7 +172,7 @@ const Intake2025Data = [
   },
   {
     id: 19,
-    name: "Kunal Gautam",
+    name: "Mr. Kunal Gautam",
     dept: "AG",
     mail: "kunalgautam0811@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -181,7 +181,7 @@ const Intake2025Data = [
   },
   {
     id: 20,
-    name: "Lunavath Koushik",
+    name: "Mr. Lunavath Koushik",
     dept: "MT",
     mail: "koushiklunavath@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -190,7 +190,7 @@ const Intake2025Data = [
   },
   {
     id: 21,
-    name: "Megha Dahale",
+    name: "Ms. Megha Dahale",
     dept: "AG",
     mail: "meghadahale02@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -199,7 +199,7 @@ const Intake2025Data = [
   },
   {
     id: 22,
-    name: "Mohar Biswas",
+    name: "Mr. Mohar Biswas",
     dept: "CS",
     mail: "2025Mohar@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -208,7 +208,7 @@ const Intake2025Data = [
   },
   {
     id: 23,
-    name: "Mulayam Singh Jatav",
+    name: "Mr. Mulayam Singh Jatav",
     dept: "EC",
     mail: "mulayam4427singh@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -217,7 +217,7 @@ const Intake2025Data = [
   },
   {
     id: 24,
-    name: "Pradeep",
+    name: "Mr. Pradeep",
     dept: "GG",
     mail: "manunaik852@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -226,7 +226,7 @@ const Intake2025Data = [
   },
   {
     id: 25,
-    name: "Priyansh Rathor",
+    name: "Mr. Priyansh Rathor",
     dept: "CS",
     mail: "rathorpriyansh180407@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -235,7 +235,7 @@ const Intake2025Data = [
   },
   {
     id: 26,
-    name: "Rahul Atram",
+    name: "Mr. Rahul Atram",
     dept: "EE",
     mail: "atramrahul487@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -244,7 +244,7 @@ const Intake2025Data = [
   },
   {
     id: 27,
-    name: "Rahul Rathore",
+    name: "Mr. Rahul Rathore",
     dept: "CH",
     mail: "rahulrathore27825@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -253,7 +253,7 @@ const Intake2025Data = [
   },
   {
     id: 28,
-    name: "Rajat",
+    name: "Mr. Rajat",
     dept: "ME",
     mail: "rajat808gothwal@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -262,7 +262,7 @@ const Intake2025Data = [
   },
   {
     id: 29,
-    name: "Rinku Shakya",
+    name: "Mr. Rinku Shakya",
     dept: "IE",
     mail: "rinkooshakya625@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -271,7 +271,7 @@ const Intake2025Data = [
   },
   {
     id: 30,
-    name: "Riya Vala",
+    name: "Ms. Riya Vala",
     dept: "MA",
     mail: "valabharat581@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -280,7 +280,7 @@ const Intake2025Data = [
   },
   {
     id: 31,
-    name: "Routhu Amulya",
+    name: "Ms. Routhu Amulya",
     dept: "EE",
     mail: "amulyarouth12@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -289,7 +289,7 @@ const Intake2025Data = [
   },
   {
     id: 32,
-    name: "Sakshi Athole",
+    name: "Ms. Sakshi Athole",
     dept: "ME",
     mail: "sakshiathole286@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -298,7 +298,7 @@ const Intake2025Data = [
   },
   {
     id: 33,
-    name: "Sandeep Neel",
+    name: "Mr. Sandeep Neel",
     dept: "CI",
     mail: "neelsandeep05@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -307,7 +307,7 @@ const Intake2025Data = [
   },
   {
     id: 34,
-    name: "Sarban Choudhary",
+    name: "Mr. Sarban Choudhary",
     dept: "CY",
     mail: "sarbanchoudhary2719@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -316,7 +316,7 @@ const Intake2025Data = [
   },
   {
     id: 35,
-    name: "Sivang",
+    name: "Mr. Sivang",
     dept: "IM",
     mail: "sivangverma822@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -325,7 +325,7 @@ const Intake2025Data = [
   },
   {
     id: 36,
-    name: "Swagata Mondal",
+    name: "Mr. Swagata Mondal",
     dept: "IM",
     mail: "mswagata412@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -334,7 +334,7 @@ const Intake2025Data = [
   },
   {
     id: 37,
-    name: "Tarun Kumar",
+    name: "Mr. Tarun Kumar",
     dept: "CS",
     mail: "omydeartarun@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -343,7 +343,7 @@ const Intake2025Data = [
   },
   {
     id: 38,
-    name: "Vidwathkalpa Gundaram",
+    name: "Mr. Vidwathkalpa Gundaram",
     dept: "AI",
     mail: "vidwathkalpa28@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -352,7 +352,7 @@ const Intake2025Data = [
   },
   {
     id: 39,
-    name: "Yash Alhapuriya",
+    name: "Mr. Yash Alhapuriya",
     dept: "AI",
     mail: "alhapuriyayash2005@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
@@ -361,7 +361,7 @@ const Intake2025Data = [
   },
    {
     id: 40,
-    name: "Yash Chaudhari",
+    name: "Mr. Yash Chaudhari",
     dept: "AI",
     mail: "yashchaudhari1401@gmail.com",
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
