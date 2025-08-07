@@ -313,7 +313,7 @@ const Intake2025Data = [
     name: "Mr. Sandeep Neel",
     dept: "CI",
     mail: "neelsandeep05@gmail.com",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
+    img: "https://res.cloudinary.com/dubu8yxkm/image/upload/v1754531801/Sandeep_Neel_lrgkrx.avif",
     linkedIn: "https://www.linkedin.com/in/sandeep-neel-5035a2377",
     hall: "LBS",
   },
