@@ -166,7 +166,7 @@ const Intake2024Data = [
     name: "Ms. Monika Dhakad",
     dept: "IE",
     mail: "monikadhakad135.24@kgpian.iitkgp.ac.in",
-    img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747753952/Monika_Dhakad_nhzfmf_pybofo.avif",
+    img: "https://res.cloudinary.com/dubu8yxkm/image/upload/v1754602951/Monika_cxjukm.avif",
     linkedIn: "",
     hall: "SN/IG",
   },
