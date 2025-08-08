@@ -1,4 +1,4 @@
-// FlashPage.jsx
+// FlashPage.jsx with audio
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 // import introAudio from "./assets/intro.mp3"; // Short audio clip

@@ -18,6 +18,7 @@ import ERPPlace from "./pages/ERPPlace";
 import AcademicPlace from "./pages/AcademicPlace";
 import CDCInternPlace from "./pages/CDCInternPlace";
 import FlshPage from "./pages/FlshPage";
+import ClickSpark from "./components/ClickEffect/ClickSpark";
 
 const App = () => {
   const [showFlash, setShowFlash] = useState(true);
@@ -48,36 +49,44 @@ const App = () => {
 
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route>
-            <Route path="/" element={<Layout />} />
-            <Route index element={<Home />} />
-            <Route
-              path="flashing-notices"
-              element={<Home scrollTo="flashing-notices" />}
-            />
-            <Route path="cr" element={<Home scrollTo="cr" />} />
-            <Route path="council" element={<Home scrollTo="council" />} />
-            <Route path="events" element={<Home scrollTo="events" />} />
-            <Route path="our-fam/:year" element={<OurFam />} />
-            <Route path="our-fam" element={<Navigate to="/our-fam/25" />} />
-            <Route path="events/:id" element={<EventsDetails />} />
-            <Route path="fresher-place" element={<FresherPlace />} />
-            <Route path="erp-place" element={<ERPPlace />} />
-            <Route path="academic-place" element={<AcademicPlace />} />
-            <Route path="cdc-intern-place" element={<CDCInternPlace />} />
-            <Route path="our-bright-minds" element={<OurBrightMinds />} />
-            <Route path="*" element={<NoPage />} />
-            {/* <Route path="flash" element ={<FlshPage/>}/> */}
-          </Route>
-        </Routes>
-        <PageUpBtn />
-        <Analytics />
-        <SpeedInsights />
-        <Footer />
-      </BrowserRouter>
+      <ClickSpark
+        sparkColor="#ef4444"
+        sparkSize={10}
+        sparkRadius={15}
+        sparkCount={8}
+        duration={400}
+      >
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route>
+              <Route path="/" element={<Layout />} />
+              <Route index element={<Home />} />
+              <Route
+                path="flashing-notices"
+                element={<Home scrollTo="flashing-notices" />}
+              />
+              <Route path="cr" element={<Home scrollTo="cr" />} />
+              <Route path="council" element={<Home scrollTo="council" />} />
+              <Route path="events" element={<Home scrollTo="events" />} />
+              <Route path="our-fam/:year" element={<OurFam />} />
+              <Route path="our-fam" element={<Navigate to="/our-fam/25" />} />
+              <Route path="events/:id" element={<EventsDetails />} />
+              <Route path="fresher-place" element={<FresherPlace />} />
+              <Route path="erp-place" element={<ERPPlace />} />
+              <Route path="academic-place" element={<AcademicPlace />} />
+              <Route path="cdc-intern-place" element={<CDCInternPlace />} />
+              <Route path="our-bright-minds" element={<OurBrightMinds />} />
+              <Route path="*" element={<NoPage />} />
+              {/* <Route path="flash" element ={<FlshPage/>}/> */}
+            </Route>
+          </Routes>
+          <PageUpBtn />
+          <Analytics />
+          <SpeedInsights />
+          <Footer />
+        </BrowserRouter>
+      </ClickSpark>
     </>
   );
 };
