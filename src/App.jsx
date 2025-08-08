@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -17,9 +17,12 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import ERPPlace from "./pages/ERPPlace";
 import AcademicPlace from "./pages/AcademicPlace";
 import CDCInternPlace from "./pages/CDCInternPlace";
+import FlshPage from "./pages/FlshPage";
 
 const App = () => {
-  React.useEffect(() => {
+  const [showFlash, setShowFlash] = useState(true);
+
+  useEffect(() => {
     AOS.init({
       offset: 100,
       duration: 900,
@@ -29,12 +32,19 @@ const App = () => {
     AOS.refresh();
   }, []);
 
-  // Gets where user is clicking
-  // React.useEffect(() => {
-  //   document.addEventListener("click", (e) => {
-  //     console.log("Clicked:", e.target);
-  //   });
-  // }, []);
+  // Show FlashPage only once per browser session
+  useEffect(() => {
+    const hasSeenFlash = sessionStorage.getItem("daanFlashShown");
+    if (hasSeenFlash) {
+      setShowFlash(false); // Skip splash if already seen
+    } else {
+      sessionStorage.setItem("daanFlashShown", "true");
+    }
+  }, []);
+
+  if (showFlash) {
+    return <FlshPage onFinish={() => setShowFlash(false)} />;
+  }
 
   return (
     <>
