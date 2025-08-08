@@ -46,7 +46,7 @@ const Footer = () => {
             <div className="pt-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
                 <img
-                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1754520271/NavLogo_lg27ym.avif"
+                  src="https://res.cloudinary.com/dubu8yxkm/image/upload/v1754643304/Logo_mnu1fh.avif"
                   alt=""
                   width="250px"
                   height="100px"

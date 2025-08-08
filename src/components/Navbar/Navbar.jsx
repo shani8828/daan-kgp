@@ -80,11 +80,11 @@ const Navbar = () => {
                   <link
                     rel="preload"
                     as="image"
-                    href="https://res.cloudinary.com/dcwwptwzt/image/upload/v1754520271/NavLogo_lg27ym.avif"
+                    href="https://res.cloudinary.com/dubu8yxkm/image/upload/v1754643304/Logo_mnu1fh.avif"
                   />
                 </Helmet>
                 <img
-                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1754520271/NavLogo_lg27ym.avif"
+                  src="https://res.cloudinary.com/dubu8yxkm/image/upload/v1754643304/Logo_mnu1fh.avif"
                   alt=""
                   width="125px"
                   height="50px"
