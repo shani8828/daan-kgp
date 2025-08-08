@@ -70,6 +70,7 @@ const App = () => {
             <Route path="cdc-intern-place" element={<CDCInternPlace />} />
             <Route path="our-bright-minds" element={<OurBrightMinds />} />
             <Route path="*" element={<NoPage />} />
+            {/* <Route path="flash" element ={<FlshPage/>}/> */}
           </Route>
         </Routes>
         <PageUpBtn />

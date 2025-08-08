@@ -16,12 +16,12 @@ const FlshPage = ({ onFinish }) => {
       <img
         src="https://res.cloudinary.com/dubu8yxkm/image/upload/v1754643304/Logo_mnu1fh.avif"
         alt="DAAN KGP Logo"
-        className="w-40 h-40 mb-4 animate-fade-in"
+        className="w-full animate-fade-in"
       />
 
       {/* Tagline */}
-      <h1 className="text-lg font-semibold text-gray-800 opacity-0 animate-fade-in-delay">
-        Connecting Dakshana Alumni at KGP
+      <h1 className="text-sm md:text-lg italic mt-2 font-semibold text-gray-700 opacity-0 animate-fade-in-delay">
+        Still Infinite Good...
       </h1>
 
       {/* Animation styles */}
