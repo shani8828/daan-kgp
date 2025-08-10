@@ -40,6 +40,7 @@ export const dropdown = [
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef();
+  
   const [showMenu, setShowMenu] = useState(false);
 
   // Close dropdown when clicking outside

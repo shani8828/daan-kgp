@@ -6,18 +6,32 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
   console.log("showMenu", showMenu);
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef();
+  const menuRef = useRef();
+  useEffect(() => {
+    const handleClickOutsideMenu = (event) => {
+      // Close menu if click is outside the menu
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShowMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutsideMenu);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutsideMenu);
+    };
+  }, [setShowMenu]);
 
   // Close dropdown when clicking outside
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handleClickOutsideDrop = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setShowDropdown(false);
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutsideDrop);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutsideDrop);
     };
   }, []);
 
@@ -27,11 +41,35 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
 
   return (
     <div
+      ref={menuRef}
       className={`${
         showMenu ? "left-0" : "-left-[100%]"
-      } fixed bottom-0 top-0 z-20 flex h-screen w-[75%] flex-col justify-between bg-white dark:bg-gray-900 dark:text-white px-8 pb-6 pt-16 text-black transition-all duration-200 md:hidden rounded-r-xl shadow-md`}
+      } fixed bottom-0 top-0 z-20 flex h-[95vh] w-[75%] flex-col justify-between bg-white dark:bg-gray-900 dark:text-white px-8 pb-6 pt-16 text-black transition-all duration-200 md:hidden rounded-r-xl shadow-md`}
     >
       <div className="card">
+        <div className="w-full flex justify-between items-center">
+          <a
+            className="bg-gray-200 p-1 rounded-lg border border-gray-300"
+            href="https://www.dakshana.org/"
+            target="_blank"
+            title="Dakshana Foundation"
+          >
+            <img
+              src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1754520270/DakshanaLogo_ouuxyh.avif"
+              alt="Dakshana Foundation"
+              width="50px"
+              height="50px"
+            />
+          </a>
+          <a
+            className="bg-gray-200 p-1 rounded-lg border border-gray-300 w-[50px] h-[50px] flex justify-center items-center"
+            href="https://erp.iitkgp.ac.in/"
+            target="_blank"
+            title="ERP IIT Kharagpur"
+          >
+            ERP
+          </a>
+        </div>
         <nav className="mt-12">
           <ul className="space-y-4 text-xl">
             {NavbarLinks.map((data) => (
@@ -87,7 +125,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
         {/* <h1>
           Made with 💖 by Amplifier
         </h1> */}
-        <div className="w-full flex justify-between items-center">
+        {/* <div className="w-full flex justify-between items-center">
           <a
             className="bg-gray-200 p-1 rounded-lg border border-gray-300"
             href="https://www.dakshana.org/"
@@ -109,7 +147,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
           >
             ERP
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
