@@ -2,6 +2,7 @@ import React from "react";
 import { GiTrophy } from "react-icons/gi";
 import { FaHelicopter, FaBus, FaBuilding } from "react-icons/fa";
 import { Helmet } from "react-helmet";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Banner = () => {
   return (
@@ -12,19 +13,10 @@ const Banner = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
               {/* Image section */}
               <div data-aos="flip-up">
-                <Helmet>
-                  <link
-                    rel="preload"
-                    as="image"
-                    href="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747720288/Untitled_design_uoutp3.avif"
-                  />
-                </Helmet>
-                <img
-                  src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1747720288/Untitled_design_uoutp3.avif"
-                  alt="Treasure Img"
-                  width="100%"
-                  height="350px"
-                  className="max-w-[450px] mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover rounded-3xl"
+                <DotLottieReact
+                  src="https://lottie.host/f0e1a2da-34e2-43b4-a34d-0b0feb81c778/GcGAAUPsnH.lottie"
+                  loop
+                  autoplay
                 />
               </div>
               {/* text content section */}
