@@ -91,7 +91,7 @@ const Tshirt = () => {
               onChange={handleChange}
               placeholder="Name"
               required
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm text-red-600
+              className="px-4 py-2 border border-red-200 rounded-full shadow-sm text-red-600
               focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
               transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
             />
@@ -104,7 +104,7 @@ const Tshirt = () => {
               onChange={handleChange}
               placeholder="Roll No"
               required
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm text-red-600
+              className="px-4 py-2 border border-red-200 rounded-full shadow-sm text-red-600
               focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
               transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
             />
@@ -115,7 +115,7 @@ const Tshirt = () => {
               value={formData.yearOfStudy}
               onChange={handleChange}
               required
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm text-red-600
+              className="px-4 py-2 border border-red-200 rounded-full shadow-sm text-red-600
               focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
               transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
             >
@@ -133,7 +133,7 @@ const Tshirt = () => {
               value={formData.hallOfResidence}
               onChange={handleChange}
               required
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm text-red-600
+              className="px-4 py-2 border border-red-200 rounded-full shadow-sm text-red-600
               focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
               transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
             >
@@ -172,7 +172,7 @@ const Tshirt = () => {
               required
               pattern="[0-9]{10}"
               maxLength={10}
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm text-red-600
+              className="px-4 py-2 border border-red-200 rounded-full shadow-sm text-red-600
   focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
   transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
             />
@@ -183,14 +183,14 @@ const Tshirt = () => {
               value={formData.coe}
               onChange={handleChange}
               required
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm text-red-600
+              className="px-4 py-2 border border-red-200 rounded-full shadow-sm text-red-600
               focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
               transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
             >
               <option value="">Select COE</option>
               {[
                 "Dakshana Valley",
-                "JNV Banglore",
+                "JNV Bengaluru Urban",
                 "JNV Bundi",
                 "JNV Kottayam",
                 "JNV Lucknow",
@@ -207,7 +207,7 @@ const Tshirt = () => {
               value={formData.tshirtSize}
               onChange={handleChange}
               required
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm text-red-600
+              className="px-4 py-2 border border-red-200 rounded-full shadow-sm text-red-600
               focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
               transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
             >
@@ -222,7 +222,7 @@ const Tshirt = () => {
             <button
               type="submit"
               disabled={loading}
-              className="bg-red-400 hover:bg-red-500 text-white py-2 px-4 rounded transition disabled:opacity-50"
+              className="bg-red-400 hover:bg-red-500 text-white py-2 px-4 rounded-full transition disabled:opacity-50"
             >
               {loading ? "Wait..." : "Register"}
             </button>
