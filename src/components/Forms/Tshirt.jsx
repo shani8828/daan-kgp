@@ -76,8 +76,7 @@ const Tshirt = () => {
 
       <div className="bg-gray-50 dark:bg-gray-900 dark:text-white min-h-[80vh] py-14 pt-20">
         <section className="container mx-auto" data-aos="fade-up">
-          <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold">
-            T Shirt Form 2025
+          <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold">T-Shirt Registration 2025
           </h1>
 
           <form
@@ -129,44 +128,79 @@ const Tshirt = () => {
             </select>
 
             {/* Hall of Residence */}
-            <input
-              type="text"
+            <select
               name="hallOfResidence"
               value={formData.hallOfResidence}
               onChange={handleChange}
-              placeholder="Hall Of Residence"
               required
               className="px-4 py-2 border border-red-200 rounded-lg shadow-sm text-red-600
               focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
               transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
-            />
-
+            >
+              <option value="">Select Hall Of Residence</option>
+              {[
+                "ABV",
+                "Azad",
+                "BRH",
+                "Gokhale",
+                "HJB",
+                "JCB",
+                "LBS",
+                "LLR",
+                "MMM",
+                "MS",
+                "MT",
+                "Nehru",
+                "Patel",
+                "RK",
+                "RP",
+                "SN/IG",
+                "SNVH",
+              ].map((y) => (
+                <option key={y} value={y}>
+                  {y}
+                </option>
+              ))}
+            </select>
             {/* Mobile No */}
             <input
-              type="text"
+              type="tel"
               name="mobileNo"
               value={formData.mobileNo}
               onChange={handleChange}
-              placeholder="Mobile No"
+              placeholder="Mobile No (9XXXXXXXXX)"
               required
+              pattern="[0-9]{10}"
+              maxLength={10}
               className="px-4 py-2 border border-red-200 rounded-lg shadow-sm text-red-600
-              focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
-              transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
+  focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
+  transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
             />
 
             {/* COE */}
-            <input
-              type="text"
+            <select
               name="coe"
               value={formData.coe}
               onChange={handleChange}
-              placeholder="COE"
               required
               className="px-4 py-2 border border-red-200 rounded-lg shadow-sm text-red-600
               focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
               transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
-            />
-
+            >
+              <option value="">Select COE</option>
+              {[
+                "Dakshana Valley",
+                "JNV Banglore",
+                "JNV Bundi",
+                "JNV Kottayam",
+                "JNV Lucknow",
+                "JNV Rangareddi",
+              ].map((y) => (
+                <option key={y} value={y}>
+                  {y}
+                </option>
+              ))}
+            </select>
             {/* T-shirt Size */}
             <select
               name="tshirtSize"
@@ -190,7 +224,7 @@ const Tshirt = () => {
               disabled={loading}
               className="bg-red-400 hover:bg-red-500 text-white py-2 px-4 rounded transition disabled:opacity-50"
             >
-              {loading ? "Submitting..." : "Submit"}
+              {loading ? "Wait..." : "Register"}
             </button>
           </form>
 
