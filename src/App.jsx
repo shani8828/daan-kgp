@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, Form } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import OurFam from "./pages/OurFam";
@@ -19,6 +19,8 @@ import AcademicPlace from "./pages/AcademicPlace";
 import CDCInternPlace from "./pages/CDCInternPlace";
 import FlshPage from "./pages/FlshPage";
 import ClickSpark from "./components/ClickEffect/ClickSpark";
+import Forms from "./pages/Forms";
+import Tshirt from "./components/Forms/Tshirt"
 
 const App = () => {
   const [showFlash, setShowFlash] = useState(true);
@@ -77,6 +79,8 @@ const App = () => {
               <Route path="academic-place" element={<AcademicPlace />} />
               <Route path="cdc-intern-place" element={<CDCInternPlace />} />
               <Route path="our-bright-minds" element={<OurBrightMinds />} />
+              <Route path="forms" element={<Forms />} />
+              <Route path="tshirt-form" element={<Tshirt/>}/>
               <Route path="*" element={<NoPage />} />
               {/* <Route path="flash" element ={<FlshPage/>}/> */}
             </Route>
