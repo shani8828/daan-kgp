@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
-const BACKEND_URL = import.meta.env.BACKEND_URL || "http://localhost:5000";
 
+// Use VITE_BACKEND_URL from .env
+const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
 const Tshirt = () => {
   document.title = "T Shirt 2025 | DAAN KGP";
@@ -18,15 +19,12 @@ const Tshirt = () => {
 
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const [device, setDevice] = useState("desktop"); // default
+  const [device, setDevice] = useState("desktop");
 
-  // Handle input changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Detect device
- // Detect device once on mount
   useEffect(() => {
     (async () => {
       try {
@@ -41,29 +39,27 @@ const Tshirt = () => {
 
         setDevice(deviceType);
       } catch (err) {
-        console.error("Failed to detect device:", err);
+        console.error("Device detection failed:", err);
       }
     })();
   }, []);
 
-
-  // Submit form
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setMessage("");
 
     try {
-      const res = await fetch(`${BACKEND_URL}/api/tshirt-form`, {
+      const res = await fetch(`https://daan-kgp-backend.onrender.com/api/tshirt-form`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, device: device }),
+        body: JSON.stringify({ ...formData, device }),
       });
 
       const data = await res.json();
 
       if (res.ok) {
-        setMessage("You’re officially registered to claim your Dakshana T-Shirt 2025.");
+        setMessage("Registered successfully! Claim your Dakshana T-Shirt 2025.");
         setFormData({
           name: "",
           rollNo: "",
@@ -74,7 +70,7 @@ const Tshirt = () => {
           tshirtSize: "",
         });
       } else {
-        setMessage(data.error || "Oops...Something went wrong!!!");
+        setMessage(data.error || "Something went wrong!");
       }
     } catch (err) {
       setMessage("Error: " + err.message);
@@ -86,143 +82,61 @@ const Tshirt = () => {
   return (
     <>
       <Helmet>
-        <meta
-          name="description"
-          content="This page includes T-Shirt 2025 registration form."
-        />
+        <meta name="description" content="T-Shirt 2025 registration form" />
       </Helmet>
 
-      <div className="dark:bg-gray-900 dark:text-white bg-gray-50 py-14 pt-20 min-h-[80vh]">
-        <section data-aos="fade-up" className="container">
+      <div className="bg-gray-50 dark:bg-gray-900 dark:text-white min-h-[80vh] py-14 pt-20">
+        <section className="container mx-auto" data-aos="fade-up">
           <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-3xl font-bold">
             T Shirt Form 2025
           </h1>
 
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col gap-4 max-w-lg mx-auto"
-          >
-            <input
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm  text-red-600
-              focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
-              transition-all duration-300 ease-in-out
-              dark:bg-gray-800 dark:text-white dark:placeholder-gray-400
-              hover:shadow-md "
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Name"
-              required
-            />
-
-            <input
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm  text-red-600
-              focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
-              transition-all duration-300 ease-in-out
-              dark:bg-gray-800 dark:text-white dark:placeholder-gray-400
-              hover:shadow-md "
-              type="text"
-              name="rollNo"
-              value={formData.rollNo}
-              onChange={handleChange}
-              placeholder="Roll No (Institution)"
-              required
-            />
-
-            <input
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm  text-red-600
-              focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
-              transition-all duration-300 ease-in-out
-              dark:bg-gray-800 dark:text-white dark:placeholder-gray-400
-              hover:shadow-md "
-              type="text"
-              name="yearOfStudy"
-              value={formData.yearOfStudy}
-              onChange={handleChange}
-              placeholder="Year of Study"
-              required
-            />
-
-            <input
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm  text-red-600
-              focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
-              transition-all duration-300 ease-in-out
-              dark:bg-gray-800 dark:text-white dark:placeholder-gray-400
-              hover:shadow-md "
-              type="text"
-              name="hallOfResidence"
-              value={formData.hallOfResidence}
-              onChange={handleChange}
-              placeholder="Hall of Residence"
-              required
-            />
-
-            <input
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm  text-red-600
-              focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
-              transition-all duration-300 ease-in-out
-              dark:bg-gray-800 dark:text-white dark:placeholder-gray-400
-              hover:shadow-md "
-              type="text"
-              name="mobileNo"
-              value={formData.mobileNo}
-              onChange={handleChange}
-              placeholder="Mobile No"
-              required
-            />
-
-            <input
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm  text-red-600
-              focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
-              transition-all duration-300 ease-in-out
-              dark:bg-gray-800 dark:text-white dark:placeholder-gray-400
-              hover:shadow-md "
-              type="text"
-              name="coe"
-              value={formData.coe}
-              onChange={handleChange}
-              placeholder="COE"
-              required
-            />
-
-            <select
-              className="px-4 py-2 border border-red-200 rounded-lg shadow-sm  text-red-600
-              focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
-              transition-all duration-300 ease-in-out
-              dark:bg-gray-800 dark:text-white dark:placeholder-gray-400
-              hover:shadow-md "
-              name="tshirtSize"
-              value={formData.tshirtSize}
-              onChange={handleChange}
-              required
-            >
-              <option value="">Select T-shirt Size</option>
-              <option value="XS">XS</option>
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-              <option value="XXL">XXL</option>
-            </select>
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-lg mx-auto">
+            {/* Render inputs */}
+            {Object.entries(formData).map(([key, value]) =>
+              key !== "tshirtSize" ? (
+                <input
+                  key={key}
+                  type="text"
+                  name={key}
+                  value={value}
+                  onChange={handleChange}
+                  placeholder={key.replace(/([A-Z])/g, " $1")}
+                  required
+                  className="px-4 py-2 border border-red-200 rounded-lg shadow-sm text-red-600
+                    focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
+                    transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
+                />
+              ) : (
+                <select
+                  key={key}
+                  name={key}
+                  value={value}
+                  onChange={handleChange}
+                  required
+                  className="px-4 py-2 border border-red-200 rounded-lg shadow-sm text-red-600
+                    focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
+                    transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
+                >
+                  <option value="">Select T-shirt Size</option>
+                  {["XS","S","M","L","XL","XXL"].map(size => (
+                    <option key={size} value={size}>{size}</option>
+                  ))}
+                </select>
+              )
+            )}
 
             <button
               type="submit"
-              className="bg-red-400 hover:bg-red-500 text-white py-2 px-4 rounded transition disabled:opacity-50"
               disabled={loading}
+              className="bg-red-400 hover:bg-red-500 text-white py-2 px-4 rounded transition disabled:opacity-50"
             >
               {loading ? "Submitting..." : "Submit"}
             </button>
           </form>
 
           {message && (
-            <p
-              className={`mt-4 text-center text-sm font-medium ${
-                message.includes("T-Shirt")
-                  ? "text-green-500"
-                  : "text-red-500"
-              }`}
-            >
+            <p className={`mt-4 text-center text-sm font-medium ${message.includes("Registered") ? "text-green-500" : "text-red-500"}`}>
               {message}
             </p>
           )}
