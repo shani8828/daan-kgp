@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+const BACKEND_URL = import.meta.env.BACKEND_URL || "http://localhost:5000";
+
 
 const Tshirt = () => {
   document.title = "T Shirt 2025 | DAAN KGP";
