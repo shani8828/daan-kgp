@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
 const Tshirt = () => {
   document.title = "T Shirt 2025 | DAAN KGP";
@@ -16,6 +17,7 @@ const Tshirt = () => {
 
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [device, setDevice] = useState("desktop"); // default
 
   // Handle input changes
   const handleChange = (e) => {
@@ -23,12 +25,26 @@ const Tshirt = () => {
   };
 
   // Detect device
-  const getDeviceType = () => {
-    const ua = navigator.userAgent;
-    if (/Mobi|Android/i.test(ua)) return "phone";
-    if (/Macintosh/i.test(ua)) return "mac";
-    return "desktop";
-  };
+ // Detect device once on mount
+  useEffect(() => {
+    (async () => {
+      try {
+        const { default: UAParser } = await import("ua-parser-js");
+        const parser = new UAParser();
+        const result = parser.getResult();
+
+        let deviceType = "desktop";
+        if (result.device.type === "mobile") deviceType = "phone";
+        else if (result.device.type === "tablet") deviceType = "tablet";
+        else if (result.os.name === "Mac OS") deviceType = "mac";
+
+        setDevice(deviceType);
+      } catch (err) {
+        console.error("Failed to detect device:", err);
+      }
+    })();
+  }, []);
+
 
   // Submit form
   const handleSubmit = async (e) => {
@@ -37,10 +53,10 @@ const Tshirt = () => {
     setMessage("");
 
     try {
-      const res = await fetch("https://daan-kgp-backend.onrender.com/api/tshirt-form", {
+      const res = await fetch(`${BACKEND_URL}/api/tshirt-form`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, device: getDeviceType() }),
+        body: JSON.stringify({ ...formData, device: device }),
       });
 
       const data = await res.json();
