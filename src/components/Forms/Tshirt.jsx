@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Helmet } from "react-helmet";
 
 // Use VITE_BACKEND_URL from .env
@@ -19,30 +19,12 @@ const Tshirt = () => {
 
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const [device, setDevice] = useState("desktop");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  useEffect(() => {
-    (async () => {
-      try {
-        const { default: UAParser } = await import("ua-parser-js");
-        const parser = new UAParser();
-        const result = parser.getResult();
-
-        let deviceType = "desktop";
-        if (result.device.type === "mobile") deviceType = "phone";
-        else if (result.device.type === "tablet") deviceType = "tablet";
-        else if (result.os.name === "Mac OS") deviceType = "mac";
-
-        setDevice(deviceType);
-      } catch (err) {
-        console.error("Device detection failed:", err);
-      }
-    })();
-  }, []);
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -53,7 +35,7 @@ const Tshirt = () => {
       const res = await fetch(`https://daan-kgp-backend.onrender.com/api/tshirt-form`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, device }),
+        body: JSON.stringify({ ...formData }),
       });
 
       const data = await res.json();
