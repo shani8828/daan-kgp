@@ -120,7 +120,7 @@ const Tshirt = () => {
               transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-white hover:shadow-md"
             >
               <option value="">Select Year of Study</option>
-              {[1, 2, 3, 4, 5].map((y) => (
+              {[1, 2, 3, 4, 5, "PG 1", "PG 2"].map((y) => (
                 <option key={y} value={y}>
                   {y}
                 </option>
