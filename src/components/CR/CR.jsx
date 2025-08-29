@@ -68,7 +68,7 @@ const CR = () => {
                 ({ id, name, status, hall, img, session, mobile }) => {
                   return (
                     <div key={id} className="my-6">
-                      <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl bg-gradient-to-tr from-red-100 dark:from-gray-800 to-red-50 dark:to-gray-700 relative border border-primary dark:border-cyan-400">
+                      <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl bg-gradient-to-tr from-red-100 dark:from-gray-800 to-red-50 dark:to-gray-700 relative border border-primary dark:border-transparent">
                         <Helmet>
                           <link rel="preload" as="image" href={img} />
                         </Helmet>
