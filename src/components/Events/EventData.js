@@ -1,5 +1,3 @@
-// components/Events/EventData.js
-
 const EventData = [
   {
     id: 0,
