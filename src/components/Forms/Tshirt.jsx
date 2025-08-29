@@ -224,7 +224,7 @@ const Tshirt = () => {
               disabled={loading}
               className="bg-red-400 hover:bg-red-500 text-white py-2 px-4 rounded-full transition disabled:opacity-50"
             >
-              {loading ? "Wait..." : "Register"}
+              {loading ? "Registering..." : "Register"}
             </button>
           </form>
 
