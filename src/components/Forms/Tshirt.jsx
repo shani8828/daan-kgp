@@ -18,25 +18,20 @@ const Tshirt = () => {
     tshirtSize: "",
   });
 
-  const [message, setMessage] = useState("");
+  
   const [loading, setLoading] = useState(false);
+  const [popup, setPopup] = useState(null);
 
   const handleChange = (e) => {
     let { name, value } = e.target;
-
-    // Force uppercase for rollNo
     if (name === "rollNo") value = value.toUpperCase();
-
-    // Cast to number for yearOfStudy
-    // if (name === "yearOfStudy") value = Number(value);
-
     setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setMessage("");
+    setPopup(null);
 
     try {
       const res = await fetch(`https://daan-kgp-backend.onrender.com/api/tshirt-form`, {
@@ -48,7 +43,10 @@ const Tshirt = () => {
       const data = await res.json();
 
       if (res.ok) {
-        setMessage("Registered successfully for Dakshana T-Shirt 2025!");
+        setPopup({
+          type: "success",
+          message: "Registered successfully for Dakshana T-Shirt 2025!",
+        });
         setFormData({
           name: "",
           rollNo: "",
@@ -59,12 +57,16 @@ const Tshirt = () => {
           tshirtSize: "",
         });
       } else {
-        setMessage(data.error || "Something went wrong!");
+        setPopup({
+          type: "error",
+          message: data.error || "Something went wrong!",
+        });
       }
     } catch (err) {
-      setMessage("Error: " + err.message);
+      setPopup({ type: "error", message: "Error: " + err.message });
     } finally {
       setLoading(false);
+      setTimeout(() => setPopup(null), 3000); // auto-hide
     }
   };
 
@@ -228,17 +230,54 @@ const Tshirt = () => {
             </button>
           </form>
 
-          {message && (
-            <p
-              className={`mt-4 text-center text-sm font-medium ${
-                message.includes("Registered")
-                  ? "text-green-500"
-                  : "text-red-500"
-              }`}
-            >
-              {message}
-            </p>
-          )}
+          {/* ✅ Fullscreen Loader Overlay */}
+        {loading && (
+          <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+            <div className="w-12 h-12 relative transform rotate-45">
+              <div
+                className="absolute bg-orange-500 w-4 h-4 animate-ping"
+                style={{ top: 0, left: 0, animationDuration: "1.2s" }}
+              ></div>
+              <div
+                className="absolute bg-orange-500 w-4 h-4 animate-ping"
+                style={{
+                  top: 0,
+                  right: 0,
+                  animationDuration: "1.2s",
+                  animationDelay: "0.15s",
+                }}
+              ></div>
+              <div
+                className="absolute bg-orange-500 w-4 h-4 animate-ping"
+                style={{
+                  bottom: 0,
+                  right: 0,
+                  animationDuration: "1.2s",
+                  animationDelay: "0.3s",
+                }}
+              ></div>
+              <div
+                className="absolute bg-orange-500 w-4 h-4 animate-ping"
+                style={{
+                  bottom: 0,
+                  left: 0,
+                  animationDuration: "1.2s",
+                  animationDelay: "0.45s",
+                }}
+              ></div>
+            </div>
+          </div>
+        )}
+        {/* ✅ Popup for both success and error */}
+        {popup && (
+          <div
+            className={`fixed top-[50%] right-5 px-4 py-2 rounded-lg shadow-lg z-50 animate-fade-in ${
+              popup.type === "success" ? "bg-green-600 dark:bg-emerald-700" : "bg-red-600 dark:bg-red-700"
+            } text-gray-200 dark:text-gray-900`}
+          >
+            {popup.message}
+          </div>
+        )}
         </section>
       </div>
     </>
