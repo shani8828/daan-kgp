@@ -53,7 +53,7 @@ const Banner = () => {
                       title="Map"
                       className="flex items-center gap-4 hover:translate-x-2 transition-all duration-300 hover:text-red-500 "
                     >
-                      <FaHelicopter className="text-4xl dark:text-gray-500 h-4 w-4 md:h-12 md:w-12 shadow-lg shadow-red-200 p-2 md:p-4 rounded-full bg-red-100 border border-red-300 dark:bg-red-400" />
+                      <FaHelicopter className="text-4xl dark:text-gray-500 h-4 w-4 md:h-12 md:w-12 shadow-lg dark:shadow-md shadow-red-200 p-2 md:p-4 rounded-full bg-red-100 border border-red-300 dark:bg-red-400" />
                       <p className="text-gray-900 dark:text-gray-500 dark:hover:text-gray-300">Helipad</p>
                     </a>
                     <a
@@ -62,7 +62,7 @@ const Banner = () => {
                       title="Map"
                       className="flex items-center gap-4 hover:translate-x-2 transition-all duration-300 hover:text-red-500"
                     >
-                      <FaBus className="text-4xl text-gray-900 dark:text-gray-500 h-4 w-4 md:h-12 md:w-12 shadow-lg shadow-green-200 p-2 md:p-4 rounded-full bg-green-100 border border-green-300 dark:bg-green-400" />
+                      <FaBus className="text-4xl text-gray-900 dark:text-gray-500 h-4 w-4 md:h-12 md:w-12 shadow-lg dark:shadow-md shadow-green-200 p-2 md:p-4 rounded-full bg-green-100 border border-green-300 dark:bg-green-400" />
                       <p className="text-gray-900 dark:text-gray-500 dark:hover:text-gray-300">Hangar</p>
                     </a>
                   </div>
@@ -73,7 +73,7 @@ const Banner = () => {
                       title="Map"
                       className="flex items-center gap-4 hover:translate-x-2 transition-all duration-300 hover:text-red-500"
                     >
-                      <GiTrophy className="text-4xl text-gray-900 dark:text-gray-500 h-4 w-4 md:h-12 md:w-12 shadow-lg shadow-blue-200 p-2 md:p-4 rounded-full bg-blue-100 border border-blue-300 dark:bg-blue-400" />
+                      <GiTrophy className="text-4xl text-gray-900 dark:text-gray-500 h-4 w-4 md:h-12 md:w-12 shadow-lg dark:shadow-md shadow-blue-200 p-2 md:p-4 rounded-full bg-blue-100 border border-blue-300 dark:bg-blue-400" />
                       <p className="text-gray-900 dark:text-gray-500 dark:hover:text-gray-300">Gymkhana</p>
                     </a>
                     <a
@@ -82,7 +82,7 @@ const Banner = () => {
                       title="Map"
                       className="flex items-center gap-4 hover:translate-x-2 transition-all duration-300 hover:text-red-500"
                     >
-                      <FaBuilding className="text-4xl text-gray-900 dark:text-gray-500 h-4 w-4 md:h-12 md:w-12 shadow-lg shadow-yellow-200 p-2 md:p-4 rounded-full bg-yellow-100 border border-yellow-300 dark:bg-yellow-400" />
+                      <FaBuilding className="text-4xl text-gray-900 dark:text-gray-500 h-4 w-4 md:h-12 md:w-12 shadow-lg dark:shadow-md shadow-yellow-200 p-2 md:p-4 rounded-full bg-yellow-100 border border-yellow-300 dark:bg-yellow-400" />
                       <p className="text-gray-900 dark:text-gray-500 dark:hover:text-gray-300">Nehru Museum</p>
                     </a>
                   </div>
