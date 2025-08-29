@@ -102,7 +102,7 @@ const Tshirt = () => {
               name="rollNo"
               value={formData.rollNo}
               onChange={handleChange}
-              placeholder="Roll No"
+              placeholder="Roll No (Institution)"
               required
               className="px-4 py-2 border border-red-200 rounded-full shadow-sm text-red-600
               focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
