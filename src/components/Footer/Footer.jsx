@@ -32,17 +32,17 @@ const FooterLinks = [
 const Footer = () => {
   return (
     <>
-      <div className=" dark:bg-gray-950 py-10 relative overflow-hidden">
+      <div className="bg-gray-50 dark:bg-gray-950 py-10 relative overflow-hidden">
         {/* <video
           autoPlay
           loop
           muted
           className="absolute right-0 top-0 h-full overflow-hidden w-full object-cover z-[-1]"
         >
-          <source src="https://res.cloudinary.com/dcwwptwzt/video/upload/v1746467353/Screen_Recording_2025-04-29_045145_ixmnjn.mp4" type="video/mp4" />
+          <source src="abcd.mp4" type="video/mp4" />
         </video> */}
         <div className="container">
-          <div className="grid md:grid-cols-3 pt-5 bg-gradient-to-tr from-gray-100 to-gray-200 border border-gray-300 backdrop-blur-sm rounded-t-xl shadow-gray-600">
+          <div className="grid md:grid-cols-3 pt-5 bg-gradient-to-tr from-gray-100 dark:from-gray-900 to-gray-200 dark:to-gray-800 border border-gray-300 dark:border-gray-700 backdrop-blur-sm rounded-t-xl shadow-gray-600">
             <div className="pt-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
                 <img
@@ -53,7 +53,7 @@ const Footer = () => {
                   // className="max-h-[60px]"
                 />
               </h1>
-              <p className="text-md mt-6">
+              <p className="text-md mt-6 text-gray-900 dark:text-gray-400">
                 DAAN KGP is a well-structured DakshanA Alumni Network
                 established at the Indian Institute of Technology, Kharagpur.
               </p>
@@ -61,12 +61,12 @@ const Footer = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 col-span-2 md:pl-10">
               <div>
                 <div className="py-8 px-4">
-                  <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
+                  <h1 className="text-xl font-bold text-justify sm:text-left mb-3 text-gray-900 dark:text-gray-200">
                     Quick Ways
                   </h1>
                   <ul className="flex flex-col gap-3">
                     {FooterLinks.map((link) => (
-                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
+                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:text-primary dark:hover:text-gray-200 space-x-1 text-gray-900 dark:text-gray-400">
                         <Link
                           to={link.link}
                           onClick={() => window.scrollTo(0, 0)}
@@ -83,7 +83,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="py-8 px-4">
-                <h1 className="text-xl font-bold text-justify sm:text:left mb-3">
+                <h1 className="text-xl font-bold text-justify sm:text:left mb-3 text-gray-900 dark:text-gray-200">
                   Reach Out
                 </h1>
                 <div>
@@ -91,7 +91,7 @@ const Footer = () => {
                     href="https://maps.app.goo.gl/SJVVbSZG5igkX1hXA"
                     target="_blank"
                     title="Address"
-                    className="flex items-center gap-3 transition-all duration-300 hover:!text-primary hover:italic"
+                    className="flex items-center gap-3 transition-all duration-300 hover:text-primary dark:hover:text-gray-200 hover:italic text-gray-900 dark:text-gray-400"
                   >
                     <FaMapMarkedAlt />
                     <p>IIT Kharagpur, West Bengal, 721302</p>
@@ -110,7 +110,7 @@ const Footer = () => {
                     href="mailto:cr.daan.kgp@gmail.com"
                     target="_blank"
                     title="E-Mail"
-                    className="flex items-center gap-1 md:gap-3 mt-3 transition-all duration-300 hover:!text-primary hover:italic"
+                    className="flex items-center gap-1 md:gap-3 mt-3 transition-all duration-300 hover:text-primary dark:hover:text-gray-200 text-gray-900 dark:text-gray-400 hover:italic"
                   >
                     <IoIosMail />
                     <p>cr.daan.kgp@gmail.com</p>
@@ -118,28 +118,28 @@ const Footer = () => {
                 </div>
                 {/* social handles */}
                 <div>
-                  <h1 className="font-semibold mt-3">DAAN Officials: </h1>
+                  <h1 className="font-semibold mt-3 text-gray-900 dark:text-gray-200">DAAN Officials: </h1>
                   <div className="flex w-[250px] md:w-[200px] justify-evenly items-center gap-6 mt-2">
                     <a
                       href="https://www.instagram.com/daan.official1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                       target="_blank"
                       title="Instagram DAAN"
                     >
-                      <FaInstagram className="text-3xl duration-300 hover:!text-primary hover:-translate-y-1 hover:shadow-lg bg-transparent rounded-lg hover:shadow-red-400" />
+                      <FaInstagram className="text-3xl text-gray-900 dark:text-gray-400 transition-all duration-300 hover:text-primary dark:hover:text-gray-300 hover:-translate-y-1 hover:shadow-lg bg-transparent rounded-lg hover:shadow-red-400 dark:hover:shadow-gray-300" />
                     </a>
                     <a
                       href="https://www.facebook.com/share/g/1HgK8eLe43/"
                       target="_blank"
                       title="Facebook DAAN"
                     >
-                      <FaFacebook className="text-3xl duration-300 hover:!text-primary  hover:-translate-y-1 hover:shadow-lg bg-transparent rounded-full hover:shadow-red-400" />
+                      <FaFacebook className="text-3xl text-gray-900 dark:text-gray-400 transition-all duration-300 hover:text-primary dark:hover:text-gray-300 hover:-translate-y-1 hover:shadow-lg bg-transparent rounded-full hover:shadow-red-400 dark:hover:shadow-gray-300" />
                     </a>
                     <a
                       href="https://www.linkedin.com/groups/4920035/"
                       target="_blank"
                       title="LinkedIn DAAN"
                     >
-                      <FaLinkedin className="text-3xl duration-300 hover:!text-primary hover:-translate-y-1 hover:shadow-lg bg-transparent rounded-md hover:shadow-red-400" />
+                      <FaLinkedin className="text-3xl text-gray-900 dark:text-gray-400 transition-all duration-300 hover:text-primary dark:hover:text-gray-300 hover:-translate-y-1 hover:shadow-lg bg-transparent rounded-md hover:shadow-red-400 dark:hover:shadow-gray-300" />
                     </a>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <div className="text-center py-5 border-t-2 border-gray-300/50 bg-primary text-gray-900 flex justify-center items-center">
+            <div className="text-center py-5 border-t-2 border-gray-400 bg-primary dark:bg-gray-900 text-gray-900 dark:text-gray-400 flex justify-center items-center">
               <FaRegCopyright />Amplifier | All rights reserved.
             </div>
           </div>
