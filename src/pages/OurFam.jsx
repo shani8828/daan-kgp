@@ -1,15 +1,14 @@
-import React from "react";
 import Fam from "../components/OurFam/Fam";
 import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 
 const OurFam = () => {
-  const { year } = useParams(); // <-- Get URL param like '24
+  const { year } = useParams(); // <-- Get URL param like '25
 
   document.title = "Our Fam | DAAN KGP";
 
   return (
-    <div className="min-h-screen pt-14 bg-gray-100">
+    <div className="min-h-screen pt-14 bg-gray-100 dark:bg-gray-900">
       <Helmet>
         <meta
           name="description"

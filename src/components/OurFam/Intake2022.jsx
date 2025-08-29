@@ -32,17 +32,16 @@ const Intake2022 = () => {
   });
 
   return (
-    <div className="dark:bg-gray-900 dark:text-white py-10">
+    <div className="dark:bg-gray-900 bg-gray-100 text-gray-900 dark:text-gray-400 py-10">
       <section data-aos="fade-up" className="container">
-        <h1 className="my-8 border-l-8 border-red-300 py-2 pl-2 text-2xl font-bold text-center w-full">
+        <h1 className="mt-8  text-gray-900 dark:text-gray-400 pl-2 text-2xl font-bold text-center w-full">
           Fourth Years
         </h1>
-        <h3 className="m-2 lg:m-4 italic text-center w-full">Total :{" "}
+        <h3 className="mb-8 italic text-center w-full">
+          Total :{" "}
           {searchName || searchDept || searchHall ? filteredItems.length : "32"}{" "}
-          Members</h3>
-        <h1 className="text-gray-700 font-semibold underline border-t-2 border-red-300 pt-2 lg:pt-4 rounded-lg text-center">
-          Search by
-        </h1>
+          Members
+        </h3>
 
         <div className="flex gap-2 items-center justify-center flex-wrap mb-4">
           <input
@@ -50,8 +49,8 @@ const Intake2022 = () => {
             placeholder="Name"
             value={searchName}
             onChange={(e) => setSearchName(e.target.value)}
-            className="px-3 py-2 border border-red-200 rounded-lg shadow-sm placeholder-red-300 text-red-600
-              focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
+            className="px-3 py-2 border border-red-200 dark:border-gray-300 rounded-lg shadow-sm placeholder-red-300 text-red-600
+              focus:outline-none focus:ring-2 focus:ring-red-200 dark:focus:ring-gray-500 
               transition-all duration-300 ease-in-out
               dark:bg-gray-800 dark:text-white dark:placeholder-gray-400
               hover:shadow-md w-[30%]"
@@ -61,8 +60,8 @@ const Intake2022 = () => {
             placeholder="Dept"
             value={searchDept}
             onChange={(e) => setSearchDept(e.target.value)}
-            className="px-4 py-2 border border-red-200 rounded-lg shadow-sm placeholder-red-300 text-red-600
-              focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
+            className="px-3 py-2 border border-red-200 dark:border-gray-300 rounded-lg shadow-sm placeholder-red-300 text-red-600
+              focus:outline-none focus:ring-2 focus:ring-red-200 dark:focus:ring-gray-500 
               transition-all duration-300 ease-in-out
               dark:bg-gray-800 dark:text-white dark:placeholder-gray-400
               hover:shadow-md w-[30%]"
@@ -72,8 +71,8 @@ const Intake2022 = () => {
             placeholder="Hall"
             value={searchHall}
             onChange={(e) => setSearchHall(e.target.value)}
-            className="px-4 py-2 border border-red-200 rounded-lg shadow-sm placeholder-red-300 text-red-600
-              focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-500
+            className="px-3 py-2 border border-red-200 dark:border-gray-300 rounded-lg shadow-sm placeholder-red-300 text-red-600
+              focus:outline-none focus:ring-2 focus:ring-red-200 dark:focus:ring-gray-500 
               transition-all duration-300 ease-in-out
               dark:bg-gray-800 dark:text-white dark:placeholder-gray-400
               hover:shadow-md w-[30%]"
