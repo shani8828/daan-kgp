@@ -1,106 +1,53 @@
-import React from "react";
-import AnimatedCounter from "./AnimatedCounter";
-import { VscDiffIgnored } from "react-icons/vsc";
-import BubbleBackground from "./BubbleBackground";
+import AnimatedCounter from "../../utils/AnimationCounter";
 import FlashingNoticesCard from "./FlashingNoticesCard";
 
-const Hero = () => {
+const stats = [
+  { target: 170, label: "Currently in campus" },
+  { target: 40, label: "Joined this year" },
+];
+
+export default function Hero() {
   return (
-    <div className="bg-transparent h-full">
-      {/* <BubbleBackground /> */}
-      <div className="h-full flex justify-center items-center p-4 bg-transparent">
-        <div className="container grid grid-cols-1 gap-4">
-          <div className="text-gray-900 dark:text-gray-300">
-            <p
-              data-aos="fade-up"
-              className="text-2xl md:text-4xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-red-900 to-red-500 font-bold text-center"
-            >
-              Congratulations on being a KGPian Dakshanite!
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-delay="300"
-              className="text-sm md:text-md lg:text-lg text-center mt-4 md:mt-6"
-            >
-              Warmest greetings on joining the esteemed community of KGPians and
-              proudly embracing your Dakshanite heritage!
-            </p>
-          </div>
-          <div className="flex justify-center items-center gap-3 md:gap-8 mt-8">
+    <div className="bg-transparent h-full flex justify-center items-center p-4">
+      <div className="container grid gap-4">
+        {/* Heading */}
+        <div className="text-gray-900 dark:text-gray-300 text-center">
+          <p
+            data-aos="fade-up"
+            className="text-2xl md:text-4xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-900 to-red-500"
+          >
+            Congratulations on being a KGPian Dakshanite!
+          </p>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="300"
+            className="mt-4 md:mt-6 text-sm md:text-md lg:text-lg"
+          >
+            Warmest greetings on joining the esteemed community of KGPians and
+            proudly embracing your Dakshanite heritage!
+          </p>
+        </div>
+
+        {/* Stats */}
+        <div className="flex justify-center gap-3 md:gap-8 mt-8">
+          {stats.map(({ target, label }, i) => (
             <div
+              key={i}
               data-aos="fade-up"
               data-aos-delay="600"
-              className="bg-gradient-to-tr from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col justify-evenly items-center"
+              className="bg-gradient-to-tr from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col items-center"
             >
               <span className="text-3xl md:text-4xl lg:text-6xl font-bold flex items-center text-center">
-                <AnimatedCounter target={170} duration={2500} /> +
+                <AnimatedCounter target={target} duration={2500} /> +
               </span>
-              <p className="text-sm text-center">Currently in campus</p>
+              <p className="text-sm text-center">{label}</p>
             </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="600"
-              className="bg-gradient-to-tr from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col justify-evenly items-center"
-            >
-              <span className="text-3xl md:text-4xl lg:text-6xl font-bold flex items-center text-center text-gray-950">
-                <AnimatedCounter target={40} duration={2500} /> +
-              </span>
-              <p className="text-sm text-center">Joined this year</p>
-            </div>
-          </div>
-          {/* <div
-            id="flashing-notices"
-            data-aos="fade-right"
-            data-aos-delay="900"
-            className="scroll-mt-[100px] text-white bg-black items-center text-left p-4 mt-8 border-red-500 border-r-2 border-b-2 rounded-xl shadow-md shadow-red-400"
-          >
-            <h1 className="text-left underline font-semibold mb-1 md:mb-2 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500 ">
-              Flashing Notices
-            </h1>
-            <div>
-              <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
-                <div className="translate-y-[3px] lg:translate-y-0">
-                  <VscDiffIgnored />
-                </div>
-                <div>Mid-Semester Exams : Sep 18-26, 2025.</div>
-              </div>
-              <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
-                <div className="translate-y-[3px] lg:translate-y-0">
-                  <VscDiffIgnored />
-                </div>
-                <div>Autumn Break : Sep 27-Oct 05, 2025.</div>
-              </div>
-              <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
-                <div className="translate-y-[3px] lg:translate-y-0">
-                  <VscDiffIgnored />
-                </div>
-                <div>Dakshana Day Celebration : Oct 15, 2025.</div>
-              </div>
-              <div className="flex items-start lg:items-center gap-1 md:gap-2 text-sm md:text-md">
-                <div className="translate-y-[3px] lg:translate-y-0">
-                  <VscDiffIgnored />
-                </div>
-
-                <div>
-                  Income Certificate
-                  <a
-                    href="https://drive.google.com/file/d/1d7_OxbrHCOzuzNQ8rVCCqui9lsEoEdUT/view?usp=sharing"
-                    target="_blank"
-                    className="text-blue-500 hover:text-blue-700 transition-all duration-300"
-                  >
-                    {" "}
-                    Format{" "}
-                  </a>
-                  for current session.
-                </div>
-              </div>
-            </div>
-          </div> */}
-          <FlashingNoticesCard/>
+          ))}
         </div>
+
+        {/* Notices */}
+        <FlashingNoticesCard />
       </div>
     </div>
   );
-};
-
-export default Hero;
+}

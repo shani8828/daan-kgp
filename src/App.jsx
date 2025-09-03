@@ -4,7 +4,6 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import OurFam from "./pages/OurFam";
 import NoPage from "./pages/NoPage";
-import FresherPlace from "./pages/FresherPlace";
 import OurBrightMinds from "./pages/OurBrightMinds";
 import EventsDetails from "./pages/EventsDetails";
 import AOS from "aos";
@@ -14,14 +13,12 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import ERPPlace from "./pages/ERPPlace";
-import AcademicPlace from "./pages/AcademicPlace";
-import CDCInternPlace from "./pages/CDCInternPlace";
 import FlshPage from "./pages/FlshPage";
 import Forms from "./pages/Forms";
 import Tshirt from "./components/Forms/Tshirt";
 import GlobalClickSpark from "./components/ClickEffect/GlobalClickSpark";
 import EventComp from "./components/Events/EventsComp";
+import Toolkit from "./pages/Toolkit";
 
 const App = () => {
   const [showFlash, setShowFlash] = useState(true);
@@ -68,11 +65,8 @@ const App = () => {
             <Route path="our-fam/:year" element={<OurFam />} />
             <Route path="our-fam" element={<Navigate to="/our-fam/25" />} />
             <Route path="/events" element={<EventComp />} />
-        <Route path="/events/:slug" element={<EventsDetails />} />
-            <Route path="fresher-place" element={<FresherPlace />} />
-            <Route path="erp-place" element={<ERPPlace />} />
-            <Route path="academic-place" element={<AcademicPlace />} />
-            <Route path="cdc-intern-place" element={<CDCInternPlace />} />
+            <Route path="/events/:slug" element={<EventsDetails />} />
+            <Route path="/toolkit" element={<Toolkit />} />
             <Route path="our-bright-minds" element={<OurBrightMinds />} />
             <Route path="forms" element={<Forms />} />
             <Route path="tshirt-form" element={<Tshirt />} />

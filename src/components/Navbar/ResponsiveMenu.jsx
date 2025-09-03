@@ -1,11 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { NavbarLinks, dropdown } from "../Navbar/JSFiles/NavbarData";
+import { NavbarLinks } from "../Navbar/JSFiles/NavbarData";
 
 const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
   console.log("showMenu", showMenu);
-  const [showDropdown, setShowDropdown] = useState(false);
-  const dropdownRef = useRef();
   const menuRef = useRef();
   useEffect(() => {
     const handleClickOutsideMenu = (event) => {
@@ -21,19 +19,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
     };
   }, [setShowMenu]);
 
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    const handleClickOutsideDrop = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setShowDropdown(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutsideDrop);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutsideDrop);
-    };
-  }, []);
+  
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -87,37 +73,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
                 </NavLink>
               </li>
             ))}
-            <li ref={dropdownRef}>
-              <div
-                onClick={() => setShowDropdown(!showDropdown)}
-                className="cursor-pointer text-gray-900 transition-all duration-300 dark:text-gray-400 hover:text-red-300 dark:hover:text-gray-400"
-              >
-                {/* KGP Toolkit {showDropdown ? "▲" : "▼"} */}
-                KGP Toolkit {showDropdown ? "↴" : "→"}
-              </div>
-              {showDropdown && (
-                <ul className="p-2 space-y-2 rounded-lg relative top-[10px] bg-gray-100 dark:bg-gray-700 border dark:border-gray-50 z-50 shadow-lg dark:shadow-md shadow-gray-500">
-                  {dropdown.map((e, index) => (
-                    <li key={index}>
-                      <NavLink
-                        to={e.link}
-                        onClick={() => {
-                          setShowMenu(false); // close mobile menu
-                          setShowDropdown(false); // close dropdown
-                        }}
-                        className={({ isActive }) =>
-                          isActive
-                            ? "text-red-500 dark:text-gray-200 font-semibold border-b-2 border-red-500 dark:border-gray-200 rounded-lg"
-                            : "text-gray-900 dark:text-gray-400 hover:text-red-300 dark:hover:text-gray-300 transition-all duration-300"
-                        }
-                      >
-                        {e.name}
-                      </NavLink>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
+            
           </ul>
         </nav>
       </div>

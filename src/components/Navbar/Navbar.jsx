@@ -1,33 +1,18 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { Helmet } from "react-helmet";
-import { dropdown, NavbarLinks } from "./JSFiles/NavbarData";
+import { NavbarLinks } from "./JSFiles/NavbarData";
 
 const Navbar = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
   const [theme, setTheme] = useState("light");
   const [showMenu, setShowMenu] = useState(false);
-  const dropdownRef = useRef();
-
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setShowDropdown(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
+const toggleMenu = () => {
+    setShowMenu((prev) => !prev);
   };
-
+ 
   // Load theme from localStorage or system preference
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -103,36 +88,6 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                 ))}
-                <li ref={dropdownRef}>
-                  <div
-                    onClick={() => setShowDropdown(!showDropdown)}
-                    className="cursor-pointer text-gray-700 dark:text-gray-400 transition-all duration-300 hover:text-red-300 dark:hover:text-gray-300"
-                  >
-                    KGP Toolkit {showDropdown ? "↴" : "→"}
-                  </div>
-                  {showDropdown && (
-                    <ul className="p-2 space-y-2 rounded-lg absolute top-[72px] bg-gray-100 dark:bg-gray-900 z-50 shadow-sm dark:shadow-lg shadow-gray-500 dark:border dark:border-gray-700">
-                      {dropdown.map((e, index) => (
-                        <li key={index}>
-                          <NavLink
-                            to={e.link}
-                            onClick={() => {
-                              setShowMenu(false);
-                              setShowDropdown(false);
-                            }}
-                            className={({ isActive }) =>
-                              isActive
-                                ? "text-red-500 font-semibold border-b-2 border-red-500 rounded-lg dark:text-gray-200 dark:border-gray-200"
-                                : "text-gray-700 hover:text-red-300 transition-all duration-300 dark:text-gray-400 dark:hover:text-gray-300"
-                            }
-                          >
-                            {e.name}
-                          </NavLink>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
               </ul>
             </div>
 
