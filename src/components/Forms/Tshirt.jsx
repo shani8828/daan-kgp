@@ -1,12 +1,49 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet";
 
-const VITE_BACKEND_link =
-  import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+const API_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
+// 🔹 Common styles
+const baseClasses =
+  "px-4 py-2 border border-red-200 dark:border-gray-600 rounded-full shadow-sm text-red-600 " +
+  "focus:outline-none focus:ring-2 focus:ring-red-200 dark:focus:ring-gray-500 " +
+  "transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-gray-300 hover:shadow-lg dark:hover:shadow-gray-800";
+
+// 🔹 Input Component
+const FormInput = ({ type = "text", ...props }) => (
+  <input type={type} className={baseClasses} {...props} />
+);
+
+// 🔹 Select Component
+const FormSelect = ({ options, placeholder, ...props }) => (
+  <select className={baseClasses} {...props}>
+    <option value="">{placeholder}</option>
+    {options.map((opt) => (
+      <option key={opt} value={opt}>
+        {opt}
+      </option>
+    ))}
+  </select>
+);
+
+// 🔹 Static options
+const yearOptions = [1, 2, 3, 4, 5, "PG 1", "PG 2"];
+const hallOptions = [
+  "ABV", "Azad", "BRH", "Gokhale", "HJB", "JCB", "LBS", "LLR", "MMM", "MS",
+  "MT", "Nehru", "Patel", "RK", "RP", "SN/IG", "SNVH",
+];
+const coeOptions = [
+  "Dakshana Valley",
+  "JNV Bengaluru Urban",
+  "JNV Bundi",
+  "JNV Kottayam",
+  "JNV Lucknow",
+  "JNV Rangareddi",
+];
+const sizeOptions = ["XS", "S", "M", "L", "XL", "XXL"];
+
+// 🔹 Main Component
 const Tshirt = () => {
-  document.title = "T Shirt 2025 | DAAN KGP";
-
   const [formData, setFormData] = useState({
     name: "",
     rollNo: "",
@@ -16,15 +53,25 @@ const Tshirt = () => {
     coe: "",
     tshirtSize: "",
   });
-
   const [loading, setLoading] = useState(false);
   const [popup, setPopup] = useState(null);
 
   const handleChange = (e) => {
     let { name, value } = e.target;
     if (name === "rollNo") value = value.toUpperCase();
-    setFormData({ ...formData, [name]: value });
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
+
+  const resetForm = () =>
+    setFormData({
+      name: "",
+      rollNo: "",
+      yearOfStudy: "",
+      hallOfResidence: "",
+      mobileNo: "",
+      coe: "",
+      tshirtSize: "",
+    });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,33 +79,18 @@ const Tshirt = () => {
     setPopup(null);
 
     try {
-      const res = await fetch(`${VITE_BACKEND_link}/api/tshirt-form`, {
+      const res = await fetch(`${API_URL}/api/tshirt-form`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-
       const data = await res.json();
 
       if (res.ok) {
-        setPopup({
-          type: "success",
-          message: "Registered successfully for Dakshana T-Shirt 2025!",
-        });
-        setFormData({
-          name: "",
-          rollNo: "",
-          yearOfStudy: "",
-          hallOfResidence: "",
-          mobileNo: "",
-          coe: "",
-          tshirtSize: "",
-        });
+        setPopup({ type: "success", message: "Registered successfully for Dakshana T-Shirt 2025!" });
+        resetForm();
       } else {
-        setPopup({
-          type: "error",
-          message: data.error || "Something went wrong!",
-        });
+        setPopup({ type: "error", message: data.error || "Something went wrong!" });
       }
     } catch (err) {
       setPopup({ type: "error", message: "Error: " + err.message });
@@ -68,59 +100,10 @@ const Tshirt = () => {
     }
   };
 
-  const baseClasses =
-    "px-4 py-2 border border-red-200 dark:border-gray-600 rounded-full shadow-sm text-red-600 " +
-    "focus:outline-none focus:ring-2 focus:ring-red-200 dark:focus:ring-gray-500 " +
-    "transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-gray-300 hover:shadow-lg dark:hover:shadow-gray-800";
-
-  const FormInput = ({
-    type = "text",
-    name,
-    value,
-    onChange,
-    placeholder,
-    required,
-    ...props
-  }) => (
-    <input
-      type={type}
-      name={name}
-      value={value}
-      onChange={onChange}
-      placeholder={placeholder}
-      required={required}
-      className={baseClasses}
-      {...props}
-    />
-  );
-
-  const FormSelect = ({
-    name,
-    value,
-    onChange,
-    required,
-    options,
-    placeholder,
-  }) => (
-    <select
-      name={name}
-      value={value}
-      onChange={onChange}
-      required={required}
-      className={baseClasses}
-    >
-      <option value="">{placeholder}</option>
-      {options.map((opt) => (
-        <option key={opt} value={opt}>
-          {opt}
-        </option>
-      ))}
-    </select>
-  );
-
   return (
     <>
       <Helmet>
+        <title>T Shirt 2025 | DAAN KGP</title>
         <meta
           name="description"
           content="Excited for Dakshana T-Shirt 2025? Don’t miss out! Register now by filling in your details and grab your tee to represent the spirit of Dakshana."
@@ -130,7 +113,7 @@ const Tshirt = () => {
       {/* Loader */}
       {loading && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
-          <div className="w-12 h-12 relative transform rotate-45">
+          <div className="w-12 h-12 relative rotate-45">
             {["0s", "0.15s", "0.3s", "0.45s"].map((delay, i) => (
               <div
                 key={i}
@@ -143,7 +126,7 @@ const Tshirt = () => {
                   animationDuration: "1.2s",
                   animationDelay: delay,
                 }}
-              ></div>
+              />
             ))}
           </div>
         </div>
@@ -161,98 +144,22 @@ const Tshirt = () => {
           {popup.message}
         </div>
       )}
-      
+
       {/* Form */}
       <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-400 text-gray-900 min-h-[80vh] py-14 pt-20">
         <section className="container mx-auto" data-aos="fade-up">
           <h1 className="my-8 border-l-8 border-red-300 dark:border-gray-400 py-2 pl-2 text-3xl font-bold">
             T-Shirt Registration 2025
           </h1>
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col gap-4 max-w-lg mx-auto"
-          >
-            <FormInput
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Name"
-              required
-            />
-            <FormInput
-              name="rollNo"
-              value={formData.rollNo}
-              onChange={handleChange}
-              placeholder="Roll No (Institution)"
-              required
-            />
-            <FormSelect
-              name="yearOfStudy"
-              value={formData.yearOfStudy}
-              onChange={handleChange}
-              placeholder="Year of Study"
-              options={[1, 2, 3, 4, 5, "PG 1", "PG 2"]}
-              required
-            />
-            <FormSelect
-              name="hallOfResidence"
-              value={formData.hallOfResidence}
-              onChange={handleChange}
-              placeholder="Hall Of Residence"
-              options={[
-                "ABV",
-                "Azad",
-                "BRH",
-                "Gokhale",
-                "HJB",
-                "JCB",
-                "LBS",
-                "LLR",
-                "MMM",
-                "MS",
-                "MT",
-                "Nehru",
-                "Patel",
-                "RK",
-                "RP",
-                "SN/IG",
-                "SNVH",
-              ]}
-              required
-            />
-            <FormInput
-              type="tel"
-              name="mobileNo"
-              value={formData.mobileNo}
-              onChange={handleChange}
-              placeholder="Mobile No (9XXXXXXXXX)"
-              required
-              pattern="[0-9]{10}"
-              maxLength={10}
-            />
-            <FormSelect
-              name="coe"
-              value={formData.coe}
-              onChange={handleChange}
-              placeholder="COE"
-              options={[
-                "Dakshana Valley",
-                "JNV Bengaluru Urban",
-                "JNV Bundi",
-                "JNV Kottayam",
-                "JNV Lucknow",
-                "JNV Rangareddi",
-              ]}
-              required
-            />
-            <FormSelect
-              name="tshirtSize"
-              value={formData.tshirtSize}
-              onChange={handleChange}
-              placeholder="T-shirt Size"
-              options={["XS", "S", "M", "L", "XL", "XXL"]}
-              required
-            />
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-lg mx-auto">
+            <FormInput name="name" value={formData.name} onChange={handleChange} placeholder="Name" required />
+            <FormInput name="rollNo" value={formData.rollNo} onChange={handleChange} placeholder="Roll No (Institution)" required />
+            <FormSelect name="yearOfStudy" value={formData.yearOfStudy} onChange={handleChange} options={yearOptions} placeholder="Year of Study" required />
+            <FormSelect name="hallOfResidence" value={formData.hallOfResidence} onChange={handleChange} options={hallOptions} placeholder="Hall Of Residence" required />
+            <FormInput type="tel" name="mobileNo" value={formData.mobileNo} onChange={handleChange} placeholder="Mobile No (9XXXXXXXXX)" pattern="[0-9]{10}" maxLength={10} required />
+            <FormSelect name="coe" value={formData.coe} onChange={handleChange} options={coeOptions} placeholder="COE" required />
+            <FormSelect name="tshirtSize" value={formData.tshirtSize} onChange={handleChange} options={sizeOptions} placeholder="T-shirt Size" required />
+
             <button
               type="submit"
               disabled={loading}

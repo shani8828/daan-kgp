@@ -11,150 +11,117 @@ import { IoIosMail } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const FooterLinks = [
+  { title: "Home", link: "/" },
+  { title: "Our Fam", link: "/our-fam" },
+  { title: "Fresher Place", link: "/fresher-place" },
+  { title: "Our Bright Minds", link: "/our-bright-minds" },
+];
+
+const SocialLinks = [
   {
-    title: "Home",
-    link: "/",
+    href: "https://www.instagram.com/daan.official1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    title: "Instagram DAAN",
+    icon: <FaInstagram />,
   },
   {
-    title: "Our Fam",
-    link: "/our-fam",
+    href: "https://www.facebook.com/share/g/1HgK8eLe43/",
+    title: "Facebook DAAN",
+    icon: <FaFacebook />,
   },
   {
-    title: "Fresher Place",
-    link: "/fresher-place",
-  },
-  {
-    title: "Our Bright Minds",
-    link: "/our-bright-minds",
+    href: "https://www.linkedin.com/groups/4920035/",
+    title: "LinkedIn DAAN",
+    icon: <FaLinkedin />,
   },
 ];
 
-const Footer = () => {
-  return (
-    <>
-      <div className="bg-gray-50 dark:bg-gray-950 py-10 relative overflow-hidden">
-        {/* <video
-          autoPlay
-          loop
-          muted
-          className="absolute right-0 top-0 h-full overflow-hidden w-full object-cover z-[-1]"
-        >
-          <source src="abcd.mp4" type="video/mp4" />
-        </video> */}
-        <div className="container">
-          <div className="grid md:grid-cols-3 pt-5 bg-gradient-to-tr from-gray-100 dark:from-gray-900 to-gray-200 dark:to-gray-800 border border-gray-300 dark:border-gray-700 backdrop-blur-sm rounded-t-xl shadow-gray-600">
-            <div className="pt-8 px-4">
-              <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
-                <img
-                  src="https://res.cloudinary.com/dubu8yxkm/image/upload/v1754643304/Logo_mnu1fh.avif"
-                  alt=""
-                  width="250px"
-                  height="100px"
-                  // className="max-h-[60px]"
-                />
-              </h1>
-              <p className="text-md mt-6 text-gray-900 dark:text-gray-400">
-                DAAN KGP is a well-structured DakshanA Alumni Network
-                established at the Indian Institute of Technology, Kharagpur.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 col-span-2 md:pl-10">
-              <div>
-                <div className="py-8 px-4">
-                  <h1 className="text-xl font-bold text-justify sm:text-left mb-3 text-gray-900 dark:text-gray-200">
-                    Quick Ways
-                  </h1>
-                  <ul className="flex flex-col gap-3">
-                    {FooterLinks.map((link) => (
-                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:text-primary dark:hover:text-gray-200 space-x-1 text-gray-900 dark:text-gray-400">
-                        <Link
-                          to={link.link}
-                          onClick={() => window.scrollTo(0, 0)}
-                          className="flex gap-1 items-center"
-                        >
-                          <span>
-                            <FaLongArrowAltRight />
-                          </span>
-                          <span>{link.title}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div className="py-8 px-4">
-                <h1 className="text-xl font-bold text-justify sm:text:left mb-3 text-gray-900 dark:text-gray-200">
-                  Reach Out
-                </h1>
-                <div>
-                  <a
-                    href="https://maps.app.goo.gl/SJVVbSZG5igkX1hXA"
-                    target="_blank"
-                    title="Address"
-                    className="flex items-center gap-3 transition-all duration-300 hover:text-primary dark:hover:text-gray-200 hover:italic text-gray-900 dark:text-gray-400"
-                  >
-                    <FaMapMarkedAlt />
-                    <p>IIT Kharagpur, West Bengal, 721302</p>
-                  </a>
+const Footer = () => (
+  <footer className="bg-gray-50 dark:bg-gray-950 py-10">
+    <div className="container">
+      {/* Main Content */}
+      <div className="grid md:grid-cols-3 pt-5 bg-gradient-to-tr from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 border border-gray-300 dark:border-gray-700 backdrop-blur-sm rounded-t-xl shadow-gray-600">
+        
+        {/* Logo & About */}
+        <div className="pt-8 px-4">
+          <img
+            src="https://res.cloudinary.com/dubu8yxkm/image/upload/v1754643304/Logo_mnu1fh.avif"
+            alt="DAAN KGP Logo"
+            width="250"
+            height="100"
+          />
+          <p className="mt-6 text-gray-900 dark:text-gray-400">
+            DAAN KGP is a well-structured Dakshana Alumni Network established at the Indian Institute of Technology, Kharagpur.
+          </p>
+        </div>
 
-                  {/* <a
-                    href="tel:+919555439091"
-                    target="_blank"
-                    className="flex items-center gap-3 mt-3 transition-all duration-300 hover:!text-primary hover:italic"
+        {/* Links & Contact */}
+        <div className="grid grid-cols-1 md:grid-cols-2 col-span-2 md:pl-10">
+          {/* Quick Links */}
+          <div className="py-8 px-4">
+            <h2 className="text-xl font-bold mb-3 text-gray-900 dark:text-gray-200">Quick Ways</h2>
+            <ul className="flex flex-col gap-3">
+              {FooterLinks.map(({ title, link }) => (
+                <li key={title} className="hover:translate-x-1 duration-300 text-gray-900 dark:text-gray-400 hover:text-primary dark:hover:text-gray-200">
+                  <Link
+                    to={link}
+                    onClick={() => window.scrollTo(0, 0)}
+                    className="flex items-center gap-1"
                   >
-                    <MdAddCall />
-                    <p>+91 9555439091</p>
-                  </a> */}
-                  <a
-                  
-                    href="mailto:cr.daan.kgp@gmail.com"
-                    target="_blank"
-                    title="E-Mail"
-                    className="flex items-center gap-1 md:gap-3 mt-3 transition-all duration-300 hover:text-primary dark:hover:text-gray-200 text-gray-900 dark:text-gray-400 hover:italic"
-                  >
-                    <IoIosMail />
-                    <p>cr.daan.kgp@gmail.com</p>
-                  </a>
-                </div>
-                {/* social handles */}
-                <div>
-                  <h1 className="font-semibold mt-3 text-gray-900 dark:text-gray-200">DAAN Officials: </h1>
-                  <div className="flex w-[250px] md:w-[200px] justify-evenly items-center gap-6 mt-2">
-                    <a
-                      href="https://www.instagram.com/daan.official1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                      target="_blank"
-                      title="Instagram DAAN"
-                    >
-                      <FaInstagram className="text-3xl text-gray-900 dark:text-gray-400 transition-all duration-300 hover:text-primary dark:hover:text-gray-300 hover:-translate-y-1 hover:shadow-lg bg-transparent rounded-lg hover:shadow-red-400 dark:hover:shadow-gray-300" />
-                    </a>
-                    <a
-                      href="https://www.facebook.com/share/g/1HgK8eLe43/"
-                      target="_blank"
-                      title="Facebook DAAN"
-                    >
-                      <FaFacebook className="text-3xl text-gray-900 dark:text-gray-400 transition-all duration-300 hover:text-primary dark:hover:text-gray-300 hover:-translate-y-1 hover:shadow-lg bg-transparent rounded-full hover:shadow-red-400 dark:hover:shadow-gray-300" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/groups/4920035/"
-                      target="_blank"
-                      title="LinkedIn DAAN"
-                    >
-                      <FaLinkedin className="text-3xl text-gray-900 dark:text-gray-400 transition-all duration-300 hover:text-primary dark:hover:text-gray-300 hover:-translate-y-1 hover:shadow-lg bg-transparent rounded-md hover:shadow-red-400 dark:hover:shadow-gray-300" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    <FaLongArrowAltRight /> {title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
-          <div>
-            <div className="text-center py-5 border-t-2 border-gray-400 bg-primary dark:bg-gray-900 text-gray-900 dark:text-gray-400 flex justify-center items-center">
-              <FaRegCopyright />Amplifier | All rights reserved.
+
+          {/* Contact & Social */}
+          <div className="py-8 px-4">
+            <h2 className="text-xl font-bold mb-3 text-gray-900 dark:text-gray-200">Reach Out</h2>
+            <div className="flex flex-col gap-3 text-gray-900 dark:text-gray-400">
+              <a
+                href="https://maps.app.goo.gl/SJVVbSZG5igkX1hXA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-primary dark:hover:text-gray-200 hover:italic"
+              >
+                <FaMapMarkedAlt /> <span>IIT Kharagpur, West Bengal, 721302</span>
+              </a>
+              <a
+                href="mailto:cr.daan.kgp@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-primary dark:hover:text-gray-200 hover:italic"
+              >
+                <IoIosMail /> <span>cr.daan.kgp@gmail.com</span>
+              </a>
+            </div>
+
+            {/* Socials */}
+            <h3 className="font-semibold mt-4 text-gray-900 dark:text-gray-200">DAAN Officials:</h3>
+            <div className="flex gap-6 mt-2">
+              {SocialLinks.map(({ href, title, icon }) => (
+                <a
+                  key={title}
+                  href={href}
+                  title={title}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-3xl text-gray-900 dark:text-gray-400 transition duration-300 hover:text-primary dark:hover:text-gray-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-400 dark:hover:shadow-gray-300 rounded-lg"
+                >
+                  {icon}
+                </a>
+              ))}
             </div>
           </div>
         </div>
       </div>
-    </>
-  );
-};
+
+      {/* Bottom Bar */}
+      <div className="text-center py-5 border-t-2 border-gray-400 bg-primary dark:bg-gray-900 text-gray-900 dark:text-gray-400 flex justify-center items-center gap-2">
+        <FaRegCopyright /> Amplifier | All rights reserved.
+      </div>
+    </div>
+  </footer>
+);
 
 export default Footer;
