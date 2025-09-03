@@ -1,32 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
-import { FiSun, FiMoon } from "react-icons/fi";
 import { Helmet } from "react-helmet";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { NavbarLinks } from "./JSFiles/NavbarData";
+import ThemeToggle from "../../utils/ThemeToggle";
 
 const Navbar = () => {
-  const [theme, setTheme] = useState("light");
   const [showMenu, setShowMenu] = useState(false);
-
-  // Load theme preference
-  useEffect(() => {
-    const saved = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    const activeTheme = saved || (prefersDark ? "dark" : "light");
-    setTheme(activeTheme);
-    document.documentElement.classList.toggle("dark", activeTheme === "dark");
-  }, []);
-
-  const toggleTheme = () => {
-    const next = theme === "light" ? "dark" : "light";
-    setTheme(next);
-    localStorage.setItem("theme", next);
-    document.documentElement.classList.toggle("dark", next === "dark");
-  };
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-gray-50 dark:bg-gray-900 backdrop-blur-sm text-gray-900 dark:text-gray-200 shadow-md dark:shadow-lg">
@@ -93,7 +74,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               title="Dakshana Foundation"
               className="bg-gradient-to-tr p-1 from-gray-100 to-gray-200 dark:from-gray-950 dark:to-gray-800 border transition-all duration-300 text-gray-900 dark:text-gray-400 rounded-lg text-center hover:bg-gradient-to-tr hover:from-gray-300 hover:to-gray-400 dark:hover:from-gray-900 dark:hover:to-gray-700 hover:border-gray-500 dark:border-gray-600 dark:hover:border-gray-500 shadow-sm shadow-gray-600 dark:shadow-gray-500"
-                  >
+            >
               <img
                 src="https://res.cloudinary.com/dcwwptwzt/image/upload/v1754520270/DakshanaLogo_ouuxyh.avif"
                 alt="Dakshana Foundation Logo"
@@ -107,19 +88,13 @@ const Navbar = () => {
               rel="noopener noreferrer"
               title="ERP IIT Kharagpur"
               className="bg-gradient-to-tr p-2 text-sm from-gray-100 to-gray-200 dark:from-gray-950 dark:to-gray-800 border transition-all duration-300 text-gray-900 dark:text-gray-400 rounded-lg text-center hover:bg-gradient-to-tr hover:from-gray-300 hover:to-gray-400 dark:hover:from-gray-900 dark:hover:to-gray-700 hover:border-gray-500 dark:border-gray-600 dark:hover:border-gray-500 shadow-sm  shadow-gray-600 dark:shadow-gray-500"
-                  >
+            >
               ERP
             </a>
           </div>
 
           {/* Theme Toggle */}
-          <button
-            onClick={toggleTheme}
-            aria-label="Toggle theme"
-            className="p-2 transition-all text-gray-900 dark:text-gray-400"
-          >
-            {theme === "light" ? <FiMoon size={20} /> : <FiSun size={20} />}
-          </button>
+          <ThemeToggle />
 
           {/* Mobile Menu Toggle */}
           <button

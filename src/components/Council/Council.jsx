@@ -4,7 +4,7 @@ import { CouncilData } from "./CouncilData";
 const Council = () => (
   <section
     id="council"
-    className="scroll-mt-[100px] bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-400 py-10"
+    className="scroll-mt-[100px] bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-400 py-10"
   >
     <div data-aos="fade-up" className="container">
       <h1 className="my-8 border-l-8 border-red-300 dark:border-gray-300 py-2 pl-2 text-3xl font-bold">

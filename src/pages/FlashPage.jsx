@@ -1,43 +1,36 @@
-//Without Audio
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 const FlashPage = ({ onFinish }) => {
   useEffect(() => {
-    const timer = setTimeout(() => {
-      onFinish();
-    }, 3000); // Show for 3 seconds
-
+    const timer = setTimeout(onFinish, 3000);
     return () => clearTimeout(timer);
   }, [onFinish]);
 
   return (
-    <div className="fixed inset-0 bg-white flex flex-col items-center justify-center z-50">
-      {/* Logo */}
-      <img
-        src="https://res.cloudinary.com/dubu8yxkm/image/upload/v1754643304/Logo_mnu1fh.avif"
-        alt="DAAN KGP Logo"
-        className="w-full animate-fade-in"
-      />
+    <div className="fixed inset-0 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-400 flex flex-col items-center justify-center z-50">
+      {/* Main Title */}
+      <h1 className="text-[18vw] font-bold opacity-0 animate-fade-in">
+        DAAN KGP
+      </h1>
+
+      {/* Subtitle */}
+      <h3 className="text-[4vw] mt-0 opacity-0 animate-fade-in-delay">
+        DakshanA Alumni Network at IIT Kharagpur
+      </h3>
 
       {/* Tagline */}
       <h1 className="text-sm md:text-lg italic mt-2 font-semibold text-gray-700 opacity-0 animate-fade-in-delay">
-        Still Infinite Good...
+        Welcomes you ...
       </h1>
-
-      {/* Animation styles */}
       <style>
         {`
-          @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.95); }
-            to { opacity: 1; transform: scale(1); }
+          @keyframes fadeIn { 
+            from { opacity:0; transform:scale(0.95); } 
+            to { opacity:1; transform:scale(1); } 
           }
-          .animate-fade-in {
-            animation: fadeIn 1s ease forwards;
-          }
-          .animate-fade-in-delay {
-            animation: fadeIn 1s ease forwards;
-            animation-delay: 0.5s;
-          }
+          .animate-fade-in { animation: fadeIn 1s ease forwards; }
+          .animate-fade-in-delay { animation: fadeIn 1s ease forwards; animation-delay: 0.5s; }
+          .animate-fade-in-delay-2 { animation: fadeIn 1s ease forwards; animation-delay: 1s; }
         `}
       </style>
     </div>

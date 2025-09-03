@@ -22,24 +22,18 @@ import GlobalClickSpark from "./components/ClickEffect/GlobalClickSpark";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
+const scrollRoutes = ["flashing-notices", "cr", "council", "events"];
+
 export default function App() {
   const [showFlash, setShowFlash] = useState(true);
 
   useEffect(() => {
-    AOS.init({
-      offset: 100,
-      duration: 900,
-      easing: "ease-in-sine",
-      delay: 100,
-    });
+    AOS.init({ offset: 100, duration: 900, easing: "ease-in-sine", delay: 100 });
   }, []);
 
   useEffect(() => {
-    if (sessionStorage.getItem("daanFlashShown")) {
-      setShowFlash(false);
-    } else {
-      sessionStorage.setItem("daanFlashShown", "true");
-    }
+    if (sessionStorage.getItem("daanFlashShown")) setShowFlash(false);
+    else sessionStorage.setItem("daanFlashShown", "true");
   }, []);
 
   if (showFlash) return <FlashPage onFinish={() => setShowFlash(false)} />;
@@ -47,14 +41,12 @@ export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      {/* Add margin so all pages sit below Navbar */}
       <main className="pt-14 md:pt-20 pb-14 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-400 min-h-full">
         <Routes>
           <Route index element={<Home />} />
-          <Route path="flashing-notices" element={<Home scrollTo="flashing-notices" />} />
-          <Route path="cr" element={<Home scrollTo="cr" />} />
-          <Route path="council" element={<Home scrollTo="council" />} />
-          <Route path="events" element={<Home scrollTo="events" />} />
+          {scrollRoutes.map((path) => (
+            <Route key={path} path={path} element={<Home scrollTo={path} />} />
+          ))}
           <Route path="our-fam/:year" element={<OurFam />} />
           <Route path="our-fam" element={<Navigate to="/our-fam/25" />} />
           <Route path="events" element={<EventComp />} />
@@ -66,6 +58,7 @@ export default function App() {
           <Route path="*" element={<NoPage />} />
         </Routes>
       </main>
+
       <PageUpBtn />
       <Analytics />
       <SpeedInsights />

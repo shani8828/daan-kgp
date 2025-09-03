@@ -26,7 +26,7 @@ const CR = () => (
     id="cr"
     data-aos="fade-up"
     data-aos-duration="300"
-    className="py-10 bg-gray-50 dark:bg-gray-900 scroll-mt-[100px]"
+    className="py-10 bg-gray-100 dark:bg-gray-900 scroll-mt-[100px]"
   >
     <div className="container">
       {/* Header */}

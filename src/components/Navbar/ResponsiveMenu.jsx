@@ -20,7 +20,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
   return (
     <div
       ref={menuRef}
-      className={`fixed top-0 bottom-0 z-20 h-[55vh] w-[75%] px-8 pt-6 pb-6 flex flex-col justify-evenly rounded-r-xl shadow-md transition-all duration-300 md:hidden ${
+      className={`fixed top-0 bottom-0 z-20 h-[55vh] w-full px-8 pt-6 pb-6 flex flex-col justify-evenly shadow-md transition-all duration-300 md:hidden ${
         showMenu ? "left-0" : "-left-full"
       } bg-gray-50 text-gray-900 dark:bg-gray-800 dark:text-gray-400`}
     >
