@@ -8,7 +8,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <div className="bg-transparent h-full flex justify-center items-center p-4">
+    <div className="bg-transparent flex justify-center items-center p-4">
       <div className="container grid gap-4">
         {/* Heading */}
         <div className="text-gray-900 dark:text-gray-300 text-center">
@@ -37,10 +37,10 @@ export default function Hero() {
               data-aos-delay="600"
               className="bg-gradient-to-tr from-red-700 to-red-400 rounded-lg p-4 md:p-6 lg:p-8 flex flex-col items-center"
             >
-              <span className="text-3xl md:text-4xl lg:text-6xl font-bold flex items-center text-center">
+              <span className="text-3xl md:text-4xl lg:text-6xl font-bold flex items-center text-center text-gray-900">
                 <AnimatedCounter target={target} duration={2500} /> +
               </span>
-              <p className="text-sm text-center">{label}</p>
+              <p className="text-sm text-center text-gray-900">{label}</p>
             </div>
           ))}
         </div>

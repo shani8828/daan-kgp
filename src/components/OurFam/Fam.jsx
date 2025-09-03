@@ -26,7 +26,7 @@ const Fam = ({ yearParam }) => {
   };
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-400 py-10">
+    <div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-400">
       <section data-aos="fade-up" className="container">
         <h1 className="my-8 border-l-8 border-red-300 dark:border-gray-300 py-2 pl-2 text-3xl font-bold text-gray-900 dark:text-gray-300">
           Our Fam

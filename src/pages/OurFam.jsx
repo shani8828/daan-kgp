@@ -8,7 +8,7 @@ const OurFam = () => {
   document.title = "Our Fam | DAAN KGP";
 
   return (
-    <div className="min-h-screen pt-14 bg-gray-100 dark:bg-gray-900">
+    <div className="bg-gray-100 dark:bg-gray-900">
       <Helmet>
         <meta
           name="description"

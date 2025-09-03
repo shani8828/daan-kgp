@@ -29,7 +29,7 @@ const Home = ({ scrollTo }) => {
         />
       </Helmet>
       <div data-aos="fade-in">
-        <div className="h-[775px] relative bg-gray-400 dark:bg-gray-900 flex items-center overflow-hidden">
+        <div className="h-[720px] relative bg-gray-400 dark:bg-gray-900 flex items-center overflow-hidden">
           <GridBackgroundOptimized />
           {/* ensure hero content sits above the grid */}
           <div className="relative z-10 w-full">

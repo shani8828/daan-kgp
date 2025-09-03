@@ -19,7 +19,7 @@ const EventsDetails = () => {
   const { image, date, title, description } = event;
 
   return (
-    <div className="pt-20">
+    <div>
       <Helmet>
         <title>{`${title} | DAAN KGP`}</title>
         <meta name="description" content={description} />

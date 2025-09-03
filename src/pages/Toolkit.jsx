@@ -24,7 +24,7 @@ const Toolkit = () => {
         />
       </Helmet>
 
-      <div className="dark:bg-gray-900 dark:text-gray-400 bg-gray-100 py-14 pt-20">
+      <div className="dark:bg-gray-900 dark:text-gray-400 bg-gray-100">
         <section data-aos="fade-up" className="container">
           {/* Page Title */}
           <h1 className="my-8 border-l-8 border-red-300 dark:border-gray-400 py-2 pl-2 text-3xl font-bold">
@@ -32,7 +32,7 @@ const Toolkit = () => {
           </h1>
 
           {/* Tabs */}
-          <div className="flex flex-wrap gap-2 mb-8">
+          <div className="flex flex-wrap justify-center items-center gap-2 mb-8">
             {tabs.map(({ key, label }) => (
               <button
                 key={key}

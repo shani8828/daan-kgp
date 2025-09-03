@@ -24,7 +24,7 @@ const AnimatedCounter = ({ target = 95, duration = 2000 }) => {
   }, [target, duration]);
 
   return (
-    <div className="text-3xl md:text-4xl lg:text-6xl font-bold flex items-center text-gray-950">
+    <div className="text-3xl md:text-4xl lg:text-6xl font-bold flex items-center text-gray-900">
       {count}
     </div>
   );

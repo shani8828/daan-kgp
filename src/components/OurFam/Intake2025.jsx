@@ -40,7 +40,7 @@ const Intake2025 = () => {
   });
 
   return (
-    <div className="dark:bg-gray-900 bg-gray-100 text-gray-900 dark:text-gray-400 py-10">
+    <div className="dark:bg-gray-900 bg-gray-100 text-gray-900 dark:text-gray-400">
       <section data-aos="fade-up" className="container">
         <h1 className="mt-8  text-gray-900 dark:text-gray-400 pl-2 text-2xl font-bold text-center w-full">
           First Years

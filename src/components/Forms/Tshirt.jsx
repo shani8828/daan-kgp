@@ -29,8 +29,23 @@ const FormSelect = ({ options, placeholder, ...props }) => (
 // 🔹 Static options
 const yearOptions = [1, 2, 3, 4, 5, "PG 1", "PG 2"];
 const hallOptions = [
-  "ABV", "Azad", "BRH", "Gokhale", "HJB", "JCB", "LBS", "LLR", "MMM", "MS",
-  "MT", "Nehru", "Patel", "RK", "RP", "SN/IG", "SNVH",
+  "ABV",
+  "Azad",
+  "BRH",
+  "Gokhale",
+  "HJB",
+  "JCB",
+  "LBS",
+  "LLR",
+  "MMM",
+  "MS",
+  "MT",
+  "Nehru",
+  "Patel",
+  "RK",
+  "RP",
+  "SN/IG",
+  "SNVH",
 ];
 const coeOptions = [
   "Dakshana Valley",
@@ -87,10 +102,16 @@ const Tshirt = () => {
       const data = await res.json();
 
       if (res.ok) {
-        setPopup({ type: "success", message: "Registered successfully for Dakshana T-Shirt 2025!" });
+        setPopup({
+          type: "success",
+          message: "Registered successfully for Dakshana T-Shirt 2025!",
+        });
         resetForm();
       } else {
-        setPopup({ type: "error", message: data.error || "Something went wrong!" });
+        setPopup({
+          type: "error",
+          message: data.error || "Something went wrong!",
+        });
       }
     } catch (err) {
       setPopup({ type: "error", message: "Error: " + err.message });
@@ -146,19 +167,71 @@ const Tshirt = () => {
       )}
 
       {/* Form */}
-      <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-400 text-gray-900 min-h-[80vh] py-14 pt-20">
+      <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-400 text-gray-900">
         <section className="container mx-auto" data-aos="fade-up">
           <h1 className="my-8 border-l-8 border-red-300 dark:border-gray-400 py-2 pl-2 text-3xl font-bold">
             T-Shirt Registration 2025
           </h1>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-lg mx-auto">
-            <FormInput name="name" value={formData.name} onChange={handleChange} placeholder="Name" required />
-            <FormInput name="rollNo" value={formData.rollNo} onChange={handleChange} placeholder="Roll No (Institution)" required />
-            <FormSelect name="yearOfStudy" value={formData.yearOfStudy} onChange={handleChange} options={yearOptions} placeholder="Year of Study" required />
-            <FormSelect name="hallOfResidence" value={formData.hallOfResidence} onChange={handleChange} options={hallOptions} placeholder="Hall Of Residence" required />
-            <FormInput type="tel" name="mobileNo" value={formData.mobileNo} onChange={handleChange} placeholder="Mobile No (9XXXXXXXXX)" pattern="[0-9]{10}" maxLength={10} required />
-            <FormSelect name="coe" value={formData.coe} onChange={handleChange} options={coeOptions} placeholder="COE" required />
-            <FormSelect name="tshirtSize" value={formData.tshirtSize} onChange={handleChange} options={sizeOptions} placeholder="T-shirt Size" required />
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-4 max-w-lg mx-auto"
+          >
+            <FormInput
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Name"
+              required
+            />
+            <FormInput
+              name="rollNo"
+              value={formData.rollNo}
+              onChange={handleChange}
+              placeholder="Roll No (Institution)"
+              required
+            />
+            <FormSelect
+              name="yearOfStudy"
+              value={formData.yearOfStudy}
+              onChange={handleChange}
+              options={yearOptions}
+              placeholder="Year of Study"
+              required
+            />
+            <FormSelect
+              name="hallOfResidence"
+              value={formData.hallOfResidence}
+              onChange={handleChange}
+              options={hallOptions}
+              placeholder="Hall Of Residence"
+              required
+            />
+            <FormInput
+              type="tel"
+              name="mobileNo"
+              value={formData.mobileNo}
+              onChange={handleChange}
+              placeholder="Mobile No (9XXXXXXXXX)"
+              pattern="[0-9]{10}"
+              maxLength={10}
+              required
+            />
+            <FormSelect
+              name="coe"
+              value={formData.coe}
+              onChange={handleChange}
+              options={coeOptions}
+              placeholder="COE"
+              required
+            />
+            <FormSelect
+              name="tshirtSize"
+              value={formData.tshirtSize}
+              onChange={handleChange}
+              options={sizeOptions}
+              placeholder="T-shirt Size"
+              required
+            />
 
             <button
               type="submit"

@@ -1,26 +1,28 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route, Navigate, Form } from "react-router-dom";
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import OurFam from "./pages/OurFam";
-import NoPage from "./pages/NoPage";
-import OurBrightMinds from "./pages/OurBrightMinds";
-import EventsDetails from "./pages/EventsDetails";
+import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import PageUpBtn from "./pages/PageUpBtn";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
-import FlshPage from "./pages/FlshPage";
+
+import Home from "./pages/Home";
+import OurFam from "./pages/OurFam";
+import OurBrightMinds from "./pages/OurBrightMinds";
+import EventsDetails from "./pages/EventsDetails";
+import NoPage from "./pages/NoPage";
+import FlashPage from "./pages/FlashPage";
 import Forms from "./pages/Forms";
 import Tshirt from "./components/Forms/Tshirt";
-import GlobalClickSpark from "./components/ClickEffect/GlobalClickSpark";
 import EventComp from "./components/Events/EventsComp";
 import Toolkit from "./pages/Toolkit";
 
-const App = () => {
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import PageUpBtn from "./pages/PageUpBtn";
+import GlobalClickSpark from "./components/ClickEffect/GlobalClickSpark";
+
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+
+export default function App() {
   const [showFlash, setShowFlash] = useState(true);
 
   useEffect(() => {
@@ -30,58 +32,45 @@ const App = () => {
       easing: "ease-in-sine",
       delay: 100,
     });
-    AOS.refresh();
   }, []);
 
-  // Show FlashPage only once per browser session
   useEffect(() => {
-    const hasSeenFlash = sessionStorage.getItem("daanFlashShown");
-    if (hasSeenFlash) {
-      setShowFlash(false); // Skip splash if already seen
+    if (sessionStorage.getItem("daanFlashShown")) {
+      setShowFlash(false);
     } else {
       sessionStorage.setItem("daanFlashShown", "true");
     }
   }, []);
 
-  if (showFlash) {
-    return <FlshPage onFinish={() => setShowFlash(false)} />;
-  }
+  if (showFlash) return <FlashPage onFinish={() => setShowFlash(false)} />;
 
   return (
-    <>
-      <BrowserRouter>
-        <Navbar />
+    <BrowserRouter>
+      <Navbar />
+      {/* Add margin so all pages sit below Navbar */}
+      <main className="pt-14 md:pt-20 pb-14 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-400 min-h-full">
         <Routes>
-          <Route>
-            <Route path="/" element={<Layout />} />
-            <Route index element={<Home />} />
-            <Route
-              path="flashing-notices"
-              element={<Home scrollTo="flashing-notices" />}
-            />
-            <Route path="cr" element={<Home scrollTo="cr" />} />
-            <Route path="council" element={<Home scrollTo="council" />} />
-            <Route path="events" element={<Home scrollTo="events" />} />
-            <Route path="our-fam/:year" element={<OurFam />} />
-            <Route path="our-fam" element={<Navigate to="/our-fam/25" />} />
-            <Route path="/events" element={<EventComp />} />
-            <Route path="/events/:slug" element={<EventsDetails />} />
-            <Route path="/toolkit" element={<Toolkit />} />
-            <Route path="our-bright-minds" element={<OurBrightMinds />} />
-            <Route path="forms" element={<Forms />} />
-            <Route path="tshirt-form" element={<Tshirt />} />
-            <Route path="*" element={<NoPage />} />
-            {/* <Route path="flash" element ={<FlshPage/>}/> */}
-          </Route>
+          <Route index element={<Home />} />
+          <Route path="flashing-notices" element={<Home scrollTo="flashing-notices" />} />
+          <Route path="cr" element={<Home scrollTo="cr" />} />
+          <Route path="council" element={<Home scrollTo="council" />} />
+          <Route path="events" element={<Home scrollTo="events" />} />
+          <Route path="our-fam/:year" element={<OurFam />} />
+          <Route path="our-fam" element={<Navigate to="/our-fam/25" />} />
+          <Route path="events" element={<EventComp />} />
+          <Route path="events/:slug" element={<EventsDetails />} />
+          <Route path="toolkit" element={<Toolkit />} />
+          <Route path="our-bright-minds" element={<OurBrightMinds />} />
+          <Route path="forms" element={<Forms />} />
+          <Route path="tshirt-form" element={<Tshirt />} />
+          <Route path="*" element={<NoPage />} />
         </Routes>
-        <PageUpBtn />
-        <Analytics />
-        <SpeedInsights />
-        <Footer />
-        <GlobalClickSpark />
-      </BrowserRouter>
-    </>
+      </main>
+      <PageUpBtn />
+      <Analytics />
+      <SpeedInsights />
+      <Footer />
+      <GlobalClickSpark />
+    </BrowserRouter>
   );
-};
-
-export default App;
+}

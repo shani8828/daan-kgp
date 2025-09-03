@@ -13,7 +13,7 @@ const OurBrightMinds = () => {
           content="This page includes our bright minds and hard works. They are the reasons behind our success."
         />
       </Helmet>
-      <div className="dark:bg-gray-900 dark:text-gray-400 text-gray-900 bg-gray-100 py-14 pt-20">
+      <div className="dark:bg-gray-900 dark:text-gray-400">
         <section data-aos="fade-up" className="container ">
           <h1 className="my-8 border-l-8 border-red-300 dark:border-gray-300 dark:text-gray-200 py-2 pl-2 text-3xl font-bold">
             Our Bright Minds
