@@ -55,7 +55,10 @@ const Tshirt = () => {
           tshirtSize: "",
         });
       } else {
-        setPopup({ type: "error", message: data.error || "Something went wrong!" });
+        setPopup({
+          type: "error",
+          message: data.error || "Something went wrong!",
+        });
       }
     } catch (err) {
       setPopup({ type: "error", message: "Error: " + err.message });
@@ -70,7 +73,15 @@ const Tshirt = () => {
     "focus:outline-none focus:ring-2 focus:ring-red-200 dark:focus:ring-gray-500 " +
     "transition-all duration-300 ease-in-out dark:bg-gray-800 dark:text-gray-300 hover:shadow-lg dark:hover:shadow-gray-800";
 
-  const FormInput = ({ type = "text", name, value, onChange, placeholder, required, ...props }) => (
+  const FormInput = ({
+    type = "text",
+    name,
+    value,
+    onChange,
+    placeholder,
+    required,
+    ...props
+  }) => (
     <input
       type={type}
       name={name}
@@ -83,7 +94,14 @@ const Tshirt = () => {
     />
   );
 
-  const FormSelect = ({ name, value, onChange, required, options, placeholder }) => (
+  const FormSelect = ({
+    name,
+    value,
+    onChange,
+    required,
+    options,
+    placeholder,
+  }) => (
     <select
       name={name}
       value={value}
@@ -134,7 +152,7 @@ const Tshirt = () => {
       {/* Popup */}
       {popup && (
         <div
-          className={`fixed top-5 left-1/2 -translate-x-1/2 px-6 py-3 rounded-lg shadow-lg z-[9999] animate-fade-in ${
+          className={`fixed bottom-5 left-1/2 -translate-x-1/2 px-6 py-3 rounded-lg shadow-lg z-[9999] animate-fade-in ${
             popup.type === "success"
               ? "bg-green-600 dark:bg-emerald-700"
               : "bg-red-600 dark:bg-red-700"
@@ -143,16 +161,31 @@ const Tshirt = () => {
           {popup.message}
         </div>
       )}
-
+      
       {/* Form */}
       <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-400 text-gray-900 min-h-[80vh] py-14 pt-20">
         <section className="container mx-auto" data-aos="fade-up">
           <h1 className="my-8 border-l-8 border-red-300 dark:border-gray-400 py-2 pl-2 text-3xl font-bold">
             T-Shirt Registration 2025
           </h1>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-lg mx-auto">
-            <FormInput name="name" value={formData.name} onChange={handleChange} placeholder="Name" required />
-            <FormInput name="rollNo" value={formData.rollNo} onChange={handleChange} placeholder="Roll No (Institution)" required />
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-4 max-w-lg mx-auto"
+          >
+            <FormInput
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Name"
+              required
+            />
+            <FormInput
+              name="rollNo"
+              value={formData.rollNo}
+              onChange={handleChange}
+              placeholder="Roll No (Institution)"
+              required
+            />
             <FormSelect
               name="yearOfStudy"
               value={formData.yearOfStudy}
@@ -167,7 +200,23 @@ const Tshirt = () => {
               onChange={handleChange}
               placeholder="Hall Of Residence"
               options={[
-                "ABV","Azad","BRH","Gokhale","HJB","JCB","LBS","LLR","MMM","MS","MT","Nehru","Patel","RK","RP","SN/IG","SNVH"
+                "ABV",
+                "Azad",
+                "BRH",
+                "Gokhale",
+                "HJB",
+                "JCB",
+                "LBS",
+                "LLR",
+                "MMM",
+                "MS",
+                "MT",
+                "Nehru",
+                "Patel",
+                "RK",
+                "RP",
+                "SN/IG",
+                "SNVH",
               ]}
               required
             />
@@ -187,7 +236,12 @@ const Tshirt = () => {
               onChange={handleChange}
               placeholder="COE"
               options={[
-                "Dakshana Valley","JNV Bengaluru Urban","JNV Bundi","JNV Kottayam","JNV Lucknow","JNV Rangareddi"
+                "Dakshana Valley",
+                "JNV Bengaluru Urban",
+                "JNV Bundi",
+                "JNV Kottayam",
+                "JNV Lucknow",
+                "JNV Rangareddi",
               ]}
               required
             />
@@ -196,7 +250,7 @@ const Tshirt = () => {
               value={formData.tshirtSize}
               onChange={handleChange}
               placeholder="T-shirt Size"
-              options={["XS","S","M","L","XL","XXL"]}
+              options={["XS", "S", "M", "L", "XL", "XXL"]}
               required
             />
             <button
