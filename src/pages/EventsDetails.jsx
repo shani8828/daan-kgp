@@ -1,16 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import EventsComp from "../components/Events/EventsComp";
 import { Helmet } from "react-helmet";
 import EventData from "../components/Events/EventData";
+import EventsComp from "../components/Events/EventsComp";
 
 const EventsDetails = () => {
-  const { id } = useParams();
-  const decodedTitle = decodeURIComponent(id);
-
-  const event = EventData.find(
-    (e) => e.title.toLowerCase() === decodedTitle.toLowerCase()
-  );
+  const { slug } = useParams();
+  const event = EventData.find((e) => e.slug === slug);
 
   if (!event) {
     return (
@@ -21,13 +17,14 @@ const EventsDetails = () => {
   }
 
   const { image, date, title, description } = event;
-  document.title = `${title} | DAAN KGP`;
 
   return (
     <div className="pt-20">
       <Helmet>
+        <title>{`${title} | DAAN KGP`}</title>
         <meta name="description" content={description} />
       </Helmet>
+
       <div className="h-auto overflow-hidden">
         <img
           src={image}
@@ -35,8 +32,9 @@ const EventsDetails = () => {
           className="mx-auto h-auto md:h-fit w-full object-cover"
         />
       </div>
+
       <div className="container bg-gray-50 dark:bg-gray-900">
-        <p className="text-slate-600 dark:text-gray-500 text-sm py-3"> on {date}</p>
+        <p className="text-slate-600 dark:text-gray-500 text-sm py-3">on {date}</p>
         <h1 className="text-2xl dark:text-gray-300 font-semibold">{title}</h1>
         <p className="text-gray-700 dark:text-gray-400">{description}</p>
       </div>

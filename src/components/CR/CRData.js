@@ -1,4 +1,4 @@
- export const CRData = [
+export const CRData = [
   {
     id: 0,
     name: "Mr. Shani Maurya",
