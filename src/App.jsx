@@ -55,8 +55,7 @@ export default function App() {
           <Route path="our-bright-minds" element={<OurBrightMinds />} />
           <Route path="forms" element={<Forms />} />
           <Route path="tshirt-form" element={<Tshirt />} />
-          {/* <Route path="*" element={<NoPage />} /> */}
-          <Route path="*" element={<FlashPage />} />
+          <Route path="*" element={<NoPage />} />
         </Routes>
       </main>
 
