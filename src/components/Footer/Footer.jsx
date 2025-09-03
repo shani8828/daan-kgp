@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 const FooterLinks = [
   { title: "Home", link: "/" },
   { title: "Our Fam", link: "/our-fam" },
-  { title: "Fresher Place", link: "/fresher-place" },
+  { title: "Toolkit", link: "/toolkit" },
   { title: "Our Bright Minds", link: "/our-bright-minds" },
 ];
 
