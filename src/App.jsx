@@ -16,7 +16,7 @@ import Toolkit from "./pages/Toolkit";
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import PageUpBtn from "./pages/PageUpBtn";
+import PageUpBtn from "./utils/PageUpBtn";
 import GlobalClickSpark from "./components/ClickEffect/GlobalClickSpark";
 
 import { Analytics } from "@vercel/analytics/react";
@@ -55,7 +55,8 @@ export default function App() {
           <Route path="our-bright-minds" element={<OurBrightMinds />} />
           <Route path="forms" element={<Forms />} />
           <Route path="tshirt-form" element={<Tshirt />} />
-          <Route path="*" element={<NoPage />} />
+          {/* <Route path="*" element={<NoPage />} /> */}
+          <Route path="*" element={<FlashPage />} />
         </Routes>
       </main>
 

@@ -19,7 +19,7 @@ const FlashPage = ({ onFinish }) => {
       </h3>
 
       {/* Tagline */}
-      <h1 className="text-sm md:text-lg italic mt-2 font-semibold text-gray-700 opacity-0 animate-fade-in-delay">
+      <h1 className="text-[3vw] md:text-[2vw] lg:text-[1vw] mt-2 text-gray-700 opacity-0 animate-fade-in-delay">
         Welcomes you ...
       </h1>
       <style>
