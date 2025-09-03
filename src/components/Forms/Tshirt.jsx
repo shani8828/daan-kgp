@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Helmet } from "react-helmet";
 
 // Use VITE_BACKEND_URL from .env
-const VITE_BACKEND_URL =
+const VITE_BACKEND_link =
   import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
 const Tshirt = () => {
@@ -34,7 +34,7 @@ const Tshirt = () => {
 
     try {
       const res = await fetch(
-        `https://daan-kgp-backend.onrender.com/api/tshirt-form`,
+        `${VITE_BACKEND_link}/api/tshirt-form`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
