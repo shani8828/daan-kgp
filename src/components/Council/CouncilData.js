@@ -10,7 +10,7 @@ export const CouncilData = [
   {
     img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723339/Paramjeet_Saini_xolxxj.avif",
     title: "Mr. Paramjeet Saini",
-    portfolio: "Senior Sectretary, DST(JNV)",
+    portfolio: "Senior Secretary, DST(JNV)",
     mail: "paramjeetsaini@kgpian.iitkgp.ac.in",
     mobile: "+91 6397189676",
     year: "4th",
