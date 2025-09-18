@@ -40,7 +40,7 @@ const Forms = () => {
                 T-Shirt Registration 2025
               </h2>
               <p className="text-gray-700 dark:text-gray-400 mt-1 text-sm">
-                Fill out your details to register.
+                Your Dakshana T-shirt is waiting! Register now and claim yours.
               </p>
               <p className="text-gray-800 dark:text-gray-400 mt-4 text-sm font-bold">
                 Deadline : 23 Sept, 2025
