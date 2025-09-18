@@ -1,27 +1,26 @@
 "use client";
 
 import { VscDiffIgnored } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
 const notices = [
-  { text: "Mid-Semester Exams : Sep 18-26, 2025." },
-  { text: "Autumn Break : Sep 27-Oct 05, 2025." },
-  { text: "Dakshana Day Celebration : Oct 15, 2025." },
   {
     text: (
       <>
-        Income Certificate{" "}
-        <a
-          href="https://drive.google.com/file/d/1d7_OxbrHCOzuzNQ8rVCCqui9lsEoEdUT/view?usp=sharing"
-          target="_blank"
+        Register{" "}
+        <Link
           rel="noopener noreferrer"
-          className="text-blue-500 hover:text-blue-700 transition-colors"
+          className="text-blue-900 dark:text-blue-700 hover:text-blue-500 transition-colors duration-300"
+          to="/tshirt-form"
         >
-          Format
-        </a>{" "}
-        for current session.
+          here
+        </Link>{" "}
+        for Dakshana T-Shirt 2025.
       </>
     ),
   },
+  { text: "Autumn Break : Sep 27-Oct 05, 2025." },
+  { text: "Dakshana Day Celebration : Oct 15, 2025." },
 ];
 
 export default function FlashingNoticesCard() {
