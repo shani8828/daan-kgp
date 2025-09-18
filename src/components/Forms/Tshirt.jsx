@@ -264,6 +264,7 @@ const Tshirt = () => {
               {loading ? "Registering..." : "Register"}
             </button>
           </form>
+          <p className="mt-10">Facing any issue? <a href="mailto:cr.daan.kgp@gmail.com" target="_blank" className="text-blue-500 dark:text-blue-400 ">Brief it!</a></p>
         </section>
       </div>
     </>
