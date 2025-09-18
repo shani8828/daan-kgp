@@ -27,7 +27,7 @@ const FormSelect = ({ options, placeholder, ...props }) => (
 );
 
 // 🔹 Static options
-const yearOptions = [1, 2, 3, 4, 5, "PG 1", "PG 2"];
+const yearOptions = [1, 2, 3, 4, 5, "PG 1", "PG 2", "PhD"];
 const hallOptions = [
   "ABV",
   "Azad",
@@ -65,8 +65,10 @@ const Tshirt = () => {
     yearOfStudy: "",
     hallOfResidence: "",
     mobileNo: "",
+    email: "",
     coe: "",
     tshirtSize: "",
+    dxnRoll: "",
   });
   const [loading, setLoading] = useState(false);
   const [popup, setPopup] = useState(null);
@@ -84,8 +86,10 @@ const Tshirt = () => {
       yearOfStudy: "",
       hallOfResidence: "",
       mobileNo: "",
+      email: "",
       coe: "",
       tshirtSize: "",
+      dxnRoll: "",
     });
 
   const handleSubmit = async (e) => {
@@ -94,7 +98,7 @@ const Tshirt = () => {
     setPopup(null);
 
     try {
-      const res = await fetch(`${API_URL}/api/tshirt-form`, {
+      const res = await fetch(`${API_URL}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -138,7 +142,7 @@ const Tshirt = () => {
             {["0s", "0.15s", "0.3s", "0.45s"].map((delay, i) => (
               <div
                 key={i}
-                className="absolute bg-red-600 dark:bg-gray-400 w-4 h-4 animate-ping"
+                className="absolute bg-red-400 dark:bg-gray-400 w-4 h-4 animate-ping"
                 style={{
                   top: i < 2 ? 0 : "auto",
                   bottom: i >= 2 ? 0 : "auto",
@@ -190,22 +194,24 @@ const Tshirt = () => {
               placeholder="Roll No (Institution)"
               required
             />
-            <FormSelect
-              name="yearOfStudy"
-              value={formData.yearOfStudy}
-              onChange={handleChange}
-              options={yearOptions}
-              placeholder="Year of Study"
-              required
-            />
-            <FormSelect
-              name="hallOfResidence"
-              value={formData.hallOfResidence}
-              onChange={handleChange}
-              options={hallOptions}
-              placeholder="Hall Of Residence"
-              required
-            />
+            <div className="grid grid-cols-2 gap-4">
+              <FormSelect
+                name="yearOfStudy"
+                value={formData.yearOfStudy}
+                onChange={handleChange}
+                options={yearOptions}
+                placeholder="Year of Study"
+                required
+              />
+              <FormSelect
+                name="hallOfResidence"
+                value={formData.hallOfResidence}
+                onChange={handleChange}
+                options={hallOptions}
+                placeholder="Hall Of Residence"
+                required
+              />
+            </div>
             <FormInput
               type="tel"
               name="mobileNo"
@@ -216,21 +222,38 @@ const Tshirt = () => {
               maxLength={10}
               required
             />
-            <FormSelect
-              name="coe"
-              value={formData.coe}
+            <FormInput
+              type="email"
+              name="email"
+              value={formData.email}
               onChange={handleChange}
-              options={coeOptions}
-              placeholder="COE"
+              placeholder="Email"
               required
             />
-            <FormSelect
-              name="tshirtSize"
-              value={formData.tshirtSize}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <FormSelect
+                name="coe"
+                value={formData.coe}
+                onChange={handleChange}
+                options={coeOptions}
+                placeholder="COE"
+                required
+              />
+              <FormSelect
+                name="tshirtSize"
+                value={formData.tshirtSize}
+                onChange={handleChange}
+                options={sizeOptions}
+                placeholder="T-shirt Size"
+                required
+              />
+            </div>
+            <FormInput
+              type="text"
+              name="dxnRoll"
+              value={formData.dxnRoll}
               onChange={handleChange}
-              options={sizeOptions}
-              placeholder="T-shirt Size"
-              required
+              placeholder="Dakshana Roll No (Optional)"
             />
 
             <button
