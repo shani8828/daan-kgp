@@ -46,9 +46,11 @@ const hallOptions = [
   "RP",
   "SN/IG",
   "SNVH",
+  "VS",
 ];
 const coeOptions = [
   "Dakshana Valley",
+  "JNV Bengaluru Rural",
   "JNV Bengaluru Urban",
   "JNV Bundi",
   "JNV Kottayam",
