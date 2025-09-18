@@ -259,7 +259,7 @@ const Tshirt = () => {
             <button
               type="submit"
               disabled={loading}
-              className="bg-red-400 dark:bg-gray-800 hover:bg-red-500 dark:hover:bg-gray-700 hover:scale-105 border border-gray-500 text-gray-900 dark:text-gray-400 py-2 px-4 rounded-full transition-all duration-500 disabled:opacity-50"
+              className="bg-red-400 dark:bg-gray-700 hover:bg-red-500 dark:hover:bg-gray-600 hover:scale-105 border border-gray-500 text-gray-900 dark:text-red-400 py-2 px-4 rounded-full transition-all duration-500 disabled:opacity-50"
             >
               {loading ? "Registering..." : "Register"}
             </button>
