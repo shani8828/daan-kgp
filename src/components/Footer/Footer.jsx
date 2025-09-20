@@ -11,9 +11,9 @@ import { IoIosMail } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const FooterLinks = [
-  { title: "Home", link: "/" },
   { title: "Our Fam", link: "/our-fam" },
   { title: "Toolkit", link: "/toolkit" },
+  { title: "Forms", link: "/forms" },
   { title: "Our Bright Minds", link: "/our-bright-minds" },
 ];
 
